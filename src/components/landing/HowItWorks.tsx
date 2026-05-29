@@ -28,10 +28,10 @@ export function HowItWorks() {
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-medium uppercase tracking-wider text-primary">Notre méthode</p>
           <h2 className="mt-3 font-display text-3xl font-semibold text-deep md:text-4xl text-balance">
-            Comment se passe la construction de votre maison neuve.
+            Construire votre maison neuve, en quatre étapes.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Nous prenons en charge la coordination du projet pour que vous gardiez le plaisir de décider, sans la charge mentale.
+            Vous gardez le plaisir de décider. On s'occupe du reste.
           </p>
         </div>
 
