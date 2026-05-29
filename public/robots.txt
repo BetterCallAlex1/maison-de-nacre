@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://maisondenacre.fr/sitemap.xml
+Sitemap: https://maison-de-nacre.fr/sitemap.xml
