@@ -1,42 +1,45 @@
-
 ## Périmètre
 
-Un seul fichier touché : `src/components/landing/HowItWorks.tsx`. Modification du tableau `steps` uniquement (lignes 1 à 22), aucun changement de structure, de classes ou de JSX.
+Un seul fichier touché : `src/components/landing/WhyUs.tsx`. Modification de l'import lucide-react, du tableau `pillars`, et du H2. Aucun changement de structure, classes, ou JSX.
 
 ## Diff
 
+**Ligne 1 — import lucide-react :**
+
 ```ts
-const steps = [
+import { Sparkles, HeartHandshake, ShieldCheck } from "lucide-react";
+```
+
+**Lignes 3 à 20 — const pillars :**
+
+```ts
+const pillars = [
   {
-    n: "01",
-    title: "On cadre votre projet",
-    body: "Nous écoutons votre projet, votre terrain, votre budget et vos contraintes. Nous validons ensemble la faisabilité.",
+    icon: Sparkles,
+    title: "Du sur-mesure, à votre image",
+    body: "Chaque mètre carré pensé pour votre terrain, votre vie, votre budget. Pas de modèle catalogue.",
   },
   {
-    n: "02",
-    title: "On dessine la maison avec l'architecte",
-    body: "Nous travaillons les plans avec un architecte partenaire jusqu'à un projet qui vous correspond.",
+    icon: HeartHandshake,
+    title: "Le savoir-faire d'une famille",
+    body: "Quinze ans à construire en Normandie. Notre nom sur chaque chantier, notre exigence avec.",
   },
   {
-    n: "03",
-    title: "On négocie les devis des artisans",
-    body: "Nous consultons et négocions les devis auprès de nos artisans partenaires, et vous restituons une offre claire.",
-  },
-  {
-    n: "04",
-    title: "On pilote le chantier jusqu'aux clés",
-    body: "Nous coordonnons les artisans, suivons le chantier et vous remettons les clés d'une maison finie.",
+    icon: ShieldCheck,
+    title: "Zéro charge mentale",
+    body: "Vous prenez les décisions importantes. On gère le reste : architecte, artisans, administratif, chantier.",
   },
 ];
 ```
 
-## Changements précis
+**H2 (dans le JSX) :**
 
-- step 01 : titre remplacé. Body inchangé.
-- step 02 : titre remplacé. Body : "vraiment" retiré en fin de phrase.
-- step 03 : titre remplacé. Body inchangé.
-- step 04 : titre remplacé. Body : "chaque semaine" retiré.
+```tsx
+<h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl text-balance">
+  Pourquoi construire avec nous.
+</h2>
+```
 
 ## Vérification
 
-Aucun caractère `—` (U+2014) dans le diff. Ponctuation utilisée : virgule, point, apostrophe.
+Aucun caractère `—` (U+2014) dans le diff. Ponctuation utilisée : virgule, point, deux-points, apostrophe.
