@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import heroImg from "@/assets/hero-maison.webp";
 
 function NotFoundComponent() {
   return (
