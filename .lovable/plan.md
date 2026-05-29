@@ -1,33 +1,50 @@
-## Objectif
+## Constat
 
-Afficher publiquement `contact@maison-de-nacre.fr` partout sur la landing (au lieu de `alexandre.duran@maison-de-nacre.fr`), tout en gardant la livraison réelle des leads vers la boîte personnelle.
+Les deux fichiers existent déjà dans `public/` :
 
-## Changements code (3 fichiers)
+- `public/robots.txt` : conforme à la demande (User-agent + Allow + Sitemap).
+- `public/sitemap.xml` : valide mais sans balise `<lastmod>`.
 
-1. **`src/components/landing/Footer.tsx`** (ligne 15)
-   - Texte affiché + `mailto:` → `contact@maison-de-nacre.fr`
+Aucune route `/sitemap.xml` ou `/robots.txt` n'existe sous `src/routes/` (pas de `sitemap[.]xml.ts`), donc les fichiers statiques de `public/` sont déjà servis bruts à la racine du domaine. Aucune redirection à neutraliser.
 
-2. **`src/routes/__root.tsx`** (ligne 114, JSON-LD LocalBusiness)
-   - Champ `email` → `contact@maison-de-nacre.fr` (email public de l'entité)
+## Changements
 
-3. **`public/llms.txt`** (ligne 28)
-   - `Email : contact@maison-de-nacre.fr`
+### 1. `public/sitemap.xml`
 
-## Fichiers NON touchés
+Ajouter `<lastmod>` à la date du jour (2026-05-29) sur l'entrée d'accueil. Le reste du fichier reste identique.
 
-- **`src/routes/api/public/send-lead.ts`** : on garde `to: ["alexandre.duran@maison-de-nacre.fr"]` (livraison directe à ta boîte, indépendante du forwarding) et `from: "Maison de Nacre <contact@maison-de-nacre.fr>"` (déjà en place).
-- Toutes les meta `og:`, canonical, hreflang, sitemap, robots : intactes.
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://maison-de-nacre.fr/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
+```
 
-## Point critique : le forwarding contact@ → boîte réelle
+### 2. `public/robots.txt`
 
-Le "renvoi automatique" de `contact@maison-de-nacre.fr` vers ta boîte n'est **pas géré par le code** : il dépend de la config MX/alias chez ton registrar ou ton hébergeur mail. Trois cas possibles :
+Aucun changement nécessaire, le fichier est déjà conforme :
 
-- **Tu as déjà configuré un alias/forwarding** `contact@` → `alexandre.duran@` (ou autre boîte) chez ton fournisseur : rien à faire, ça marchera quand un visiteur cliquera sur le `mailto:` ou répondra à un mail Resend.
-- **Pas encore configuré** : les mails envoyés à `contact@` partiront dans le vide. À configurer manuellement chez ton registrar (OVH, Gandi, Cloudflare Email Routing, Google Workspace, etc.).
-- **Cas Resend uniquement** : Resend peut *envoyer* depuis `contact@` (domaine vérifié) sans qu'il existe de vraie boîte. Mais pour *recevoir* (visiteur qui clique sur `mailto:` ou répond à un lead), il faut un MX + alias.
+```
+User-agent: *
+Allow: /
+Disallow: /api/
 
-**Action recommandée** : confirme-moi que le forwarding `contact@maison-de-nacre.fr` est bien actif (et où il est configuré). Si non, je peux te guider sur la mise en place (Cloudflare Email Routing est gratuit et rapide si ton DNS est chez Cloudflare).
+Sitemap: https://maison-de-nacre.fr/sitemap.xml
+```
 
-## Règle absolue
+Note : la ligne `Disallow: /api/` existante est conservée (elle protège les endpoints internes sans bloquer la home ni le sitemap). Si tu préfères un robots.txt strictement minimal (sans `Disallow: /api/`), dis-le et je l'enlèverai.
 
-Pas de tiret cadratin `—` dans le diff final.
+## Vérification du routing
+
+- Pas de fichier `src/routes/sitemap[.]xml.ts` ni `src/routes/robots[.]txt.ts` → aucune route serveur ne capture ces chemins.
+- `src/routes/api/public/send-lead.ts` ne matche que `/api/public/send-lead`, pas la racine.
+- Vite/TanStack Start sert `public/*` directement en statique avec priorité sur le SPA fallback : `https://maison-de-nacre.fr/sitemap.xml` et `/robots.txt` retourneront bien les fichiers bruts.
+
+## Règle
+
+Pas de tiret cadratin (`—`) dans le diff.
