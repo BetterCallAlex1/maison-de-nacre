@@ -5,7 +5,7 @@ export const leadSchema = z.object({
   hasLand: z.enum(["oui", "non", "en_recherche"]),
   surface: z.enum(["moins_80", "80_120", "120_160", "plus_160"]),
   area: z.string().min(2).max(100),
-  budget: z.string().max(50).optional().or(z.literal("")),
+  budget: z.string().min(1).max(50),
   firstName: z.string().min(1).max(60),
   lastName: z.string().min(1).max(60),
   email: z.string().email().max(160),
