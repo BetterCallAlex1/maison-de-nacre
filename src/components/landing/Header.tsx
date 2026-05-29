@@ -8,6 +8,7 @@ export function Header() {
           Maison de Nacre
         </a>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Navigation principale">
+          <a href="#realisations" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">Nos réalisations</a>
           <a href="#methode" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">Notre méthode</a>
           <a href="#pourquoi" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">Pourquoi nous</a>
           <a href="#faq" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">Questions</a>
