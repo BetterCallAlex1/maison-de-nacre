@@ -11,7 +11,7 @@ export function Footer() {
             </p>
           </div>
           <div className="text-sm text-muted-foreground">
-            <p>Téléphone : <a href="tel:[À COMPLÉTER]" className="font-medium text-deep hover:text-primary">[À COMPLÉTER]</a></p>
+            <p>Téléphone : <a href="tel:+33669260817" className="font-medium text-deep hover:text-primary">06 69 26 08 17</a></p>
             <p className="mt-1">Email : <a href="mailto:[À COMPLÉTER]" className="font-medium text-deep hover:text-primary">[À COMPLÉTER]</a></p>
           </div>
         </div>
