@@ -1,23 +1,23 @@
 const steps = [
   {
     n: "01",
-    title: "Échange et cadrage",
+    title: "On cadre votre projet",
     body: "Nous écoutons votre projet, votre terrain, votre budget et vos contraintes. Nous validons ensemble la faisabilité.",
   },
   {
     n: "02",
-    title: "Conception avec l'architecte",
-    body: "Nous travaillons les plans avec un architecte partenaire jusqu'à un projet qui vous correspond vraiment.",
+    title: "On dessine la maison avec l'architecte",
+    body: "Nous travaillons les plans avec un architecte partenaire jusqu'à un projet qui vous correspond.",
   },
   {
     n: "03",
-    title: "Devis consultés et négociés",
+    title: "On négocie les devis des artisans",
     body: "Nous consultons et négocions les devis auprès de nos artisans partenaires, et vous restituons une offre claire.",
   },
   {
     n: "04",
-    title: "Chantier et livraison clé en main",
-    body: "Nous coordonnons les artisans, suivons le chantier chaque semaine et vous remettons les clés d'une maison finie.",
+    title: "On pilote le chantier jusqu'aux clés",
+    body: "Nous coordonnons les artisans, suivons le chantier et vous remettons les clés d'une maison finie.",
   },
 ];
 
