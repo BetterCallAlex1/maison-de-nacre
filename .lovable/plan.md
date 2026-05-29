@@ -1,38 +1,35 @@
+# Plan — Mise à jour SEO meta (title + description)
 
-## Objectif
+## Décisions actées
+- **Title** : `Maison neuve à Caen, clé en main (14) | Maison de Nacre` (53 car.)
+- **Description retenue** : variante « Maître d'œuvre dédié »
 
-Ajouter une nouvelle section "Nos dernières réalisations" sur la landing page, intercalée entre `ReviewsMarquee` et `HowItWorks`, dans le style exact du reste du site.
+> **Votre maison neuve clé en main à Caen et dans le Calvados. Maître d'œuvre dédié, architecte inclus, devis négociés, norme RE2020. 1er rendez-vous offert.**
+> (152 car., cumul ~580 recherches/mois sur *maison neuve Caen* + *Calvados* + *clé en main* + *maître d'œuvre Caen* + *RE2020*)
 
-## Fichiers
+## 2 confirmations avant build
+Avant de coller le code, j'ai besoin d'un oui/non rapide sur :
 
-1. **Créer `src/components/landing/Realisations.tsx`**
-   - Composant client (hook `useState` pour le "voir plus").
-   - Structure d'en-tête identique à `HowItWorks` :
-     - `<section id="realisations" className="py-20 lg:py-28">`
-     - `container mx-auto max-w-6xl px-4`
-     - Label : `NOS DERNIÈRES RÉALISATIONS` (même classes que HowItWorks)
-     - h2 : "Nos projets, près de chez vous" (font-display, text-deep)
-     - Sous-titre : "Découvrez quelques-unes des maisons individuelles que nous avons accompagnées de la conception à la remise des clés."
-   - Tableau `projects` de 4 placeholders : `{ id, image, commune: "Commune", surface: "000 m²" }`.
-   - Images placeholder : utiliser `https://images.unsplash.com/...` (maisons neuves) ou un simple `https://placehold.co/800x900/EEE/333?text=Projet+N`. Je pars sur Unsplash pour un rendu réaliste, l'utilisateur remplacera ensuite.
-   - Grille : `grid gap-6 sm:grid-cols-2 lg:grid-cols-3`.
-   - État `showAll` ; affiche `projects.slice(0, showAll ? projects.length : 3)`.
-   - Bouton "Voir plus de réalisations" centré sous la grille, visible uniquement si `projects.length > 3 && !showAll`. Style cohérent : variante secondaire/outline pour ne pas dupliquer le CTA accent. J'utilise les classes Tailwind directes (bordure border-border, fond bg-card, hover bg-secondary) pour rester aligné avec les autres boutons sobres du site.
-   - Carte (non cliquable) :
-     - `relative overflow-hidden rounded-2xl border border-border shadow-sm aspect-[4/5]` (portrait léger, hauteur alignée via aspect-ratio).
-     - `<img>` avec `className="absolute inset-0 h-full w-full object-cover"`, `alt="Maison neuve réalisée à {commune}"`, `loading="lazy"`.
-     - Bande basse : `absolute inset-x-0 bottom-0 p-4 flex justify-between items-center backdrop-blur-md bg-black/30`.
-     - Pillules : `rounded-full bg-white/15 backdrop-blur px-3 py-1 text-xs font-medium text-white` (gauche = commune, droite = surface).
-   - Pas d'effet hover sur les cartes.
+1. **« 1er rendez-vous offert »** — est-ce bien vrai dans votre offre commerciale ?
+   - ✅ Oui → on garde (meilleur trigger CTR)
+   - ❌ Non → on remplace par *« Accompagnement de A à Z. »* (description = 156 car.)
 
-2. **Modifier `src/routes/index.tsx`**
-   - Importer `Realisations` et l'insérer entre `<ReviewsMarquee />` et `<HowItWorks />`.
+2. **« Maître d'œuvre dédié » assumé publiquement** — OK avec votre cadre juridique / positionnement ?
+   - ✅ Oui → on garde (capte le mot-clé n°1 du tableau : 170/mo)
+   - ❌ Non → fallback sans cette mention (on perd ~170/mo de volume capté)
 
-3. **Mettre à jour `public/sitemap.xml`** : pas nécessaire (ancre interne sur la page d'accueil).
+## Fichiers modifiés (une fois confirmé)
+- `src/routes/__root.tsx` — `head().meta` :
+  - `title`
+  - `description`
+  - `og:title`, `og:description`
+  - `twitter:title`, `twitter:description`
 
-## Détails techniques
+Aucun autre changement (canonical, og:url, JSON-LD, H1 du Hero restent inchangés sur ce passage).
 
-- Tokens design système uniquement (`text-deep`, `text-primary`, `bg-card`, `border-border`, `text-muted-foreground`, `font-display`).
-- Responsive : 1 col mobile, 2 col `sm:`, 3 col `lg:`.
-- Accessibilité : `<section aria-labelledby="realisations-title">` avec `id` sur le h2, `alt` descriptifs, bouton avec `aria-expanded`.
-- Pas de tiret cadratin dans le code.
+## Mémoire projet
+Je consigne aussi la stratégie de mots-clés (cibles principales, secondaires, termes à éviter type « constructeur ») dans `mem://seo/keyword-strategy` + entrée dans `mem://index.md`, pour que les prochaines pages (Services, Réalisations, Contact…) restent cohérentes.
+
+---
+
+**Répondez simplement : `1=oui/non, 2=oui/non`** et je passe en build.
