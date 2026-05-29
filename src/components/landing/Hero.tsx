@@ -45,6 +45,9 @@ export function Hero() {
             alt="Maison neuve contemporaine en pierre et bois dans la région de Caen, livrée par Maison de Nacre"
             width={1536}
             height={1024}
+            fetchPriority="high"
+            loading="eager"
+            decoding="async"
             className="aspect-[3/2] w-full rounded-2xl object-cover shadow-2xl"
           />
         </div>
