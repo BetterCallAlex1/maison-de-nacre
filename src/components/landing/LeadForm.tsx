@@ -123,8 +123,9 @@ export function LeadForm() {
         </div>
 
         <div className="md:col-span-2">
-          <label className={labelClass} htmlFor="budget">Budget estimé (facultatif)</label>
+          <label className={labelClass} htmlFor="budget">Budget estimé</label>
           <input id="budget" type="text" placeholder="Ex : entre 250 000 et 320 000 €" {...register("budget")} className={inputClass} />
+          {errors.budget && <p className={errClass}>Indiquez une estimation de budget.</p>}
         </div>
 
         <div>
