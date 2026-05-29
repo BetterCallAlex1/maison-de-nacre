@@ -96,9 +96,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "canonical", href: "https://maisondenacre.fr/" },
-      { rel: "alternate", hreflang: "fr-FR", href: "https://maisondenacre.fr/" },
-      { rel: "alternate", hreflang: "x-default", href: "https://maisondenacre.fr/" },
+      { rel: "canonical", href: "https://maison-de-nacre.fr/" },
+      { rel: "alternate", hreflang: "fr-FR", href: "https://maison-de-nacre.fr/" },
+      { rel: "alternate", hreflang: "x-default", href: "https://maison-de-nacre.fr/" },
+      { rel: "preload", as: "image", href: heroImg, fetchpriority: "high" },
     ],
     scripts: [
       {
