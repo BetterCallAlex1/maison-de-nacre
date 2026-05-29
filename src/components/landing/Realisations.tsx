@@ -62,7 +62,7 @@ export function Realisations() {
           </h2>
           <p className="mt-4 text-muted-foreground">
             Découvrez quelques-unes des maisons individuelles que nous avons
-            réalisées : de la conception à la remise des clés.
+            réalisé.
           </p>
         </div>
 
