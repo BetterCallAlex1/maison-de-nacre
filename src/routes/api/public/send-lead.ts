@@ -123,8 +123,8 @@ export const Route = createFileRoute("/api/public/send-lead")({
                 ${data.message ? `<p><strong>Message :</strong><br/>${esc(data.message).replace(/\n/g, "<br/>")}</p>` : ""}
               `;
               await resend.emails.send({
-                from: "Maison de Nacre <onboarding@resend.dev>",
-                to: ["duran.alexandre.pro@gmail.com"],
+                from: "Maison de Nacre <contact@maison-de-nacre.fr>",
+                to: ["alexandre.duran@maison-de-nacre.fr"],
                 replyTo: data.email,
                 subject: `Nouvelle demande : ${data.firstName} ${data.lastName}`,
                 html,
