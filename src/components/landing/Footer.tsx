@@ -12,7 +12,7 @@ export function Footer() {
           </div>
           <div className="text-sm text-muted-foreground">
             <p>Téléphone : <a href="tel:+33669260817" className="font-medium text-deep hover:text-primary">06 69 26 08 17</a></p>
-            <p className="mt-1">Email : <a href="mailto:alexandre.duran@maison-de-nacre.fr" className="font-medium text-deep hover:text-primary">alexandre.duran@maison-de-nacre.fr</a></p>
+            <p className="mt-1">Email : <a href="mailto:contact@maison-de-nacre.fr" className="font-medium text-deep hover:text-primary">contact@maison-de-nacre.fr</a></p>
           </div>
         </div>
         <div className="mt-8 border-t border-border pt-6 text-xs text-muted-foreground">

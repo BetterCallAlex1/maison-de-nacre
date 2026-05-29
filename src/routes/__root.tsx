@@ -111,7 +111,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "description": "Accompagnement à la construction de maisons neuves clé en main dans la région de Caen.",
           "url": "https://maison-de-nacre.fr/",
           "telephone": "+33669260817",
-          "email": "alexandre.duran@maison-de-nacre.fr",
+          "email": "contact@maison-de-nacre.fr",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Caen",
