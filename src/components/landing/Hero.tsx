@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import heroImg from "@/assets/hero-maison.jpg";
+import heroImg from "@/assets/hero-maison.webp";
 
 const points = [
   "Architecte inclus",
