@@ -25,7 +25,7 @@ export function WhyUs() {
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-medium uppercase tracking-wider text-soft">Pourquoi nous choisir</p>
           <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl text-balance">
-            Pourquoi construire avec nous.
+            Trois engagements, une exigence.
           </h2>
         </div>
 
