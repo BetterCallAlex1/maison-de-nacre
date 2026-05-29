@@ -9,14 +9,15 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import heroImg from "@/assets/hero-maison.webp";
 
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">Page introuvable</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
+        <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground">Erreur 404</p>
+        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-foreground">Page introuvable</h1>
+        <p className="mt-3 text-sm text-muted-foreground">
           Cette page n'existe pas ou a été déplacée.
         </p>
         <div className="mt-6">
@@ -72,8 +73,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Construction maison neuve près de Caen | Accompagnement clé en main | Maison de Nacre" },
-      { name: "description", content: "Faire construire votre maison neuve dans la région de Caen, sans rien gérer. Maison de Nacre pilote votre projet de la conception à la remise des clés : architecte, artisans partenaires, chantier. Calvados (14)." },
+      { title: "Construction maison neuve près de Caen | Maison de Nacre" },
+      { name: "description", content: "Faire construire votre maison neuve clé en main près de Caen. Un seul interlocuteur, de la conception à la remise des clés. Calvados (14)." },
       { name: "author", content: "Maison de Nacre" },
       { name: "language", content: "fr-FR" },
       { httpEquiv: "content-language", content: "fr-FR" },
@@ -81,23 +82,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "geo.placename", content: "Caen, Calvados, France" },
       { name: "geo.position", content: "49.1829;-0.3707" },
       { name: "ICBM", content: "49.1829, -0.3707" },
-      { property: "og:title", content: "Construction maison neuve près de Caen | Accompagnement clé en main | Maison de Nacre" },
-      { property: "og:description", content: "Faire construire votre maison neuve dans la région de Caen, sans rien gérer. Maison de Nacre pilote votre projet de la conception à la remise des clés : architecte, artisans partenaires, chantier. Calvados (14)." },
+      { property: "og:title", content: "Construction maison neuve près de Caen | Maison de Nacre" },
+      { property: "og:description", content: "Faire construire votre maison neuve clé en main près de Caen. Un seul interlocuteur, de la conception à la remise des clés. Calvados (14)." },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "fr_FR" },
       { property: "og:site_name", content: "Maison de Nacre" },
-      { property: "og:url", content: "https://maisondenacre.fr/" },
+      { property: "og:url", content: "https://maison-de-nacre.fr/" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Construction maison neuve près de Caen | Accompagnement clé en main | Maison de Nacre" },
-      { name: "twitter:description", content: "Faire construire votre maison neuve dans la région de Caen, sans rien gérer. Maison de Nacre pilote votre projet de la conception à la remise des clés : architecte, artisans partenaires, chantier. Calvados (14)." },
+      { name: "twitter:title", content: "Construction maison neuve près de Caen | Maison de Nacre" },
+      { name: "twitter:description", content: "Faire construire votre maison neuve clé en main près de Caen. Un seul interlocuteur, de la conception à la remise des clés. Calvados (14)." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/89b1dbff-fd65-4152-b07b-f17fbfe75cd6/id-preview-1895e7d8--5b4883a1-2ba1-479a-976f-1c48421421fb.lovable.app-1780050663202.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/89b1dbff-fd65-4152-b07b-f17fbfe75cd6/id-preview-1895e7d8--5b4883a1-2ba1-479a-976f-1c48421421fb.lovable.app-1780050663202.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "canonical", href: "https://maisondenacre.fr/" },
-      { rel: "alternate", hreflang: "fr-FR", href: "https://maisondenacre.fr/" },
-      { rel: "alternate", hreflang: "x-default", href: "https://maisondenacre.fr/" },
+      { rel: "canonical", href: "https://maison-de-nacre.fr/" },
+      { rel: "alternate", hreflang: "fr-FR", href: "https://maison-de-nacre.fr/" },
+      { rel: "alternate", hreflang: "x-default", href: "https://maison-de-nacre.fr/" },
+      { rel: "preload", as: "image", href: heroImg, fetchpriority: "high" },
     ],
     scripts: [
       {
@@ -107,8 +109,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "LocalBusiness",
           "name": "Maison de Nacre",
           "description": "Accompagnement à la construction de maisons neuves clé en main dans la région de Caen.",
-          "url": "https://maisondenacre.fr/",
+          "url": "https://maison-de-nacre.fr/",
           "telephone": "+33669260817",
+          "email": "alexandre.duran@maison-de-nacre.fr",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Caen",

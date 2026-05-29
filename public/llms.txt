@@ -2,24 +2,28 @@
 
 > Accompagnement à la construction de maisons neuves clé en main dans la région de Caen (Calvados, France). Un seul interlocuteur pilote le projet de la conception à la remise des clés.
 
-## Service
+## Pages clés
+- [Accueil](https://maison-de-nacre.fr/)
+- [Notre méthode](https://maison-de-nacre.fr/#methode)
+- [Pourquoi nous choisir](https://maison-de-nacre.fr/#pourquoi)
+- [Questions fréquentes](https://maison-de-nacre.fr/#faq)
+- [Contact](https://maison-de-nacre.fr/#contact)
 
+## Service
 - Conception avec architecte partenaire
 - Consultation et négociation des devis auprès d'artisans partenaires
 - Pilotage du chantier
 - Remise des clés
 
 ## Zone d'intervention
-
 Caen et communes du Calvados dans un rayon de 20 km : Hérouville-Saint-Clair, Ifs, Bretteville-sur-Odon, Verson, Douvres-la-Délivrande, Ouistreham, Mondeville, Carpiquet, Bayeux.
 
 ## Caractéristiques
-
 - Entreprise familiale, 15 ans d'expérience dans la construction en Normandie
 - Maisons neuves conformes à la norme RE2020
 - Honoraires présentés en toute transparence lors du premier rendez-vous, sans engagement
 
 ## Contact
-
 - Téléphone : 06 69 26 08 17
-- Site : https://maisondenacre.fr
+- Email : alexandre.duran@maison-de-nacre.fr
+- Site : https://maison-de-nacre.fr
