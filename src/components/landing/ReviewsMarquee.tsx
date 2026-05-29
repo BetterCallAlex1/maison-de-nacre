@@ -63,7 +63,7 @@ export function ReviewsMarquee() {
           Ils nous ont fait confiance
         </p>
         <h2 className="mt-3 text-center font-display text-3xl font-semibold text-deep md:text-4xl">
-          Des familles et des investisseurs sereins
+          Ils ont fait construire avec nous, près de Caen.
         </h2>
       </div>
       <div className="pause-on-hover mt-10 overflow-hidden">
