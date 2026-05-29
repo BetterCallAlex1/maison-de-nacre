@@ -1,20 +1,20 @@
-import { Compass, HandshakeIcon, MapPin } from "lucide-react";
+import { Sparkles, HeartHandshake, ShieldCheck } from "lucide-react";
 
 const pillars = [
   {
-    icon: Compass,
-    title: "Interlocuteur unique",
-    body: "Un seul contact pour l'architecte, les artisans et l'administratif. Vous ne courez plus après personne.",
+    icon: Sparkles,
+    title: "Du sur-mesure, à votre image",
+    body: "Chaque mètre carré pensé pour votre terrain, votre vie, votre budget. Pas de modèle catalogue.",
   },
   {
-    icon: HandshakeIcon,
-    title: "Artisans partenaires sélectionnés",
-    body: "Nous travaillons avec des artisans locaux que nous connaissons. Devis consultés, comparés, négociés en toute transparence.",
+    icon: HeartHandshake,
+    title: "Le savoir-faire d'une famille",
+    body: "Quinze ans à construire en Normandie. Notre nom sur chaque chantier, notre exigence avec.",
   },
   {
-    icon: MapPin,
-    title: "Ancrés autour de Caen",
-    body: "Nous intervenons uniquement dans un rayon de 20 km autour de Caen. Suivi de chantier régulier, présence sur le terrain.",
+    icon: ShieldCheck,
+    title: "Zéro charge mentale",
+    body: "Vous prenez les décisions importantes. On gère le reste : architecte, artisans, administratif, chantier.",
   },
 ];
 
@@ -25,7 +25,7 @@ export function WhyUs() {
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-medium uppercase tracking-wider text-soft">Pourquoi nous choisir</p>
           <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl text-balance">
-            Une approche faite pour les particuliers et les investisseurs exigeants
+            Pourquoi construire avec nous.
           </h2>
         </div>
 
