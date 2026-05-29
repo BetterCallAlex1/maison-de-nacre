@@ -14,12 +14,12 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-3">
           <a
-            href="tel:[À COMPLÉTER]"
+            href="tel:+33669260817"
             className="hidden items-center gap-2 text-sm font-medium text-deep transition-colors hover:text-primary sm:inline-flex"
             aria-label="Appeler Maison de Nacre"
           >
             <Phone className="h-4 w-4" aria-hidden="true" />
-            [À COMPLÉTER]
+            06 69 26 08 17
           </a>
           <a
             href="#contact"
