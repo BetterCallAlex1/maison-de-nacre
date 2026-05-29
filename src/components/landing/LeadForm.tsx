@@ -199,7 +199,7 @@ export function LeadFormSection() {
             Décrivez-nous votre projet en quelques minutes. Nous revenons vers vous sous 48 heures ouvrées pour convenir d'un rendez-vous, à notre bureau ou chez vous.
           </p>
           <ul className="mt-6 space-y-3 text-sm text-foreground">
-            <li className="flex gap-2"><Check className="h-5 w-5 text-primary" aria-hidden="true" />Réponse personnelle sous 48 h ouvrées</li>
+            <li className="flex gap-2"><Check className="h-5 w-5 text-primary" aria-hidden="true" />Réponse sous 48 h ouvrées</li>
             <li className="flex gap-2"><Check className="h-5 w-5 text-primary" aria-hidden="true" />Étude de faisabilité gratuite</li>
             <li className="flex gap-2"><Check className="h-5 w-5 text-primary" aria-hidden="true" />Aucun engagement</li>
           </ul>
