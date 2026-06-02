@@ -17,31 +17,31 @@ const projects: Project[] = [
   {
     id: 1,
     image: realisation1.url,
-    commune: "Douvres-la-Délivrande",
+    commune: "Mathieu",
     surface: "000 m²",
   },
   {
     id: 2,
     image: realisation2.url,
-    commune: "Douvres-la-Délivrande",
+    commune: "Mathieu",
     surface: "000 m²",
   },
   {
     id: 3,
     image: realisation3.url,
-    commune: "Douvres-la-Délivrande",
+    commune: "Mathieu",
     surface: "000 m²",
   },
   {
     id: 4,
     image: realisation4.url,
-    commune: "Douvres-la-Délivrande",
+    commune: "Mathieu",
     surface: "000 m²",
   },
   {
     id: 5,
     image: realisation5.url,
-    commune: "Douvres-la-Délivrande",
+    commune: "Mathieu",
     surface: "000 m²",
   },
 ];
