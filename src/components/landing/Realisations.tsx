@@ -1,5 +1,6 @@
 import { useState } from "react";
 import realisation1 from "@/assets/realisation-1.jpg.asset.json";
+import realisation2 from "@/assets/realisation-2.jpg.asset.json";
 
 
 type Project = {
@@ -18,8 +19,7 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80",
+    image: realisation2.url,
     commune: "Commune",
     surface: "000 m²",
   },
