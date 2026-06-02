@@ -3,6 +3,7 @@ import realisation1 from "@/assets/realisation-1.jpg.asset.json";
 import realisation2 from "@/assets/realisation-2.jpg.asset.json";
 import realisation3 from "@/assets/realisation-3.jpg.asset.json";
 import realisation4 from "@/assets/realisation-4.jpg.asset.json";
+import realisation5 from "@/assets/realisation-5.jpg.asset.json";
 
 
 type Project = {
@@ -34,6 +35,12 @@ const projects: Project[] = [
   {
     id: 4,
     image: realisation4.url,
+    commune: "Commune",
+    surface: "000 m²",
+  },
+  {
+    id: 5,
+    image: realisation5.url,
     commune: "Commune",
     surface: "000 m²",
   },
