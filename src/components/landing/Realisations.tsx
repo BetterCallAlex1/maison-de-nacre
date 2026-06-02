@@ -17,32 +17,32 @@ const projects: Project[] = [
   {
     id: 1,
     image: realisation1.url,
-    commune: "Mathieu",
-    surface: "000 m²",
+    commune: "Douvres-la-Délivrande",
+    surface: "140 m²",
   },
   {
     id: 2,
     image: realisation2.url,
     commune: "Mathieu",
-    surface: "000 m²",
+    surface: "150 m²",
   },
   {
     id: 3,
     image: realisation3.url,
-    commune: "Mathieu",
-    surface: "000 m²",
+    commune: "Villers-sur-Mer",
+    surface: "170 m²",
   },
   {
     id: 4,
     image: realisation4.url,
-    commune: "Mathieu",
-    surface: "000 m²",
+    commune: "Biéville-Beuville",
+    surface: "110 m²",
   },
   {
     id: 5,
     image: realisation5.url,
-    commune: "Mathieu",
-    surface: "000 m²",
+    commune: "Luc-sur-Mer",
+    surface: "130 m²",
   },
 ];
 
