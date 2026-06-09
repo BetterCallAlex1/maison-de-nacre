@@ -358,10 +358,121 @@ const G12: Guide = {
 };
 
 // ────────────────────────────────────────────────────────────────────────────────
+// G17 — Viabilisation terrain (quick win, 1 900/mo, KD 26)
+// ────────────────────────────────────────────────────────────────────────────────
+
+const G17: Guide = {
+  slug: "viabilisation-terrain",
+  title: "Viabilisation terrain : coûts et étapes | Maison de Nacre",
+  metaDescription:
+    "Viabiliser un terrain à bâtir : raccordements eau, électricité, assainissement, coûts réels et étapes. Comptez 5 000 à 15 000 € selon la distance aux réseaux.",
+  h1: "Viabilisation d'un terrain : étapes, coûts et délais",
+  primaryKeyword: "viabilisation terrain",
+  searchVolume: 1900,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Vous avez repéré un terrain, ou vous venez d'en acheter un, et la question tombe : est-il viabilisé, et sinon, combien va coûter le raccordement ? La viabilisation est l'un des postes les plus souvent sous-estimés d'un projet de construction. Voici, sans jargon, ce qu'elle recouvre, ce qu'elle coûte vraiment et dans quel ordre s'y prendre.",
+  sections: [
+    {
+      h2: "Qu'est-ce que la viabilisation d'un terrain ?",
+      html: `<p>Viabiliser un terrain, c'est le raccorder aux réseaux indispensables pour y construire et y vivre : l'eau potable, l'électricité, l'assainissement (les eaux usées), et selon les cas le gaz, le téléphone et la fibre. Un terrain viabilisé dispose de ces raccordements amenés en limite de parcelle ou à proximité immédiate. Un terrain non viabilisé, lui, n'est qu'un bout de terre : tant qu'il n'est pas raccordé, on ne peut pas y habiter.</p>
+<p>Attention à une confusion fréquente : un terrain constructible n'est pas forcément viabilisé. Constructible veut dire que le plan local d'urbanisme (PLU) autorise à bâtir. Viabilisé veut dire que les réseaux sont là. Les deux sont nécessaires, et ils ne vont pas toujours ensemble.</p>`,
+    },
+    {
+      h2: "Terrain viabilisé ou non : comment le savoir",
+      html: `<p>Avant d'acheter, c'est une vérification à ne jamais sauter. Trois réflexes : demandez au vendeur l'état des raccordements par écrit, consultez le certificat d'urbanisme (CU) qui renseigne sur la desserte par les réseaux, et interrogez la mairie sur la présence des réseaux dans la rue. Plus les réseaux passent loin de votre parcelle, plus la facture grimpe : un terrain en plein bourg, réseaux devant le portail, coûtera bien moins cher à raccorder qu'un terrain isolé à plusieurs dizaines de mètres du premier branchement.</p>`,
+    },
+    {
+      h2: "Les raccordements à prévoir",
+      html: `<p>La viabilisation regroupe plusieurs raccordements, à demander chacun à son gestionnaire de réseau :</p>
+<p>L'<strong>eau potable</strong> se raccorde au réseau public via le service des eaux de la commune. L'<strong>électricité</strong> passe par Enedis, qui réalise le branchement et, si besoin, l'extension du réseau jusqu'à la parcelle. Le <strong>gaz</strong> est optionnel : il ne se justifie que si le réseau est présent et que vous prévoyez un usage au gaz, ce qui devient rare avec les maisons RE2020 chauffées par pompe à chaleur. Le <strong>téléphone et la fibre</strong> se raccordent en général à faible coût quand l'infrastructure existe.</p>
+<p>Reste l'<strong>assainissement</strong>, souvent le poste le plus lourd. Deux cas : si la rue est desservie par le tout-à-l'égout (assainissement collectif), vous vous y raccordez, avec parfois une taxe de raccordement à la charge de la commune. Si le réseau collectif n'existe pas, vous devez installer un assainissement individuel (fosse toutes eaux ou microstation), plus coûteux, et soumis à une étude et à la validation du service public d'assainissement (SPANC).</p>
+<p>Enfin, n'oubliez pas l'<strong>accès</strong> : création d'un bateau (abaissé de trottoir), parfois une voirie ou un chemin si le terrain est en retrait.</p>`,
+    },
+    {
+      h2: "Combien coûte la viabilisation d'un terrain ?",
+      html: `<p>C'est la vraie question, et la réponse honnête est : cela dépend surtout de la distance aux réseaux. Voici des fourchettes indicatives par poste, pour un terrain raisonnablement proche des branchements.</p>
+<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr><th class="text-left py-2 pr-4">Poste</th><th class="text-left py-2">Coût indicatif</th></tr></thead><tbody>
+<tr class="border-t"><td class="py-2 pr-4">Raccordement eau potable</td><td class="py-2">800 à 2 500 €</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Raccordement électricité (Enedis)</td><td class="py-2">1 000 à 4 000 €</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Raccordement au tout-à-l'égout</td><td class="py-2">1 500 à 5 000 €</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Assainissement individuel (si pas de réseau)</td><td class="py-2">4 000 à 10 000 €</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Gaz (optionnel)</td><td class="py-2">400 à 1 200 €</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Téléphone et fibre</td><td class="py-2">0 à 500 €</td></tr>
+</tbody></table></div>
+<p class="mt-4">Au total, comptez le plus souvent <strong>5 000 à 15 000 €</strong> pour un terrain proche des réseaux, et davantage (parfois 20 000 € et plus) pour un terrain isolé ou nécessitant une extension de réseau. Ces montants s'ajoutent au prix du terrain et à celui de la construction. Pour situer la viabilisation dans le budget global d'un projet, voir notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a>.</p>`,
+    },
+    {
+      h2: "Les étapes de la viabilisation",
+      html: `<p>La viabilisation suit un ordre logique qu'il vaut mieux respecter :</p>
+<ol class="list-decimal pl-6 space-y-2">
+<li><strong>Demander le certificat d'urbanisme</strong> auprès de la mairie : il précise la desserte par les réseaux et les règles applicables.</li>
+<li><strong>Faire une demande de raccordement à chaque gestionnaire</strong> : service des eaux, Enedis, gestionnaire d'assainissement, et opérateurs télécom. Chacun établit un devis.</li>
+<li><strong>Comparer et valider les devis</strong>, en tenant compte des délais annoncés.</li>
+<li><strong>Réaliser les travaux de raccordement</strong>, souvent en coordination avec le chantier de construction.</li>
+<li><strong>Obtenir les attestations de raccordement</strong>, utiles pour la suite et pour la revente.</li>
+</ol>
+<p class="mt-4">Cette coordination, lot par lot, fait partie du travail d'un maître d'œuvre, qui pilote les demandes et le calendrier pour que rien ne bloque le chantier.</p>`,
+    },
+    {
+      h2: "Combien de temps prend la viabilisation ?",
+      html: `<p>Là encore, tout dépend des gestionnaires de réseau et de l'éloignement. Comptez en général de 2 à 6 mois entre les premières demandes et la fin des raccordements. Le branchement électrique est souvent le plus long à obtenir, surtout s'il impose une extension de réseau. D'où l'intérêt de lancer les démarches tôt, idéalement en parallèle de l'instruction du permis de construire.</p>`,
+    },
+    {
+      h2: "Viabilisation et permis de construire",
+      html: `<p>Les deux sujets sont liés. Le permis de construire peut exiger la preuve que le terrain est raccordable, et certaines demandes de raccordement ne se finalisent qu'une fois le permis obtenu. Le bon réflexe est de mener les deux de front : déposer le permis et engager les demandes de raccordement en même temps pour ne pas perdre de mois. Notre guide sur le <a href="/guides/permis-de-construire-maison" class="text-primary underline">permis de construire</a> détaille cette procédure.</p>`,
+    },
+    {
+      h2: "Terrain en lotissement ou terrain isolé : une grosse différence",
+      html: `<p>Un terrain en lotissement est presque toujours vendu <strong>déjà viabilisé</strong> : l'aménageur a amené les réseaux en limite de chaque lot, et le coût est intégré au prix de vente. C'est plus cher à l'achat, mais sans surprise de raccordement. Un terrain isolé en secteur diffus est souvent moins cher, mais la viabilisation est à votre charge et peut réserver des écarts importants selon la distance aux réseaux. C'est un critère à intégrer dès le choix du terrain, comme nous l'expliquons dans notre guide <a href="/guides/choisir-terrain-constructible" class="text-primary underline">comment choisir son terrain constructible</a>.</p>`,
+    },
+    {
+      h2: "La taxe d'aménagement, à ne pas confondre avec la viabilisation",
+      html: `<p>Beaucoup de futurs propriétaires mélangent la viabilisation (les travaux de raccordement) et la taxe d'aménagement (un impôt). Ce sont deux choses différentes, mais toutes deux à budgéter. La taxe d'aménagement est due une fois, après l'obtention du permis de construire, et finance les équipements publics de la commune. Son montant dépend de la surface de la construction, d'une valeur forfaitaire au mètre carré fixée chaque année, et des taux votés par la commune et le département.</p>
+<p>Concrètement, pour une maison individuelle, elle représente souvent de l'ordre de quelques milliers d'euros, payables en une ou deux échéances après le démarrage. Elle s'ajoute donc, comme la viabilisation, aux frais à anticiper au-delà du prix de la maison. La distinguer dès le départ évite de croire que tout est compris dans le devis de construction.</p>`,
+    },
+    {
+      h2: "Faire estimer la viabilisation de votre projet",
+      html: `<p>La viabilisation est typiquement le poste où l'on découvre de mauvaises surprises quand on ne l'a pas anticipée. Chez Maison de Nacre, nous vérifions l'état des réseaux et estimons ce poste dès l'étude de votre terrain, pour que votre budget tienne du premier jour à la remise des clés.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Faire le point sur mon terrain</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Quelle est la différence entre un terrain constructible et un terrain viabilisé ?",
+      answer:
+        "Constructible signifie que le PLU autorise à bâtir. Viabilisé signifie que les réseaux (eau, électricité, assainissement) sont raccordés. Un terrain peut être constructible sans être viabilisé.",
+    },
+    {
+      question: "Combien coûte la viabilisation d'un terrain ?",
+      answer:
+        "Le plus souvent 5 000 à 15 000 € pour un terrain proche des réseaux, davantage pour un terrain isolé. Le poste le plus variable est l'assainissement, surtout en l'absence de tout-à-l'égout.",
+    },
+    {
+      question: "Combien de temps prend la viabilisation ?",
+      answer:
+        "Généralement 2 à 6 mois selon les gestionnaires de réseau. Le raccordement électrique est souvent le plus long, en particulier s'il faut étendre le réseau.",
+    },
+    {
+      question: "Un terrain en lotissement est-il viabilisé ?",
+      answer:
+        "Oui, presque toujours. L'aménageur amène les réseaux en limite de lot et intègre le coût au prix de vente. C'est l'un des avantages du lotissement.",
+    },
+    {
+      question: "Qui s'occupe des démarches de viabilisation ?",
+      answer:
+        "Vous pouvez les mener vous-même auprès de chaque gestionnaire de réseau, ou les confier à un maître d'œuvre qui coordonne les demandes, les devis et le calendrier avec le chantier.",
+    },
+  ],
+  relatedGuideSlugs: ["prix-maison-neuve-calvados", "choisir-terrain-constructible"],
+};
+
+// ────────────────────────────────────────────────────────────────────────────────
 // Registre
 // ────────────────────────────────────────────────────────────────────────────────
 
-export const GUIDES: Guide[] = [G11, G6, G12];
+export const GUIDES: Guide[] = [G11, G6, G12, G17];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
