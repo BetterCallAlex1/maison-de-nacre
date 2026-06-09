@@ -5,7 +5,7 @@
 //     error logger plugins, and sandbox detection (port/host/strictPort).
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
-import { copyFileSync, existsSync } from "node:fs";
+import { copyFileSync, existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import type { PluginOption } from "vite";
 import { getPrerenderPages } from "./src/lib/prerender-routes";
@@ -18,12 +18,18 @@ import { getPrerenderPages } from "./src/lib/prerender-routes";
 // La liste vient de src/lib/prerender-routes.ts qui agrège la home et
 // les slugs des guides (et plus tard des communes / services).
 
-// Workaround : TanStack Start preview-server-plugin (utilisé par le
-// prerender) charge `dist/server/server.js`, alors que Nitro émet
-// `dist/server/index.mjs`. On dépose une copie sous le nom attendu
-// après l'écriture du bundle serveur, sinon le prerender se mange un
-// "Cannot find module …/dist/server/server.js" et toutes les routes
-// remontent en 500.
+// Deux workarounds pour pouvoir lancer le prerender via le preview-server
+// de TanStack Start :
+//
+// 1) preview-server-plugin charge `dist/server/server.js`, alors que Nitro
+//    émet `dist/server/index.mjs`. On dépose une copie sous le nom attendu.
+//
+// 2) Le wrapper cloudflare-module appelle `augmentReq` qui fait
+//    `req.ip = …` sur un srvx NodeRequest où `ip` est un getter en lecture
+//    seule → TypeError, toutes les routes remontent en 500. On enveloppe
+//    cette assignation dans un try/catch pour neutraliser l'erreur en
+//    preview (en prod sur Cloudflare, `ip` est writable, le try/catch n'a
+//    aucun effet).
 const aliasServerEntryPlugin: PluginOption = {
   name: "lovable:alias-server-entry-as-server-js",
   apply: "build",
@@ -32,9 +38,18 @@ const aliasServerEntryPlugin: PluginOption = {
     handler() {
       const src = join(process.cwd(), "dist/server/index.mjs");
       const dst = join(process.cwd(), "dist/server/server.js");
-      if (existsSync(src)) {
-        copyFileSync(src, dst);
+      if (!existsSync(src)) return;
+
+      let code = readFileSync(src, "utf8");
+      const target = 'req.ip = cfReq.headers.get("cf-connecting-ip") || void 0;';
+      if (code.includes(target)) {
+        code = code.replace(
+          target,
+          `try { ${target} } catch { /* srvx NodeRequest in preview server */ }`,
+        );
+        writeFileSync(src, code);
       }
+      copyFileSync(src, dst);
     },
   },
 };
