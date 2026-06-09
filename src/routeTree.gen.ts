@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as GuidesSlugRouteImport } from './routes/guides.$slug'
 import { Route as ApiPublicSendLeadRouteImport } from './routes/api/public/send-lead'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GuidesSlugRoute = GuidesSlugRouteImport.update({
+  id: '/guides/$slug',
+  path: '/guides/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiPublicSendLeadRoute = ApiPublicSendLeadRouteImport.update({
@@ -25,27 +31,31 @@ const ApiPublicSendLeadRoute = ApiPublicSendLeadRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/guides/$slug': typeof GuidesSlugRoute
   '/api/public/send-lead': typeof ApiPublicSendLeadRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/guides/$slug': typeof GuidesSlugRoute
   '/api/public/send-lead': typeof ApiPublicSendLeadRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/guides/$slug': typeof GuidesSlugRoute
   '/api/public/send-lead': typeof ApiPublicSendLeadRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/api/public/send-lead'
+  fullPaths: '/' | '/guides/$slug' | '/api/public/send-lead'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/api/public/send-lead'
-  id: '__root__' | '/' | '/api/public/send-lead'
+  to: '/' | '/guides/$slug' | '/api/public/send-lead'
+  id: '__root__' | '/' | '/guides/$slug' | '/api/public/send-lead'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  GuidesSlugRoute: typeof GuidesSlugRoute
   ApiPublicSendLeadRoute: typeof ApiPublicSendLeadRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/guides/$slug': {
+      id: '/guides/$slug'
+      path: '/guides/$slug'
+      fullPath: '/guides/$slug'
+      preLoaderRoute: typeof GuidesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/public/send-lead': {
@@ -70,8 +87,19 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  GuidesSlugRoute: GuidesSlugRoute,
   ApiPublicSendLeadRoute: ApiPublicSendLeadRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
