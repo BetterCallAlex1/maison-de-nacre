@@ -263,7 +263,93 @@ const S4: Service = {
   relatedGuideSlugs: ["prix-maison-neuve-calvados", "maitre-doeuvre-ou-constructeur", "etapes-construction-maison"],
 };
 
-export const SERVICES: Service[] = [S2, S1, S4];
+// ────────────────────────────────────────────────────────────────────────────────
+// G18 — Maison d'architecte (service hybride, 2 400/mo, KD 32)
+// ────────────────────────────────────────────────────────────────────────────────
+
+const SArchi: Service = {
+  slug: "maison-architecte",
+  title: "Maison d'architecte sur-mesure | Maison de Nacre",
+  metaDescription:
+    "Une maison d'architecte sur-mesure dans le Calvados : conception unique, RE2020, clé en main avec un maître d'œuvre. Avantages, prix et déroulé du projet.",
+  h1: "Maison d'architecte sur-mesure dans le Calvados",
+  primaryKeyword: "maison d'architecte",
+  searchVolume: 2400,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Une maison d'architecte, c'est une maison pensée pour vous et pour votre terrain, et non un modèle reproduit à l'identique. Loin du cliché de la maison de luxe inaccessible, c'est avant tout une maison conçue sur-mesure, optimisée et personnelle. Voici ce qui la distingue, ce qu'elle coûte vraiment, et comment nous la rendons accessible en clé en main dans la région de Caen.",
+  sections: [
+    {
+      h2: "Qu'est-ce qu'une maison d'architecte ?",
+      html: `<p>Une maison d'architecte est une maison dont la conception est confiée à un architecte, qui la dessine spécifiquement pour vos besoins, votre mode de vie et votre parcelle. Tout part d'une page blanche : l'implantation sur le terrain, l'orientation, les volumes, la lumière, la circulation entre les pièces. Rien n'est imposé par un catalogue. Le résultat est une maison unique, qui exploite au mieux les atouts et les contraintes de votre terrain, plutôt qu'un plan standard posé sans tenir compte du lieu.</p>`,
+    },
+    {
+      h2: "Les avantages d'une maison d'architecte",
+      html: `<p>Choisir une maison d'architecte apporte plusieurs bénéfices concrets. Le premier est l'<strong>unicité</strong> : votre maison vous ressemble et ne ressemble à aucune autre. Le deuxième est l'<strong>optimisation du terrain</strong> : l'architecte tire parti de la pente, de l'orientation et des vues, là où un modèle standard les ignore. Le troisième est la <strong>qualité de vie</strong> : lumière naturelle, volumes justes, circulations fluides, espaces pensés pour votre quotidien. Le quatrième est la <strong>performance</strong> : la conception bioclimatique et la RE2020 sont intégrées dès le départ, pour le confort et les économies d'énergie. Le dernier est la <strong>valeur</strong> : une maison singulière, bien conçue et performante, se distingue à la revente.</p>`,
+    },
+    {
+      h2: "Maison d'architecte ou maison de catalogue ?",
+      html: `<p>La différence est fondamentale. Une maison de catalogue est un modèle préexistant, décliné en quelques variantes, conçu pour être reproductible et donc rentable pour celui qui le vend. Une maison d'architecte est dessinée sur-mesure, sans modèle imposé. La première a l'avantage de la rapidité et d'un prix d'appel parfois bas ; la seconde a l'avantage de l'adaptation parfaite à votre terrain et à vos envies. Si vous avez un terrain avec du caractère, une vue, une pente, ou simplement une idée précise de la maison que vous voulez, le sur-mesure d'architecte prend tout son sens.</p>`,
+    },
+    {
+      h2: "Combien coûte une maison d'architecte ?",
+      html: `<p>C'est là que les idées reçues ont la vie dure. Une maison d'architecte n'est pas forcément plus chère à construire qu'une autre : le coût des travaux dépend de la surface, des finitions et de la complexité, pas du fait qu'un architecte ait dessiné les plans. Ce qui s'ajoute, c'est la rémunération de la conception, en pourcentage du coût des travaux. Et cet investissement se rentabilise souvent : un plan optimisé évite les mètres carrés inutiles, exploite mieux le terrain et limite les surcoûts techniques. Pour situer l'ensemble du budget, voir notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a>, et pour le coût de l'accompagnement, notre guide <a href="/guides/cout-maitre-doeuvre" class="text-primary underline">combien coûte un maître d'œuvre</a>.</p>`,
+    },
+    {
+      h2: "Architecte et maître d'œuvre : le duo gagnant",
+      html: `<p>Faire dessiner sa maison par un architecte est une chose ; la faire construire en est une autre. C'est là qu'intervient le maître d'œuvre : il prolonge le travail de conception en consultant les artisans, en coordonnant le chantier et en suivant la réalisation jusqu'à la remise des clés. Chez Maison de Nacre, nous réunissons les deux : la conception sur-mesure avec un architecte, et le pilotage complet du projet en maîtrise d'œuvre. Vous bénéficiez d'une maison d'architecte sans avoir à coordonner vous-même conception et chantier. Pour comprendre ce métier, voir notre comparatif <a href="/guides/maitre-doeuvre-ou-constructeur" class="text-primary underline">maître d'œuvre ou constructeur</a>.</p>`,
+    },
+    {
+      h2: "Le déroulé d'un projet de maison d'architecte",
+      html: `<p>Le projet commence par un échange approfondi sur vos besoins, vos goûts et votre budget. L'architecte propose ensuite une esquisse, affinée avec vous jusqu'aux plans définitifs. Vient le dépôt du permis de construire, puis la consultation des artisans et la signature des devis. Le chantier démarre alors sous notre coordination, jusqu'à la réception et la remise des clés. À chaque étape, vous décidez, et nous gérons l'opérationnel. Le parcours complet est détaillé dans notre guide <a href="/guides/etapes-construction-maison" class="text-primary underline">les étapes d'une construction</a>.</p>`,
+    },
+    {
+      h2: "Maison d'architecte : trois idées reçues à dépasser",
+      html: `<p>La maison d'architecte traîne quelques préjugés qui méritent d'être corrigés. Premier mythe : « c'est réservé aux maisons de luxe ». Faux. L'architecte conçoit aussi bien des maisons familiales au budget mesuré ; ce qui compte, c'est la qualité de la conception, pas le niveau de gamme. Deuxième mythe : « c'est forcément plus cher ». Le coût des travaux ne dépend pas de l'auteur des plans, et un plan optimisé fait souvent économiser sur la surface et la technique ce qu'il coûte en conception. Troisième mythe : « c'est plus long et plus compliqué ». Avec un maître d'œuvre qui pilote conception et chantier, le parcours est au contraire plus fluide, car tout est coordonné par un seul interlocuteur.</p>
+<p class="mt-4">En réalité, la vraie question n'est pas le prix mais l'adéquation : une maison d'architecte se justifie dès que vous voulez exploiter un terrain particulier, obtenir une maison qui vous ressemble, ou éviter les compromis d'un modèle standard. Pour beaucoup de familles, c'est le meilleur rapport entre l'investissement et la maison obtenue.</p>`,
+    },
+    {
+      h2: "Notre offre : une maison d'architecte clé en main",
+      html: `<p>Nous rendons la maison d'architecte simple et accessible : conception sur-mesure avec un architecte, gestion complète du projet en maîtrise d'œuvre, et livraison clé en main, le tout pour des honoraires clairs de 12 % du coût de construction. Vous obtenez une maison unique, performante et conforme à la RE2020, sans le stress de la coordination. Découvrez notre <a href="/services/maison-cle-en-main" class="text-primary underline">accompagnement clé en main</a>.</p>`,
+    },
+    {
+      h2: "Donnez vie à votre maison d'architecte",
+      html: `<p>Vous rêvez d'une maison unique, pensée pour vous et votre terrain ? Parlons-en. Maison de Nacre conçoit et réalise votre maison d'architecte clé en main. Première estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Une maison d'architecte est-elle plus chère ?",
+      answer:
+        "Pas forcément à construire : le coût des travaux dépend de la surface et des finitions, pas de l'auteur des plans. S'ajoute la rémunération de la conception, souvent rentabilisée par un plan optimisé qui évite les surcoûts.",
+    },
+    {
+      question: "Quelle différence entre une maison d'architecte et une maison de catalogue ?",
+      answer:
+        "La maison d'architecte est dessinée sur-mesure pour vous et votre terrain. La maison de catalogue est un modèle préexistant, décliné en quelques variantes.",
+    },
+    {
+      question: "Faut-il obligatoirement un architecte pour construire ?",
+      answer:
+        "Le recours à un architecte est obligatoire au-delà d'un certain seuil de surface. En dessous, il reste fortement recommandé pour une maison sur-mesure et bien conçue.",
+    },
+    {
+      question: "Peut-on avoir une maison d'architecte clé en main ?",
+      answer:
+        "Oui. Avec un maître d'œuvre, vous combinez la conception sur-mesure d'un architecte et la gestion complète du chantier jusqu'à la remise des clés.",
+    },
+    {
+      question: "Une maison d'architecte respecte-t-elle la RE2020 ?",
+      answer:
+        "Oui, comme toute construction neuve, et même mieux : la conception bioclimatique de l'architecte sert directement la performance exigée par la RE2020.",
+    },
+  ],
+  relatedGuideSlugs: ["prix-maison-neuve-calvados", "maitre-doeuvre-ou-constructeur", "cout-maitre-doeuvre"],
+};
+
+export const SERVICES: Service[] = [S2, S1, S4, SArchi];
 
 export const SERVICES_BY_SLUG: Record<string, Service> = Object.fromEntries(
   SERVICES.map((s) => [s.slug, s]),
