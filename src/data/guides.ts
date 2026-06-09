@@ -81,7 +81,7 @@ const G11: Guide = {
 <li><strong>Milieu de gamme (1 850 – 2 050 € / m²)</strong> : décrochés de façade, garage intégré, prestations supérieures (carrelage grand format, menuiseries alu, domotique), isolation renforcée.</li>
 <li><strong>Haut de gamme sur-mesure (2 100 – 2 300 € / m²)</strong> : conception architecte, matériaux nobles, large vitrage, équipements RE2020 optimisés (PAC géothermique, panneaux photovoltaïques en autoconsommation, VMC double flux).</li>
 </ul>
-<p class="mt-4">Pour la méthodologie de calcul détaillée du prix au m² (TVA, prestations comptabilisées, surface habitable vs SHON), consultez notre <a href="/guides/prix-construction-maison-au-m2" class="text-primary underline">guide dédié au prix de construction au m²</a>.</p>`,
+<p class="mt-4">Pour la méthodologie de calcul détaillée du prix au m² (TVA, prestations comptabilisées, surface habitable vs SHON), consultez notre <a href="/guides/prix-construction-maison-m2" class="text-primary underline">guide dédié au prix de construction au m²</a>.</p>`,
     },
     {
       h2: "Surcoût RE2020 : combien faut-il vraiment provisionner ?",
@@ -145,7 +145,7 @@ const G11: Guide = {
         "Oui, légèrement : les postes fixes (cuisine, salle de bain, équipements techniques) sont mutualisés sur plus de surface. On observe environ 100 à 150 € de moins par m² entre une 90 m² et une 150 m² à prestations égales.",
     },
   ],
-  relatedGuideSlugs: ["prix-construction-maison-au-m2", "maitre-doeuvre-ou-constructeur"],
+  relatedGuideSlugs: ["prix-construction-maison-m2", "maitre-doeuvre-ou-constructeur"],
 };
 
 // ────────────────────────────────────────────────────────────────────────────────
@@ -259,10 +259,109 @@ const G6: Guide = {
 };
 
 // ────────────────────────────────────────────────────────────────────────────────
+// G12 — Prix construction maison au m² (page trafic cluster prix, 1 900/mo, KD 31)
+// ────────────────────────────────────────────────────────────────────────────────
+
+const G12: Guide = {
+  slug: "prix-construction-maison-m2",
+  title: "Prix de construction d'une maison au m² | Maison de Nacre",
+  metaDescription:
+    "Combien coûte la construction d'une maison au m² en 2026 ? Fourchettes par standing, ce que comprend le prix, écart entrée et haut de gamme.",
+  h1: "Prix de construction d'une maison au m² : le vrai coût en 2026",
+  primaryKeyword: "prix construction maison au m²",
+  searchVolume: 1900,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "« Combien coûte une maison au mètre carré ? » C'est la première question de tout projet de construction, et la réponse honnête commence par une mise au point : le prix au m² varie du simple au double selon le standing, la forme de la maison et ce que l'on inclut dedans. Voici les fourchettes 2026, ce qu'elles recouvrent, et comment lire un prix au m² sans se faire avoir.",
+  sections: [
+    {
+      h2: "Quel est le prix de construction au m² en 2026 ?",
+      html: `<p>Pour une maison neuve traditionnelle, hors terrain, le prix de construction au mètre carré se situe le plus souvent dans ces fourchettes selon le niveau de finition :</p>
+<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr><th class="text-left py-2 pr-4">Standing</th><th class="text-left py-2">Prix de construction au m² (hors terrain)</th></tr></thead><tbody>
+<tr class="border-t"><td class="py-2 pr-4">Entrée de gamme</td><td class="py-2">1 500 à 1 800 €/m²</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Milieu de gamme</td><td class="py-2">1 800 à 2 300 €/m²</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Haut de gamme</td><td class="py-2">2 300 à 3 000 €/m² et plus</td></tr>
+</tbody></table></div>
+<p class="mt-4">Ces montants correspondent au coût des travaux pour sortir une maison de terre, prête à habiter. Ils n'incluent ni le terrain, ni les frais annexes, ni la rémunération de l'accompagnement. C'est le point que la plupart des gens confondent, et il change tout sur le budget final.</p>`,
+    },
+    {
+      h2: "Construction seule ou clé en main : ne pas confondre",
+      html: `<p>Un prix de construction au m² n'est pas un prix « tout fait, tout géré ». Pour passer du coût des travaux à un projet clé en main, il faut ajouter la conception et le pilotage.</p>
+<p>Avec un accompagnement en maîtrise d'œuvre, cela prend la forme d'honoraires affichés, souvent autour de 12 % du coût de construction. Une maison construite à 2 500 €/m² de travaux revient donc à environ 2 800 €/m² livré clé en main, honoraires inclus. C'est ce chiffre « livré » qu'il faut comparer d'un projet à l'autre, pas le seul coût des travaux. Pour comprendre ce que couvre cet accompagnement, voir notre comparatif <a href="/guides/maitre-doeuvre-ou-constructeur" class="text-primary underline">maître d'œuvre ou constructeur</a>.</p>`,
+    },
+    {
+      h2: "Ce que comprend (et ne comprend pas) le prix au m²",
+      html: `<p>Un prix au m² crédible doit recouvrir l'essentiel de ce qui rend la maison habitable : le gros œuvre (fondations, murs, toiture), l'isolation et l'étanchéité aux normes RE2020, la menuiserie extérieure, le chauffage et l'eau chaude, l'électricité, la plomberie, et les revêtements de sols et murs.</p>
+<p>En revanche, plusieurs postes restent hors du prix au m² et doivent être budgétés à part : le terrain et ses frais de notaire, la viabilisation si le terrain n'est pas raccordé, l'étude de sol, l'assurance dommage-ouvrage, et les aménagements extérieurs (clôture, terrasse, allée). Méfiez-vous d'un prix au m² très bas : il omet souvent une partie de ces éléments, qui réapparaissent ensuite en surcoût.</p>`,
+    },
+    {
+      h2: "Ce qui fait varier le prix au m²",
+      html: `<p>À surface égale, deux maisons peuvent s'écarter de plusieurs centaines d'euros au mètre carré. Les principaux leviers :</p>
+<p>Les <strong>finitions et équipements</strong> sont le premier facteur : cuisine, salle de bains, sols, domotique, menuiseries font glisser le prix de l'entrée vers le haut de gamme. La <strong>forme de la maison</strong> compte aussi : une maison compacte et carrée coûte moins cher au m² qu'une maison tout en longueur ou à décrochements multiples, car elle demande moins de murs et de toiture pour la même surface. Le <strong>terrain</strong> influe par sa nature : une pente, un sol argileux ou un accès difficile renchérissent les fondations et la mise en œuvre. Enfin, la <strong>performance énergétique</strong> ajoute sa part : la RE2020 représente de l'ordre de 5 à 10 % de surcoût, largement compensé à l'usage par des factures réduites.</p>`,
+    },
+    {
+      h2: "Plain-pied ou étage : quel impact sur le m² ?",
+      html: `<p>Le plain-pied est souvent perçu comme plus simple, mais il coûte généralement un peu plus cher au mètre carré qu'une maison à étage. La raison est mécanique : à surface habitable égale, un plain-pied demande une emprise au sol plus grande, donc plus de fondations et plus de toiture, les deux postes les plus lourds. Une maison à étage empile la surface sur une emprise réduite et amortit mieux ces postes. L'étage économise aussi du terrain, ce qui pèse dans les secteurs où le foncier est cher.</p>`,
+    },
+    {
+      h2: "L'effet de la surface : pourquoi les petites maisons coûtent plus cher au m²",
+      html: `<p>C'est contre-intuitif, mais une petite maison coûte plus cher au mètre carré qu'une grande. Les pièces les plus chères, la cuisine et la salle de bains, ont un coût quasi fixe quelle que soit la surface totale. Sur une maison de 80 m², ce coût se répartit sur peu de mètres carrés ; sur 150 m², il se dilue. C'est pourquoi un prix au m² doit toujours se lire en regard de la surface du projet. Pour un budget calibré sur une surface précise, voir notre guide <a href="/guides/prix-maison-120m2" class="text-primary underline">combien coûte une maison de 120 m²</a>.</p>`,
+    },
+    {
+      h2: "Du prix au m² au budget de votre maison",
+      html: `<p>Le prix au m² ne prend tout son sens qu'une fois multiplié par la surface de votre projet. Voici ce que représentent les fourchettes ci-dessus, en coût de construction clé en main (honoraires inclus, hors terrain), pour trois surfaces courantes.</p>
+<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr><th class="text-left py-2 pr-4">Surface</th><th class="text-left py-2 pr-4">Entrée de gamme</th><th class="text-left py-2 pr-4">Milieu de gamme</th><th class="text-left py-2">Haut de gamme</th></tr></thead><tbody>
+<tr class="border-t"><td class="py-2 pr-4">90 m²</td><td class="py-2 pr-4">150 000 à 180 000 €</td><td class="py-2 pr-4">180 000 à 230 000 €</td><td class="py-2">230 000 à 300 000 €</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">120 m²</td><td class="py-2 pr-4">200 000 à 240 000 €</td><td class="py-2 pr-4">240 000 à 310 000 €</td><td class="py-2">310 000 à 405 000 €</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">150 m²</td><td class="py-2 pr-4">250 000 à 300 000 €</td><td class="py-2 pr-4">300 000 à 385 000 €</td><td class="py-2">385 000 à 505 000 €</td></tr>
+</tbody></table></div>
+<p class="mt-4">Ces montants couvrent la construction livrée prête à habiter, honoraires de maîtrise d'œuvre compris, mais sans le terrain. Ils situent le standard du sur-mesure milieu à haut de gamme autour de 2 800 €/m² livré, l'ordre de grandeur que nous retenons pour un projet Maison de Nacre. Pour un budget complet incluant le terrain et les frais annexes, voir notre guide <a href="/guides/budget-construction-maison" class="text-primary underline">budget d'un projet de construction</a>.</p>`,
+    },
+    {
+      h2: "Et dans le Calvados ?",
+      html: `<p>Le coût de construction au m² varie peu d'une région à l'autre : ce sont surtout le terrain et la main-d'œuvre locale qui font la différence sur le budget total. Dans le département, c'est donc le prix du terrain qui creuse l'écart, pas le m² de construction. Nous avons détaillé les fourchettes locales, terrain compris, dans notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a>.</p>`,
+    },
+    {
+      h2: "Comment lire un prix au m² dans un devis",
+      html: `<p>Pour comparer deux offres au m² sans se tromper, posez trois questions. D'abord, le prix inclut-il les honoraires de conception et de suivi, ou seulement les travaux ? Ensuite, quelle est la surface de référence : surface habitable, surface de plancher ou surface utile ? Le même prix au m² ne pèse pas pareil selon la base. Enfin, le niveau de finition est-il précisé, ou s'agit-il d'un prix d'appel « à partir de » qui grimpera au premier choix de matériaux ? Un prix au m² honnête s'accompagne toujours d'un descriptif clair de ce qu'il contient. Pour situer le coût de l'accompagnement, voir notre guide <a href="/guides/cout-maitre-doeuvre" class="text-primary underline">combien coûte un maître d'œuvre</a>.</p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Quel est le prix de construction d'une maison au m² en 2026 ?",
+      answer:
+        "Comptez 1 500 à 1 800 €/m² en entrée de gamme, 1 800 à 2 300 €/m² en milieu de gamme et 2 300 à 3 000 €/m² ou plus en haut de gamme, hors terrain. Clé en main avec maîtrise d'œuvre, ajoutez les honoraires (environ 12 %), soit autour de 2 800 €/m² livré pour un standard milieu de gamme.",
+    },
+    {
+      question: "Le prix au m² inclut-il le terrain ?",
+      answer:
+        "Non. Le prix de construction au m² ne comprend jamais le terrain ni ses frais de notaire, qui se budgétisent à part et varient fortement selon le secteur.",
+    },
+    {
+      question: "Pourquoi une petite maison coûte-t-elle plus cher au m² ?",
+      answer:
+        "Parce que les pièces les plus coûteuses (cuisine, salle de bains) ont un coût quasi fixe qui se répartit sur moins de surface. Plus la maison est grande, plus ce coût se dilue.",
+    },
+    {
+      question: "Une maison de plain-pied est-elle plus chère au m² ?",
+      answer:
+        "Généralement oui, car elle demande plus de fondations et de toiture qu'une maison à étage de surface équivalente, et consomme plus de terrain.",
+    },
+    {
+      question: "Quel est le surcoût de la RE2020 au m² ?",
+      answer:
+        "De l'ordre de 5 à 10 % du coût de construction, compensé à l'usage par des factures d'énergie nettement plus basses.",
+    },
+  ],
+  relatedGuideSlugs: ["prix-maison-neuve-calvados", "maitre-doeuvre-ou-constructeur"],
+};
+
+// ────────────────────────────────────────────────────────────────────────────────
 // Registre
 // ────────────────────────────────────────────────────────────────────────────────
 
-export const GUIDES: Guide[] = [G11, G6];
+export const GUIDES: Guide[] = [G11, G6, G12];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
