@@ -996,7 +996,101 @@ const G5: Guide = {
   relatedGuideSlugs: ["maitre-doeuvre-ou-constructeur", "prix-maison-neuve-calvados"],
 };
 
-export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5];
+// ────────────────────────────────────────────────────────────────────────────────
+// G19 — La RE2020 expliquée simplement (guide de fond, 8 100/mo KD 44)
+// ────────────────────────────────────────────────────────────────────────────────
+
+const G19: Guide = {
+  slug: "re2020",
+  title: "La RE2020 expliquée simplement | Maison de Nacre",
+  metaDescription:
+    "La RE2020 expliquée simplement : objectifs, indicateurs, ce qui change pour votre maison neuve, surcoût et confort d'été. Le guide clair de la norme.",
+  h1: "La RE2020 expliquée simplement",
+  primaryKeyword: "RE2020",
+  searchVolume: 8100,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "La RE2020 est la réglementation qui encadre toutes les maisons neuves depuis 2022. Derrière ce sigle un peu technique se cache une idée simple : construire des maisons qui consomment moins, émettent moins de carbone et restent confortables, y compris pendant les fortes chaleurs. Voici l'essentiel à comprendre, sans jargon inutile.",
+  sections: [
+    {
+      h2: "Qu'est-ce que la RE2020 ?",
+      html: `<p>RE2020 signifie « réglementation environnementale 2020 ». Elle remplace l'ancienne réglementation thermique (la RT2012) et s'applique à toutes les constructions neuves, dont les maisons individuelles. Sa nouveauté principale : elle ne regarde plus seulement la consommation d'énergie, mais aussi l'empreinte carbone de la maison sur tout son cycle de vie, et le confort en été. C'est une approche plus large, qui vise des maisons sobres et durables.</p>`,
+    },
+    {
+      h2: "Les trois grands objectifs de la RE2020",
+      html: `<p>La norme poursuit trois buts complémentaires. Le premier est la <strong>sobriété énergétique</strong> : réduire les besoins en chauffage, en eau chaude et en refroidissement grâce à une meilleure conception et une isolation renforcée. Le deuxième est la <strong>réduction de l'empreinte carbone</strong> : limiter les émissions liées à la fabrication des matériaux et à l'usage de la maison, en favorisant les énergies décarbonées et les matériaux plus vertueux. Le troisième est le <strong>confort d'été</strong> : garantir que la maison reste vivable pendant les canicules, sans recourir systématiquement à la climatisation.</p>`,
+    },
+    {
+      h2: "Ce que la RE2020 change concrètement pour votre maison",
+      html: `<p>Pour respecter ces objectifs, une maison RE2020 repose sur plusieurs principes. La <strong>conception bioclimatique</strong> d'abord : on oriente la maison et on dimensionne les ouvertures pour profiter du soleil l'hiver et s'en protéger l'été. L'<strong>isolation et l'étanchéité à l'air</strong> ensuite, nettement renforcées par rapport à l'ancien. Le <strong>chauffage décarboné</strong>, le plus souvent une pompe à chaleur, qui remplace les énergies fossiles. Et des <strong>matériaux à plus faible impact carbone</strong>, choisis pour leur empreinte sur tout le cycle de vie. Ces choix se font dès la conception, pas après coup.</p>`,
+    },
+    {
+      h2: "Les indicateurs de la RE2020, sans jargon",
+      html: `<p>La norme s'appuie sur quelques indicateurs chiffrés. Inutile d'en être expert, mais les connaître aide à comprendre. Le <strong>Bbio</strong> mesure le besoin bioclimatique, c'est-à-dire la qualité de conception de la maison avant même les équipements. Le <strong>Cep</strong> mesure la consommation d'énergie primaire. Les indicateurs <strong>carbone</strong> évaluent les émissions liées à la construction et à l'usage. Enfin, le <strong>DH</strong> (degrés-heures) mesure l'inconfort en été : plus il est bas, mieux la maison résiste à la chaleur. En clair, la RE2020 note à la fois la conception, la consommation, le carbone et le confort estival.</p>`,
+    },
+    {
+      h2: "Le confort d'été, la vraie nouveauté",
+      html: `<p>C'est l'apport le plus concret de la RE2020. Les réglementations précédentes se concentraient sur l'hiver et le chauffage. La RE2020 impose désormais que la maison reste vivable en été, mesuré par les degrés-heures d'inconfort. Avec des étés de plus en plus chauds, y compris en Normandie, c'est un vrai gain. Ce confort se gagne à la conception, par l'orientation, les protections solaires (débords de toit, volets, brise-soleil), une inertie suffisante et une ventilation pensée pour rafraîchir la nuit, plutôt que par un climatiseur ajouté ensuite.</p>`,
+    },
+    {
+      h2: "RE2020 ou RT2012 : ce qui a changé",
+      html: `<p>Par rapport à la RT2012, la RE2020 va plus loin sur trois plans. Elle renforce les exigences d'isolation et de performance énergétique. Elle ajoute une dimension carbone, absente de l'ancienne norme, qui pèse sur le choix des matériaux et des énergies. Et elle introduit l'exigence de confort d'été. C'est donc une marche en avant nette vers des maisons plus sobres et mieux adaptées au climat.</p>`,
+    },
+    {
+      h2: "Le surcoût de la RE2020",
+      html: `<p>Soyons clairs : la RE2020 augmente le coût de construction de l'ordre de 5 à 10 % par rapport aux anciennes normes, du fait de l'isolation, de l'étanchéité et des équipements décarbonés. Mais ce surcoût se rattrape à l'usage, par des factures d'énergie nettement plus basses, et par une maison plus confortable et mieux valorisée. C'est un investissement, pas une dépense perdue. Pour situer ce surcoût dans le budget global, voir notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a>.</p>`,
+    },
+    {
+      h2: "RE2020 et chauffage : la fin des énergies fossiles",
+      html: `<p>L'un des effets les plus visibles de la RE2020 est la sortie progressive des énergies fossiles pour le chauffage. Le gaz, en particulier, devient difficile à justifier dans une maison neuve, au profit de solutions décarbonées comme la pompe à chaleur, qui combine bonne performance et faibles émissions. Le choix précis dépend de la maison et du terrain, mais la logique est claire : chauffer propre et efficace.</p>`,
+    },
+    {
+      h2: "Les bénéfices concrets d'une maison RE2020 au quotidien",
+      html: `<p>Au-delà de la conformité, vivre dans une maison RE2020 change le quotidien. Les <strong>factures d'énergie</strong> sont nettement plus basses qu'en maison ancienne, parfois divisées par deux ou trois, grâce à l'isolation et à une pompe à chaleur efficace. Le <strong>confort thermique</strong> est stable toute l'année : pas de murs froids l'hiver, pas de surchauffe l'été dans une maison bien conçue. La <strong>qualité de l'air</strong> s'améliore aussi, grâce à une ventilation maîtrisée qui renouvelle l'air sans déperdition. Et la <strong>valeur du bien</strong> progresse : une maison performante, bien classée au DPE, se revend plus facilement et plus cher qu'une passoire énergétique, dont la décote ne cesse d'augmenter.</p>
+<p class="mt-4">À l'inverse de l'ancien, où les travaux d'amélioration énergétique s'étalent sur des années et coûtent cher, une maison RE2020 part directement au meilleur niveau, sans rénovation à prévoir. C'est l'un des arguments forts du neuf face à l'achat dans l'ancien, surtout dans un contexte où les exigences sur les logements ne cessent de se durcir.</p>`,
+    },
+    {
+      h2: "Comment bien concevoir une maison RE2020",
+      html: `<p>Respecter la norme est une obligation ; en tirer le meilleur est un art. Une maison RE2020 réussie se conçoit dès les premiers plans, en intégrant l'orientation, l'isolation, les protections solaires et les équipements de façon cohérente. C'est tout l'intérêt de travailler avec un architecte et un maître d'œuvre qui pensent la performance dès le départ, plutôt que de la subir. Pour notre approche, voir notre page <a href="/services/maison-re2020" class="text-primary underline">construire une maison RE2020</a>.</p>`,
+    },
+    {
+      h2: "Construisez une maison performante",
+      html: `<p>Vous voulez une maison neuve sobre, confortable et durable, qui tire le meilleur de la RE2020 ? Parlons-en. Maison de Nacre conçoit et réalise votre maison performante, de A à Z. Estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Qu'est-ce que la RE2020 ?",
+      answer:
+        "La réglementation environnementale 2020, qui encadre toutes les constructions neuves. Elle vise à réduire la consommation d'énergie, l'empreinte carbone et à garantir le confort d'été.",
+    },
+    {
+      question: "Quelle différence avec la RT2012 ?",
+      answer:
+        "La RE2020 renforce les exigences énergétiques, ajoute une dimension carbone (matériaux et usage) et introduit le confort d'été, absents de la RT2012.",
+    },
+    {
+      question: "Quel est le surcoût de la RE2020 ?",
+      answer:
+        "De l'ordre de 5 à 10 % du coût de construction, compensé à l'usage par des factures d'énergie nettement plus basses.",
+    },
+    {
+      question: "Quel chauffage pour une maison RE2020 ?",
+      answer:
+        "Le plus souvent une pompe à chaleur. Les énergies fossiles comme le gaz deviennent difficiles à justifier dans une maison neuve.",
+    },
+    {
+      question: "La RE2020 est-elle obligatoire ?",
+      answer:
+        "Oui, pour toutes les constructions neuves de maison individuelle. La question n'est donc pas de la respecter, mais de bien la concevoir.",
+    },
+  ],
+  relatedGuideSlugs: ["prix-maison-neuve-calvados", "maitre-doeuvre-ou-constructeur"],
+};
+
+export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5, G19];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
