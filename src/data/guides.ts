@@ -472,7 +472,122 @@ const G17: Guide = {
 // Registre
 // ────────────────────────────────────────────────────────────────────────────────
 
-export const GUIDES: Guide[] = [G11, G6, G12, G17];
+// ────────────────────────────────────────────────────────────────────────────────
+// G23 — Étapes construction maison (pilier "déroulé du projet", 480/mo, KD 17)
+// ────────────────────────────────────────────────────────────────────────────────
+
+const G23: Guide = {
+  slug: "etapes-construction-maison",
+  title: "Les étapes d'une construction de maison | Maison de Nacre",
+  metaDescription:
+    "Les étapes pour faire construire sa maison, de l'idée à la remise des clés : terrain, conception, permis, financement, chantier, réception. Le guide complet.",
+  h1: "Les étapes d'une construction de maison, de l'idée aux clés",
+  primaryKeyword: "étapes construction maison",
+  searchVolume: 480,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Faire construire sa maison est un parcours en plusieurs étapes, qui s'étale sur un à deux ans entre les premières envies et l'emménagement. Bien connaître l'enchaînement évite les mauvaises surprises et les pertes de temps. Voici les grandes étapes, dans l'ordre, avec ce qui se joue à chacune.",
+  sections: [
+    {
+      h2: "Vue d'ensemble : les grandes phases",
+      html: `<p>Un projet de construction se découpe en trois temps. D'abord la <strong>préparation</strong> : définir le projet, trouver le terrain, concevoir la maison et obtenir le permis. Ensuite le <strong>montage</strong> : financer le projet, souscrire les assurances et signer les devis des artisans. Enfin la <strong>réalisation</strong> : le chantier, puis la réception et la remise des clés. Chacune de ces phases compte, et c'est leur bon enchaînement qui fait un projet sans accroc.</p>`,
+    },
+    {
+      h2: "Étape 1 : Définir le projet et le budget",
+      html: `<p>Tout commence par vos besoins : surface, nombre de chambres, plain-pied ou étage, style, et surtout enveloppe budgétaire. C'est le moment de calibrer un budget réaliste, terrain compris, pour orienter toutes les décisions suivantes. Notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a> aide à poser ces premiers chiffres.</p>`,
+    },
+    {
+      h2: "Étape 2 : Trouver et sécuriser le terrain",
+      html: `<p>Sans terrain, pas de projet. Cette étape consiste à trouver une parcelle constructible adaptée à votre budget et à vos envies, puis à la sécuriser par un compromis. Vérifiez bien deux points avant de signer : la constructibilité au regard du plan local d'urbanisme, et l'état des raccordements. Nos guides <a href="/guides/choisir-terrain-constructible" class="text-primary underline">comment choisir son terrain constructible</a> et <a href="/guides/viabilisation-terrain" class="text-primary underline">la viabilisation d'un terrain</a> détaillent ces vérifications essentielles.</p>`,
+    },
+    {
+      h2: "Étape 3 : La conception avec l'architecte ou le maître d'œuvre",
+      html: `<p>Une fois le terrain en vue, on passe à la conception. C'est ici que la maison prend forme : plans, implantation sur la parcelle, orientation, choix techniques et premiers chiffrages. Travailler avec un architecte ou un maître d'œuvre garantit un plan sur-mesure, pensé pour votre terrain et conforme aux règles d'urbanisme. C'est aussi l'étape où l'on intègre les exigences de la RE2020 dès le départ, plutôt que de les subir.</p>`,
+    },
+    {
+      h2: "Étape 4 : Le permis de construire",
+      html: `<p>Le projet conçu, on dépose la demande de permis de construire en mairie. L'instruction dure en général deux à trois mois pour une maison individuelle. C'est une étape incompressible qu'il faut anticiper dans le calendrier. Notre guide <a href="/guides/permis-de-construire-maison" class="text-primary underline">le permis de construire</a> explique le dossier et la procédure, et le <a href="/guides/delai-permis-de-construire" class="text-primary underline">délai d'obtention d'un permis</a> donne les durées à prévoir.</p>`,
+    },
+    {
+      h2: "Étape 5 : Le financement et les assurances",
+      html: `<p>En parallèle de la conception et du permis, on boucle le financement : prêt immobilier, mobilisation de l'apport, et éventuellement prêt à taux zéro pour un primo-accédant. C'est aussi le moment de souscrire l'assurance dommage-ouvrage, obligatoire, qui protège votre bien pendant dix ans. Mieux vaut avoir l'accord de prêt avant de lancer les travaux.</p>`,
+    },
+    {
+      h2: "Étape 6 : Consultation des artisans et signature des devis",
+      html: `<p>Le permis obtenu et le financement en place, on consulte les artisans pour chaque corps de métier : terrassement, gros œuvre, charpente, couverture, menuiseries, plomberie, électricité, finitions. Les devis sont comparés, négociés, puis signés. Avec un maître d'œuvre, cette mise en concurrence se fait pour votre compte, sans marge sur les travaux, ce qui assure des prix justes et transparents.</p>`,
+    },
+    {
+      h2: "Étape 7 : Le chantier",
+      html: `<p>C'est la phase la plus visible. Elle s'enchaîne dans un ordre précis : le terrassement et les fondations, puis le gros œuvre (murs, planchers), la charpente et la couverture pour mettre la maison hors d'eau, les menuiseries extérieures pour la mettre hors d'air, puis le second œuvre (cloisons, isolation, électricité, plomberie, chauffage) et enfin les finitions (sols, peintures, cuisine, salle de bains). Chaque corps de métier intervient au bon moment, et la coordination est la clé pour tenir les délais. C'est précisément le travail d'un maître d'œuvre, qui suit le chantier semaine après semaine.</p>`,
+    },
+    {
+      h2: "Étape 8 : La réception et la remise des clés",
+      html: `<p>Le chantier terminé, vient la réception : vous visitez la maison avec le professionnel, vous vérifiez la conformité et vous consignez d'éventuelles réserves (défauts à corriger). Une fois les réserves levées, c'est la remise des clés, et vous pouvez emménager. Notre guide <a href="/guides/reception-travaux-maison-neuve" class="text-primary underline">réception de chantier et levée des réserves</a> explique comment bien réceptionner votre maison.</p>`,
+    },
+    {
+      h2: "Combien de temps dure une construction ?",
+      html: `<p>De la signature du terrain à la remise des clés, comptez en général douze à dix-huit mois, dont environ six à dix mois de chantier effectif. Le reste se joue sur la conception, le permis et le montage financier, qui se déroulent en partie en parallèle. Notre guide <a href="/guides/delai-construction-maison" class="text-primary underline">combien de temps pour construire une maison</a> détaille chaque durée.</p>`,
+    },
+    {
+      h2: "Récapitulatif : les étapes et leur durée",
+      html: `<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr><th class="text-left py-2 pr-4">Étape</th><th class="text-left py-2 pr-4">Ce qui se passe</th><th class="text-left py-2">Durée indicative</th></tr></thead><tbody>
+<tr class="border-t"><td class="py-2 pr-4">1. Définir le projet et le budget</td><td class="py-2 pr-4">Besoins, surface, enveloppe budgétaire</td><td class="py-2">2 à 4 semaines</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">2. Trouver et sécuriser le terrain</td><td class="py-2 pr-4">Recherche, compromis, vérifications</td><td class="py-2">1 à 6 mois</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">3. Conception des plans</td><td class="py-2 pr-4">Plans, implantation, chiffrage</td><td class="py-2">1 à 3 mois</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">4. Permis de construire</td><td class="py-2 pr-4">Dépôt et instruction en mairie</td><td class="py-2">2 à 3 mois</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">5. Financement et assurances</td><td class="py-2 pr-4">Prêt, apport, dommage-ouvrage</td><td class="py-2">1 à 2 mois (en parallèle)</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">6. Consultation des artisans</td><td class="py-2 pr-4">Devis, comparaison, signature</td><td class="py-2">3 à 6 semaines</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">7. Chantier</td><td class="py-2 pr-4">Du terrassement aux finitions</td><td class="py-2">6 à 10 mois</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">8. Réception et remise des clés</td><td class="py-2 pr-4">Visite, réserves, emménagement</td><td class="py-2">Quelques jours à semaines</td></tr>
+</tbody></table></div>
+<p class="mt-4">Attention : ces durées ne s'additionnent pas. Plusieurs étapes se chevauchent, notamment la conception, le permis et le financement, qui avancent en partie en même temps. C'est cette gestion en parallèle qui permet de tenir un délai total de douze à dix-huit mois.</p>`,
+    },
+    {
+      h2: "Les erreurs fréquentes à éviter",
+      html: `<p>Quelques pièges reviennent souvent et coûtent cher en temps ou en argent. Le premier : acheter un terrain sans vérifier sa viabilisation ni sa constructibilité réelle, et découvrir ensuite des milliers d'euros de raccordement. Le deuxième : sous-estimer les frais annexes (notaire sur le terrain, viabilisation, assurance, aménagements extérieurs) et bâtir un budget trop juste. Le troisième : lancer les démarches en série plutôt qu'en parallèle, et allonger inutilement le projet de plusieurs mois. Le dernier : signer des devis sans mise en concurrence, et payer plus cher faute de comparaison. Un accompagnement par un maître d'œuvre fait justement office de garde-fou sur chacun de ces points.</p>`,
+    },
+    {
+      h2: "Le rôle du maître d'œuvre dans ce parcours",
+      html: `<p>À chaque étape, un maître d'œuvre vous fait gagner du temps et de la sérénité : il conçoit le projet, monte le dossier de permis, consulte et coordonne les artisans, suit le chantier et vous accompagne jusqu'à la réception. Vous gardez la décision, il gère l'opérationnel et défend vos intérêts. C'est le modèle de Maison de Nacre, de la première esquisse à la remise des clés. Pour comprendre ce métier, voir notre comparatif <a href="/guides/maitre-doeuvre-ou-constructeur" class="text-primary underline">maître d'œuvre ou constructeur</a>.</p>`,
+    },
+    {
+      h2: "Lancez votre projet",
+      html: `<p>Vous envisagez de faire construire et vous voulez un parcours clair, sans surprise ? Parlons-en. Maison de Nacre vous accompagne à chaque étape, de la conception à la remise des clés.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Quelles sont les grandes étapes pour faire construire une maison ?",
+      answer:
+        "Définir le projet et le budget, trouver le terrain, concevoir la maison, obtenir le permis de construire, boucler le financement, consulter les artisans, réaliser le chantier, puis réceptionner et recevoir les clés.",
+    },
+    {
+      question: "Quelle est la première étape d'un projet de construction ?",
+      answer:
+        "Définir précisément ses besoins et son budget global, terrain compris. C'est ce cadrage qui oriente toutes les décisions suivantes.",
+    },
+    {
+      question: "Combien de temps entre l'achat du terrain et l'emménagement ?",
+      answer:
+        "En général douze à dix-huit mois, dont six à dix mois de chantier, le reste se partageant entre conception, permis et financement.",
+    },
+    {
+      question: "Faut-il le permis de construire avant de financer ?",
+      answer:
+        "Les deux avancent souvent en parallèle, mais il est prudent d'avoir l'accord de prêt avant de signer les devis et de lancer les travaux.",
+    },
+    {
+      question: "Qui coordonne les différentes étapes ?",
+      answer:
+        "Vous pouvez tout piloter vous-même, ou confier la coordination à un maître d'œuvre qui enchaîne conception, permis, consultation des artisans et suivi de chantier jusqu'à la réception.",
+    },
+  ],
+  relatedGuideSlugs: ["delai-construction-maison", "prix-maison-neuve-calvados", "maitre-doeuvre-ou-constructeur"],
+};
+
+export const GUIDES: Guide[] = [G11, G6, G12, G17, G23];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
