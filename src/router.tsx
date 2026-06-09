@@ -10,9 +10,6 @@ export const getRouter = () => {
     context: { queryClient },
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
-    // Le prerender ajoute systématiquement un trailing slash à chaque URL ;
-    // sans ça, /guides/<slug>/ ne matche pas /guides/$slug et renvoie 500.
-    trailingSlash: "preserve",
   });
 
   return router;
