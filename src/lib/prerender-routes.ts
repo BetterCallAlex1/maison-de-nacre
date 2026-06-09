@@ -5,7 +5,7 @@
 // Règle : toute route qui doit rester accessible sans Worker runtime
 // (objectif : hébergement 100 % statique post-abonnement) DOIT figurer ici.
 
-import { getAllGuideSlugs } from "@/data/guides";
+import { getAllGuideSlugs } from "../data/guides";
 
 export type PrerenderPage = {
   path: string;
