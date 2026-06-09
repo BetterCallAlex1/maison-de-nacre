@@ -687,7 +687,108 @@ const G24: Guide = {
   relatedGuideSlugs: ["etapes-construction-maison", "maitre-doeuvre-ou-constructeur"],
 };
 
-export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24];
+// ────────────────────────────────────────────────────────────────────────────────
+// G29 — Délai permis de construire (cluster timeline, 1 900/mo, KD 35)
+// ────────────────────────────────────────────────────────────────────────────────
+
+const G29: Guide = {
+  slug: "delai-permis-de-construire",
+  title: "Délai d'obtention d'un permis de construire | Maison de Nacre",
+  metaDescription:
+    "Quel délai pour obtenir un permis de construire ? 2 mois d'instruction pour une maison, plus le délai de recours. Ce qui peut rallonger et comment l'éviter.",
+  h1: "Délai d'obtention d'un permis de construire : combien de temps ?",
+  primaryKeyword: "délai permis de construire",
+  searchVolume: 1900,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Le permis de construire est une étape incompressible de tout projet de construction, et son délai pèse directement sur votre calendrier. Pour une maison individuelle, comptez deux mois d'instruction, auxquels s'ajoutent un délai de recours et quelques cas qui peuvent rallonger la procédure. Voici tout ce qu'il faut savoir pour ne pas perdre de temps.",
+  sections: [
+    {
+      h2: "Le délai légal d'instruction",
+      html: `<p>Le délai d'instruction de droit commun est de <strong>deux mois pour une maison individuelle</strong> et ses annexes. Pour les autres constructions, il passe à trois mois. Ce délai court à compter du dépôt d'un dossier complet en mairie. À l'issue, la mairie notifie sa décision : accord, accord avec prescriptions, ou refus motivé.</p>`,
+    },
+    {
+      h2: "Le point de départ du délai",
+      html: `<p>Le délai démarre à la date de dépôt du dossier complet, matérialisée par un récépissé que la mairie vous remet. Ce récépissé indique la date à partir de laquelle le délai court et la date limite de réponse. C'est un document à conserver : il fait foi pour calculer le délai et, le cas échéant, constater un permis tacite.</p>`,
+    },
+    {
+      h2: "Les cas qui allongent le délai",
+      html: `<p>Plusieurs situations majorent le délai d'instruction, et la mairie doit vous en informer dans le premier mois. Le cas le plus fréquent : un terrain situé dans le périmètre d'un monument historique ou d'un site protégé, qui impose l'avis de l'Architecte des Bâtiments de France et ajoute généralement <strong>un mois</strong> au délai. D'autres consultations (sécurité, accessibilité, sites classés) peuvent aussi rallonger la procédure. Dans tous les cas, la majoration doit vous être notifiée au début de l'instruction, sinon le délai de droit commun s'applique.</p>`,
+    },
+    {
+      h2: "La demande de pièces complémentaires",
+      html: `<p>Si votre dossier est incomplet, la mairie vous réclame des pièces manquantes, en principe dans le premier mois suivant le dépôt. Vous disposez alors de <strong>trois mois pour les fournir</strong>, et le délai d'instruction ne reprend qu'une fois le dossier complété. C'est l'une des principales causes d'allongement, et elle est entièrement évitable : un dossier complet et bien monté dès le dépôt évite ce mois perdu. C'est l'un des intérêts de confier le montage à un professionnel, comme nous le détaillons dans notre guide <a href="/guides/permis-de-construire-maison" class="text-primary underline">le permis de construire</a>.</p>`,
+    },
+    {
+      h2: "Le permis tacite",
+      html: `<p>Si la mairie ne vous répond pas avant la fin du délai d'instruction, vous bénéficiez en principe d'un <strong>permis tacite</strong> : le silence vaut accord. Il est prudent de demander à la mairie un certificat attestant ce permis tacite, utile notamment pour le financement et pour la revente. Attention, certaines situations (secteur protégé, par exemple) peuvent écarter le permis tacite : vérifiez votre cas.</p>`,
+    },
+    {
+      h2: "Et après l'obtention : affichage et délai de recours",
+      html: `<p>Obtenir le permis ne signifie pas pouvoir démarrer immédiatement en toute sécurité. Une fois le permis accordé, vous devez l'<strong>afficher sur le terrain</strong>, de façon visible depuis la voie publique, pendant toute la durée du chantier. Cet affichage fait courir un <strong>délai de recours des tiers de deux mois</strong> : un voisin peut contester le permis durant cette période. Par ailleurs, l'administration dispose d'un délai pour retirer un permis illégal. La pratique prudente est donc d'attendre la fin du délai de recours avant de lancer les gros travaux, pour ne pas bâtir sur un permis fragile.</p>`,
+    },
+    {
+      h2: "La durée de validité du permis",
+      html: `<p>Une fois obtenu, le permis de construire est valable <strong>trois ans</strong>. Si vous ne commencez pas les travaux dans ce délai, il devient caduc. Cette validité peut être prorogée deux fois d'un an, ce qui porte la durée maximale à cinq ans, sous réserve d'en faire la demande avant l'échéance et que les règles d'urbanisme n'aient pas changé.</p>`,
+    },
+    {
+      h2: "Les délais à retenir",
+      html: `<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr><th class="text-left py-2 pr-4">Étape</th><th class="text-left py-2">Délai</th></tr></thead><tbody>
+<tr class="border-t"><td class="py-2 pr-4">Instruction, maison individuelle</td><td class="py-2">2 mois</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Instruction, autres constructions</td><td class="py-2">3 mois</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Majoration en secteur protégé (ABF)</td><td class="py-2">+ 1 mois</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Délai pour compléter un dossier incomplet</td><td class="py-2">3 mois (suspend l'instruction)</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Recours des tiers après affichage</td><td class="py-2">2 mois</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Validité du permis</td><td class="py-2">3 ans (prorogeable jusqu'à 5 ans)</td></tr>
+</tbody></table></div>
+<p class="mt-4">Ce tableau résume les durées de droit commun. Votre cas précis peut varier selon la commune et la localisation du terrain : le service urbanisme de la mairie reste la source de référence.</p>`,
+    },
+    {
+      h2: "Permis de construire ou déclaration préalable : des délais différents",
+      html: `<p>Tous les projets ne relèvent pas du permis de construire. Les travaux de moindre ampleur (petite extension, abri de jardin, modification de façade, selon les surfaces) relèvent d'une simple <strong>déclaration préalable de travaux</strong>, dont le délai d'instruction n'est que d'<strong>un mois</strong> en règle générale. La construction d'une maison neuve, elle, exige toujours un permis de construire, avec son délai de deux mois. Bien identifier la nature de l'autorisation dès le départ évite de se tromper de procédure et de perdre du temps. En cas de doute, le service urbanisme de la mairie vous oriente vers la bonne demande.</p>`,
+    },
+    {
+      h2: "Comment éviter les retards",
+      html: `<p>Le meilleur levier est un <strong>dossier complet et conforme dès le dépôt</strong>, qui évite la demande de pièces et son mois de perdu. Ensuite, déposer tôt et mener le permis en parallèle des autres démarches (financement, viabilisation) plutôt qu'en série. Enfin, anticiper le délai de recours dans le calendrier global, plutôt que de le découvrir au dernier moment. Un maître d'œuvre monte le dossier, suit l'instruction et cale ces délais dans le planning d'ensemble, comme nous l'expliquons dans notre guide <a href="/guides/etapes-construction-maison" class="text-primary underline">les étapes d'une construction</a>.</p>`,
+    },
+    {
+      h2: "Sécurisez le calendrier de votre projet",
+      html: `<p>Un permis bien monté et bien suivi, c'est des mois de gagnés. Maison de Nacre prépare votre dossier, suit l'instruction et intègre les délais dans le calendrier de votre construction. Parlons-en.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Quel est le délai pour obtenir un permis de construire ?",
+      answer:
+        "Deux mois d'instruction pour une maison individuelle, trois mois pour les autres constructions, à compter du dépôt d'un dossier complet.",
+    },
+    {
+      question: "Le délai peut-il être plus long ?",
+      answer:
+        "Oui. Un terrain en secteur protégé (avis de l'Architecte des Bâtiments de France) ajoute généralement un mois. Une demande de pièces complémentaires suspend aussi le délai.",
+    },
+    {
+      question: "Qu'est-ce qu'un permis tacite ?",
+      answer:
+        "Si la mairie ne répond pas avant la fin du délai d'instruction, le silence vaut accord. Il est conseillé de demander un certificat attestant ce permis tacite.",
+    },
+    {
+      question: "Peut-on commencer les travaux dès l'obtention du permis ?",
+      answer:
+        "Techniquement oui, mais il est prudent d'attendre la fin du délai de recours des tiers (deux mois après l'affichage) pour ne pas construire sur un permis contestable.",
+    },
+    {
+      question: "Combien de temps un permis de construire est-il valable ?",
+      answer:
+        "Trois ans, prorogeables deux fois d'un an, soit cinq ans au maximum, si la demande est faite avant l'échéance.",
+    },
+  ],
+  relatedGuideSlugs: ["permis-de-construire-maison", "etapes-construction-maison", "delai-construction-maison"],
+};
+
+export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
