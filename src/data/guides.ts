@@ -1194,7 +1194,97 @@ const G28: Guide = {
   relatedGuideSlugs: ["delai-permis-de-construire", "etapes-construction-maison"],
 };
 
-export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28];
+const G16: Guide = {
+  slug: "choisir-terrain-constructible",
+  title: "Comment choisir son terrain constructible | Maison de Nacre",
+  metaDescription:
+    "Comment choisir son terrain constructible : PLU, viabilisation, nature du sol, orientation, voisinage. Les critères et les pièges pour bien acheter.",
+  h1: "Comment choisir son terrain constructible",
+  primaryKeyword: "choisir terrain constructible",
+  searchVolume: null,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Le terrain est la fondation de tout projet de construction, au sens propre comme au figuré. Un bon terrain rend le projet fluide ; un mauvais choix peut renchérir la construction de plusieurs dizaines de milliers d'euros ou compliquer la vie pendant des années. Voici les critères à vérifier et les pièges à éviter pour bien choisir.",
+  sections: [
+    {
+      h2: "Vérifier la constructibilité avant tout",
+      html: `<p>Premier réflexe absolu : s'assurer que le terrain est réellement constructible. Constructible ne va pas de soi : c'est le plan local d'urbanisme (PLU) de la commune qui le détermine, ainsi que les règles applicables (hauteur, emprise au sol, distances aux limites, aspect). Demandez un <strong>certificat d'urbanisme</strong> à la mairie : il renseigne sur la constructibilité, les règles et la desserte par les réseaux. Ne signez jamais un compromis sans cette vérification, idéalement assortie d'une condition suspensive d'obtention du permis.</p>`,
+    },
+    {
+      h2: "Terrain en lotissement ou terrain isolé ?",
+      html: `<p>C'est un choix structurant. Un <strong>terrain en lotissement</strong> est aménagé, borné et presque toujours viabilisé : tout est prêt, mais il est plus cher et soumis à un règlement de lotissement qui encadre les constructions. Un <strong>terrain isolé en secteur diffus</strong> est souvent moins cher et plus libre, mais la viabilisation est à votre charge et peut réserver des écarts importants selon la distance aux réseaux. À budget égal, le lotissement offre la tranquillité, le diffus offre la liberté et parfois le caractère.</p>`,
+    },
+    {
+      h2: "La viabilisation et les réseaux",
+      html: `<p>Un terrain non viabilisé n'est qu'un bout de terre. Vérifiez la présence et la distance des réseaux (eau, électricité, assainissement, télécom) : plus ils passent loin, plus le raccordement coûte cher. C'est l'un des postes les plus sous-estimés. Notre guide <a href="/guides/viabilisation-terrain" class="text-primary underline">la viabilisation d'un terrain</a> détaille les coûts et les étapes à anticiper.</p>`,
+    },
+    {
+      h2: "La nature du sol",
+      html: `<p>Le sol détermine le type de fondations, donc une part du coût. Un sol argileux, fréquent dans certaines zones du Calvados et sur le littoral, gonfle et se rétracte avec l'humidité, et impose des fondations adaptées. Une <strong>étude de sol</strong> est d'ailleurs obligatoire dans de nombreux cas avant de construire. Mieux vaut connaître la nature du sol avant d'acheter que de découvrir un surcoût de fondations après.</p>`,
+    },
+    {
+      h2: "L'orientation et la topographie",
+      html: `<p>L'orientation du terrain influe directement sur le confort et la performance de la future maison. Un terrain bien exposé permet de profiter de la lumière et de la chaleur du sud, un atout pour la RE2020. La <strong>topographie</strong> compte aussi : un terrain plat se construit facilement, un terrain en pente peut offrir du caractère et des vues, mais renchérit le terrassement et les fondations. Ces éléments se pensent dès le choix du terrain, en lien avec le projet de maison.</p>`,
+    },
+    {
+      h2: "L'environnement et le voisinage",
+      html: `<p>Au-delà des critères techniques, le cadre de vie compte. Regardez le <strong>vis-à-vis</strong> (un point souvent décisif), les vues, l'ensoleillement réel, mais aussi les nuisances possibles : route passante, voie ferrée, zone inondable, exploitation agricole, projet d'urbanisme à proximité. Une visite à différents moments de la journée et la consultation du PLU et des servitudes évitent les mauvaises surprises.</p>`,
+    },
+    {
+      h2: "Le budget terrain",
+      html: `<p>Le prix du terrain est le premier poste qui fait varier le budget total. Dans le Calvados, il va d'environ 150 €/m² dans l'arrière-pays à 250 €/m² en première couronne caennaise, et davantage dans Caen et sur le littoral prisé. À l'achat s'ajoutent les frais de notaire (7 à 8 %). Pour les fourchettes par secteur, voir notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a>.</p>`,
+    },
+    {
+      h2: "Les pièges à éviter",
+      html: `<p>Quelques erreurs reviennent souvent. Acheter sans vérifier la constructibilité ni le PLU. Négliger la viabilisation sur un terrain isolé. Ignorer la nature du sol et son impact sur les fondations. Sous-estimer le vis-à-vis ou les nuisances. Et signer sans condition suspensive d'obtention du permis. Chacune de ces erreurs peut coûter cher ou bloquer le projet : une vérification méthodique avant l'achat est le meilleur investissement.</p>`,
+    },
+    {
+      h2: "Les documents à demander avant d'acheter",
+      html: `<p>Avant de signer, réunissez quelques documents qui révèlent l'essentiel sur le terrain. Le <strong>certificat d'urbanisme</strong> d'abord, qui précise la constructibilité, les règles et la desserte par les réseaux. L'<strong>extrait du plan local d'urbanisme</strong> ensuite, pour connaître la zone et ses contraintes (hauteur, emprise, aspect). Le <strong>plan de bornage</strong>, qui définit précisément les limites de la parcelle et sa surface réelle. L'<strong>état des servitudes</strong> (passages, réseaux, droits de voisinage) qui peuvent peser sur le projet. L'<strong>état des risques</strong> (ERP), qui signale les zones inondables, argileuses ou exposées à d'autres aléas. Et, sur un terrain isolé, un <strong>devis de viabilisation</strong> pour chiffrer le raccordement.</p>
+<p class="mt-4">Ces documents se demandent à la mairie, au vendeur ou au notaire, et se lisent avec attention. Une incohérence ou une contrainte lourde repérée à ce stade vaut bien mieux qu'une mauvaise surprise une fois le terrain acheté. En cas de doute, faire relire le dossier par un professionnel évite des erreurs coûteuses.</p>`,
+    },
+    {
+      h2: "Notre accompagnement dans le choix du terrain",
+      html: `<p>Choisir un terrain demande un œil technique. Chez Maison de Nacre, nous vous aidons à évaluer la faisabilité d'un terrain avant l'achat : constructibilité, viabilisation, sol, orientation et budget, pour éviter les mauvaises surprises et caler le projet sur le bon terrain. Pour la suite du parcours, voir notre guide <a href="/guides/etapes-construction-maison" class="text-primary underline">les étapes d'une construction</a>.</p>`,
+    },
+    {
+      h2: "Trouvez le bon terrain pour votre projet",
+      html: `<p>Vous hésitez sur un terrain ou vous cherchez encore ? Nous vous aidons à évaluer sa faisabilité et à éviter les pièges. Parlons de votre projet. Première estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Comment savoir si un terrain est constructible ?",
+      answer:
+        "En consultant le plan local d'urbanisme de la commune et en demandant un certificat d'urbanisme, qui précise la constructibilité, les règles et la desserte par les réseaux.",
+    },
+    {
+      question: "Vaut-il mieux un terrain en lotissement ou isolé ?",
+      answer:
+        "Le lotissement est viabilisé et tranquille mais plus cher et encadré. Le terrain isolé est plus libre et souvent moins cher, mais la viabilisation est à votre charge.",
+    },
+    {
+      question: "Pourquoi vérifier la nature du sol ?",
+      answer:
+        "Parce qu'elle détermine le type de fondations et donc une partie du coût. Un sol argileux impose des fondations adaptées. Une étude de sol est souvent obligatoire.",
+    },
+    {
+      question: "Quel budget prévoir pour un terrain dans le Calvados ?",
+      answer:
+        "De l'ordre de 150 €/m² dans l'arrière-pays à 250 €/m² en première couronne caennaise, davantage dans Caen et sur le littoral, plus les frais de notaire.",
+    },
+    {
+      question: "Quelles précautions avant d'acheter un terrain ?",
+      answer:
+        "Vérifier le PLU, la viabilisation, le sol, l'orientation et le voisinage, et signer avec une condition suspensive d'obtention du permis de construire.",
+    },
+  ],
+  relatedGuideSlugs: ["viabilisation-terrain", "prix-maison-neuve-calvados", "etapes-construction-maison"],
+};
+
+export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
