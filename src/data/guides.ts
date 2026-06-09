@@ -1090,7 +1090,111 @@ const G19: Guide = {
   relatedGuideSlugs: ["prix-maison-neuve-calvados", "maitre-doeuvre-ou-constructeur"],
 };
 
-export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5, G19];
+// ────────────────────────────────────────────────────────────────────────────────
+// G28 — Le permis de construire pour une maison (90/mo, KD 36)
+// ────────────────────────────────────────────────────────────────────────────────
+
+const G28: Guide = {
+  slug: "permis-de-construire-maison",
+  title: "Permis de construire pour une maison | Maison de Nacre",
+  metaDescription:
+    "Le permis de construire pour une maison : dossier, pièces, dépôt, délai d'instruction, décision et recours. Le guide complet pour réussir votre demande.",
+  h1: "Le permis de construire pour une maison : le guide complet",
+  primaryKeyword: "permis de construire maison",
+  searchVolume: 90,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Construire une maison neuve impose presque toujours un permis de construire. C'est une étape administrative incontournable, qui conditionne le démarrage du chantier. Bien la préparer évite les retards et les refus. Voici tout ce qu'il faut savoir : quand le permis est obligatoire, quelles pièces fournir, comment déposer la demande, et ce qui se passe après.",
+  sections: [
+    {
+      h2: "Qu'est-ce que le permis de construire et quand est-il obligatoire ?",
+      html: `<p>Le permis de construire est une autorisation d'urbanisme délivrée par la mairie, qui vérifie que votre projet respecte les règles locales (plan local d'urbanisme, règles de hauteur, d'implantation, d'aspect). Pour la construction d'une maison individuelle neuve, il est en principe toujours obligatoire. Les travaux de moindre ampleur relèvent, eux, d'une simple déclaration préalable. Construire sans permis expose à de lourdes sanctions, jusqu'à la démolition.</p>`,
+    },
+    {
+      h2: "Permis de construire ou déclaration préalable ?",
+      html: `<p>Tous les projets ne relèvent pas du permis. La <strong>déclaration préalable</strong> suffit pour des travaux limités (petite extension, abri, modification de façade, selon les surfaces), avec un délai d'instruction d'un mois seulement. La construction d'une maison neuve, elle, exige un <strong>permis de construire</strong>, avec un délai de deux mois. Bien identifier la bonne autorisation dès le départ évite de se tromper de procédure. Notre guide <a href="/guides/delai-permis-de-construire" class="text-primary underline">délai d'obtention d'un permis de construire</a> détaille les durées.</p>`,
+    },
+    {
+      h2: "Le dossier de demande de permis",
+      html: `<p>Le dossier de permis comprend un formulaire (Cerfa) et un ensemble de pièces qui permettent à la mairie de comprendre et d'évaluer le projet :</p>
+<ul class="list-disc pl-6 space-y-2 mt-2">
+<li>Un <strong>plan de situation</strong> du terrain, qui le localise dans la commune.</li>
+<li>Un <strong>plan de masse</strong>, qui montre l'implantation de la maison sur la parcelle, avec les réseaux.</li>
+<li>Un <strong>plan en coupe</strong> du terrain et de la construction.</li>
+<li>Les <strong>plans des façades et des toitures</strong>.</li>
+<li>Une <strong>notice</strong> décrivant le terrain et le projet.</li>
+<li>Un <strong>document graphique</strong> d'insertion (la maison dans son environnement).</li>
+<li>Des <strong>photographies</strong> situant le terrain dans le paysage proche et lointain.</li>
+</ul>
+<p class="mt-4">Un dossier complet et soigné est la clé d'une instruction rapide : la moindre pièce manquante déclenche une demande de complément et fait perdre du temps.</p>`,
+    },
+    {
+      h2: "Où et comment déposer la demande",
+      html: `<p>La demande se dépose à la mairie de la commune où se situe le terrain, en plusieurs exemplaires, ou en ligne lorsque la commune propose le dépôt dématérialisé. La mairie vous remet un récépissé indiquant la date de dépôt et le délai d'instruction. Ce récépissé est important : il fait courir le délai et sert de référence pour la suite.</p>`,
+    },
+    {
+      h2: "Le délai d'instruction",
+      html: `<p>Pour une maison individuelle, le délai d'instruction est de <strong>deux mois</strong> à compter du dépôt d'un dossier complet. Il peut être majoré d'un mois si le terrain se situe en secteur protégé (avis de l'Architecte des Bâtiments de France). Une demande de pièces complémentaires suspend ce délai. Le détail figure dans notre guide <a href="/guides/delai-permis-de-construire" class="text-primary underline">délai d'obtention d'un permis de construire</a>.</p>`,
+    },
+    {
+      h2: "La décision de la mairie",
+      html: `<p>À l'issue de l'instruction, trois réponses sont possibles : l'<strong>accord</strong>, l'<strong>accord assorti de prescriptions</strong> (des conditions à respecter), ou le <strong>refus</strong>, qui doit être motivé. En l'absence de réponse à la fin du délai, vous bénéficiez en principe d'un permis tacite. En cas de refus, vous pouvez demander à la mairie de revoir sa position, puis, si besoin, exercer un recours.</p>`,
+    },
+    {
+      h2: "Après l'obtention du permis",
+      html: `<p>Obtenir le permis ne suffit pas pour démarrer sereinement. Vous devez l'<strong>afficher sur le terrain</strong>, visible depuis la voie publique, pendant toute la durée du chantier. Cet affichage fait courir un <strong>délai de recours des tiers de deux mois</strong> : un voisin peut contester le permis. Au démarrage des travaux, vous adressez une déclaration d'ouverture de chantier à la mairie ; à la fin, une déclaration attestant l'achèvement et la conformité des travaux. La pratique prudente est d'attendre la fin du délai de recours avant de lancer les gros travaux.</p>`,
+    },
+    {
+      h2: "La durée de validité du permis",
+      html: `<p>Une fois obtenu, le permis est valable <strong>trois ans</strong>. Si les travaux ne commencent pas dans ce délai, il devient caduc. Il peut être prorogé deux fois d'un an, sous réserve d'en faire la demande avant l'échéance et que les règles d'urbanisme n'aient pas changé.</p>`,
+    },
+    {
+      h2: "Les motifs fréquents de refus et comment les éviter",
+      html: `<p>Un permis se refuse rarement par hasard : la plupart des refus tiennent à quelques causes récurrentes, toutes évitables. La première est la <strong>non-conformité au plan local d'urbanisme</strong> : hauteur, implantation, emprise au sol, distance aux limites ou aspect extérieur non respectés. La deuxième est un <strong>dossier incomplet ou imprécis</strong>, qui empêche la mairie d'évaluer le projet. La troisième concerne les <strong>règles d'aspect</strong> dans certaines zones (couleurs, matériaux, pente de toit imposés), souvent sous-estimées. La quatrième touche les <strong>secteurs protégés</strong>, où l'avis de l'Architecte des Bâtiments de France impose des contraintes spécifiques.</p>
+<p class="mt-4">La parade est simple : consulter le PLU et, en cas de doute, le service urbanisme de la mairie avant de finaliser le projet, puis monter un dossier rigoureux et conforme. C'est précisément le travail d'un maître d'œuvre ou d'un architecte, qui connaît les règles locales et conçoit le projet pour qu'il passe du premier coup. Un refus, c'est plusieurs mois perdus : autant mettre toutes les chances de son côté dès le dépôt.</p>`,
+    },
+    {
+      h2: "Qui peut monter le dossier de permis ?",
+      html: `<p>Vous pouvez préparer le dossier vous-même, mais c'est un exercice technique où une erreur coûte des semaines. Le recours à un <strong>architecte est obligatoire</strong> au-delà d'un certain seuil de surface de plancher pour les particuliers. En dessous, un <strong>maître d'œuvre</strong> peut monter et suivre le dossier dans le cadre de son accompagnement, ce qui sécurise la demande et évite les allers-retours avec la mairie. C'est ce que nous faisons chez Maison de Nacre, comme le détaille notre guide <a href="/guides/etapes-construction-maison" class="text-primary underline">les étapes d'une construction</a>.</p>`,
+    },
+    {
+      h2: "Sécurisez votre permis de construire",
+      html: `<p>Un dossier bien préparé, c'est un permis obtenu sans accroc et des semaines gagnées. Maison de Nacre monte votre dossier, suit l'instruction et intègre cette étape dans votre projet. Parlons-en.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Le permis de construire est-il obligatoire pour une maison ?",
+      answer:
+        "Oui, la construction d'une maison individuelle neuve nécessite en principe toujours un permis de construire. Les petits travaux relèvent d'une déclaration préalable.",
+    },
+    {
+      question: "Quelles pièces composent le dossier de permis ?",
+      answer:
+        "Le formulaire Cerfa, un plan de situation, un plan de masse, un plan en coupe, les plans de façades et toitures, une notice, un document d'insertion et des photographies.",
+    },
+    {
+      question: "Combien de temps pour obtenir un permis de construire ?",
+      answer:
+        "Deux mois d'instruction pour une maison individuelle, à compter du dépôt d'un dossier complet, parfois un mois de plus en secteur protégé.",
+    },
+    {
+      question: "Que faire en cas de refus de permis ?",
+      answer:
+        "Vous pouvez demander à la mairie de revoir sa décision, corriger le projet, puis exercer un recours si nécessaire. Un dossier bien monté limite ce risque.",
+    },
+    {
+      question: "Faut-il un architecte pour le permis ?",
+      answer:
+        "Le recours à un architecte est obligatoire au-delà d'un certain seuil de surface. En dessous, un maître d'œuvre peut monter le dossier.",
+    },
+  ],
+  relatedGuideSlugs: ["delai-permis-de-construire", "etapes-construction-maison"],
+};
+
+export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
