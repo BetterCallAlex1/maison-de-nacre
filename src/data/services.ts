@@ -181,7 +181,89 @@ const S1: Service = {
   relatedGuideSlugs: ["maitre-doeuvre-ou-constructeur", "etapes-construction-maison", "prix-maison-neuve-calvados"],
 };
 
-export const SERVICES: Service[] = [S2, S1];
+// ────────────────────────────────────────────────────────────────────────────────
+// S4 — Construire une maison RE2020 (service, 110/mo, KD 13)
+// ────────────────────────────────────────────────────────────────────────────────
+
+const S4: Service = {
+  slug: "maison-re2020",
+  title: "Construire une maison RE2020 | Maison de Nacre",
+  metaDescription:
+    "Construire une maison neuve RE2020 dans le Calvados : confort, basse consommation, conception bioclimatique. Maître d'œuvre, de la conception aux clés.",
+  h1: "Construire une maison RE2020 dans le Calvados",
+  primaryKeyword: "maison RE2020",
+  searchVolume: 110,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Toutes les maisons neuves doivent aujourd'hui respecter la RE2020, la réglementation environnementale en vigueur. Mais entre cocher la case réglementaire et concevoir une maison réellement performante et agréable à vivre, il y a un monde. Notre rôle de maître d'œuvre : intégrer la RE2020 dès la première esquisse, pour une maison sobre, confortable et durable, dans la région de Caen et tout le Calvados.",
+  sections: [
+    {
+      h2: "La RE2020 en bref",
+      html: `<p>La RE2020 est la norme qui encadre la performance énergétique et environnementale des constructions neuves. Elle vise trois objectifs : réduire la consommation d'énergie, limiter l'empreinte carbone des matériaux et de l'usage, et garantir le confort, notamment en été face aux fortes chaleurs. Concrètement, elle impose une isolation renforcée, une bonne étanchéité à l'air, des énergies décarbonées et une conception pensée pour le climat. Pour le détail technique de la norme, voir notre guide <a href="/guides/re2020" class="text-primary underline">la RE2020 expliquée simplement</a>.</p>`,
+    },
+    {
+      h2: "Ce que la RE2020 change pour votre maison",
+      html: `<p>Une maison RE2020 bien conçue repose sur plusieurs piliers. La <strong>conception bioclimatique</strong> d'abord : l'orientation, les ouvertures et les protections solaires sont pensées pour capter la chaleur l'hiver et s'en protéger l'été. L'<strong>isolation et l'étanchéité</strong> ensuite, nettement renforcées, pour limiter les déperditions. Le <strong>chauffage décarboné</strong>, le plus souvent une pompe à chaleur, qui remplace les énergies fossiles. Et des <strong>matériaux à plus faible empreinte carbone</strong>, choisis pour leur impact sur tout le cycle de vie. Ces exigences se travaillent dès le plan, pas après coup.</p>`,
+    },
+    {
+      h2: "Les avantages d'une maison RE2020",
+      html: `<p>Au-delà de l'obligation, une maison RE2020 apporte des bénéfices concrets. Le premier est le <strong>confort</strong> : une maison bien isolée et bien orientée reste tempérée en hiver comme en été, sans surchauffe estivale. Le deuxième est l'<strong>économie</strong> : des factures d'énergie nettement réduites par rapport à une maison ancienne, qui compensent à l'usage le surcoût de construction. Le troisième est la <strong>valeur</strong> : une maison performante et bien classée au DPE se revend mieux. Le dernier est l'<strong>empreinte réduite</strong> : moins d'énergie consommée et des matériaux plus vertueux.</p>`,
+    },
+    {
+      h2: "Le surcoût RE2020 et son retour sur investissement",
+      html: `<p>Soyons transparents : la RE2020 ajoute de l'ordre de 5 à 10 % au coût de construction par rapport aux anciennes normes, du fait de l'isolation, de l'étanchéité et des équipements. Mais ce surcoût se rattrape à l'usage, par des factures d'énergie bien plus basses, et par une maison plus confortable et mieux valorisée. C'est un investissement, pas une dépense perdue. Pour situer ce surcoût dans le budget global, voir notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a>.</p>`,
+    },
+    {
+      h2: "Le confort d'été, la vraie nouveauté de la RE2020",
+      html: `<p>C'est l'apport le plus concret de la norme, et celui dont on parle le moins. Là où les réglementations précédentes se concentraient sur le chauffage en hiver, la RE2020 introduit une exigence de confort en été, mesurée en degrés-heures d'inconfort. Autrement dit, votre maison doit rester vivable pendant les épisodes de chaleur, sans recourir systématiquement à la climatisation. Avec des étés de plus en plus chauds, y compris en Normandie, c'est un vrai gain de qualité de vie.</p>
+<p class="mt-4">Ce confort d'été se gagne à la conception, pas avec un climatiseur ajouté après coup. Il repose sur l'orientation de la maison, des protections solaires bien placées (débords de toit, brise-soleil, volets), une inertie suffisante pour amortir les pics de chaleur, et une ventilation pensée pour rafraîchir la nuit. Ce sont exactement les arbitrages que nous intégrons dès les premiers plans, en tenant compte de votre terrain et de son exposition. Une maison bien conçue de ce point de vue reste agréable en pleine canicule, sans surcoût de fonctionnement.</p>`,
+    },
+    {
+      h2: "Notre approche : la RE2020 intégrée dès la conception",
+      html: `<p>C'est là que se joue la différence entre une maison qui respecte tout juste la norme et une maison réellement performante. En tant que maître d'œuvre, nous intégrons les exigences RE2020 dès la conception avec l'architecte : implantation sur le terrain, orientation, dimensionnement des ouvertures, choix de l'isolation et des équipements. Plutôt que de subir la réglementation, nous nous en servons pour dessiner une maison cohérente, confortable et économe, adaptée à votre terrain et à votre mode de vie.</p>`,
+    },
+    {
+      h2: "RE2020 et sur-mesure clé en main",
+      html: `<p>Performance ne rime pas avec maison standardisée. Notre offre conjugue la RE2020, le sur-mesure et le clé en main : une maison conçue sur-mesure avec un architecte, conforme et performante, et gérée de bout en bout jusqu'à la remise des clés. Vous bénéficiez d'une construction durable sans renoncer à la liberté de plan ni à la simplicité d'un interlocuteur unique. Découvrez notre <a href="/services/maison-cle-en-main" class="text-primary underline">accompagnement clé en main</a>.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet RE2020",
+      html: `<p>Vous voulez une maison neuve performante, confortable et qui vous ressemble ? Confiez-nous votre projet. Première estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Toutes les maisons neuves doivent-elles être RE2020 ?",
+      answer:
+        "Oui. La RE2020 s'applique à toutes les constructions neuves de maison individuelle. La question n'est donc pas de la respecter ou non, mais de bien la concevoir.",
+    },
+    {
+      question: "Quel est le surcoût d'une maison RE2020 ?",
+      answer:
+        "De l'ordre de 5 à 10 % du coût de construction, compensé à l'usage par des factures d'énergie nettement plus basses.",
+    },
+    {
+      question: "Quel chauffage pour une maison RE2020 ?",
+      answer:
+        "Le plus souvent une pompe à chaleur, qui combine performance et énergie décarbonée. Le choix se fait selon la maison et le terrain.",
+    },
+    {
+      question: "Une maison RE2020 est-elle plus confortable ?",
+      answer:
+        "Oui, c'est l'un de ses objectifs : isolation renforcée et conception bioclimatique apportent un confort stable en hiver comme en été, sans surchauffe estivale.",
+    },
+    {
+      question: "Peut-on personnaliser une maison RE2020 ?",
+      answer:
+        "Totalement. La RE2020 encadre la performance, pas le style. Avec un maître d'œuvre, votre maison reste 100 % sur-mesure.",
+    },
+  ],
+  relatedGuideSlugs: ["prix-maison-neuve-calvados", "maitre-doeuvre-ou-constructeur", "etapes-construction-maison"],
+};
+
+export const SERVICES: Service[] = [S2, S1, S4];
 
 export const SERVICES_BY_SLUG: Record<string, Service> = Object.fromEntries(
   SERVICES.map((s) => [s.slug, s]),
