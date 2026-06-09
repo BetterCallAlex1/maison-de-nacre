@@ -149,10 +149,120 @@ const G11: Guide = {
 };
 
 // ────────────────────────────────────────────────────────────────────────────────
+// G6 — Maître d'œuvre ou constructeur (comparatif neutre, KD 7)
+// ────────────────────────────────────────────────────────────────────────────────
+
+const G6: Guide = {
+  slug: "maitre-doeuvre-ou-constructeur",
+  title: "Maître d'œuvre ou constructeur : que choisir | Maison de Nacre",
+  metaDescription:
+    "Différences réelles entre maître d'œuvre et constructeur en 2026 : prix, garanties, liberté de plan, choix des artisans. Comparatif sans langue de bois.",
+  h1: "Maître d'œuvre ou constructeur : le vrai comparatif",
+  primaryKeyword: "maître d'œuvre ou constructeur",
+  searchVolume: 170,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Quand on décide de faire construire, une question revient vite : faut-il passer par un maître d'œuvre ou par un constructeur ? Les deux mènent à une maison neuve, mais ce sont deux métiers différents, avec deux façons de fixer le prix, deux niveaux de liberté et deux répartitions du risque. Voici un comparatif sans langue de bois, y compris les cas où le constructeur reste le bon choix.",
+  sections: [
+    {
+      h2: "Les deux modèles en une phrase",
+      html: `<p>Le <strong>maître d'œuvre</strong> conçoit votre maison et assemble pour vous l'équipe qui va la construire. Il dessine le projet (ou travaille avec un architecte), met les artisans en concurrence, puis pilote le chantier. Vous restez maître d'ouvrage : les contrats sont à votre nom, et le maître d'œuvre est rémunéré par des honoraires affichés, sans marge sur les travaux.</p>
+<p>Le <strong>constructeur</strong> vous vend une maison. Il propose le plus souvent des modèles, intègre sa marge dans un prix global, et signe avec vous un contrat unique qui l'engage sur un prix et un délai. Vous achetez un produit fini plutôt que vous ne pilotez un projet.</p>
+<p>Un mot au passage sur l'architecte, souvent confondu avec le maître d'œuvre : l'architecte conçoit les plans, le maître d'œuvre conçoit <strong>et</strong> coordonne l'exécution jusqu'à la livraison. Beaucoup de maîtres d'œuvre travaillent main dans la main avec un architecte, ce qui vous donne le meilleur des deux.</p>`,
+    },
+    {
+      h2: "Qu'est-ce qu'un maître d'œuvre, concrètement ?",
+      html: `<p>Avant de comparer, posons le métier. Un maître d'œuvre est le chef d'orchestre de votre construction. Il traduit votre projet en plans, chiffre le coût réel de chaque corps de métier, consulte plusieurs artisans pour chaque lot, puis suit le chantier semaine après semaine : il vérifie la qualité, fait respecter le planning, valide les situations de paiement et règle les imprévus à votre place.</p>
+<p>Concrètement, il porte trois casquettes. Concepteur : il dessine la maison, seul ou avec un architecte. Acheteur pour votre compte : il met les entreprises en concurrence et négocie, sans toucher de marge sur leurs devis. Pilote : il coordonne les interventions dans le bon ordre et contrôle l'exécution jusqu'à la réception. Vous gardez la décision sur tout, lui gère l'opérationnel et défend vos intérêts face aux entreprises.</p>
+<p>C'est cette position d'intermédiaire transparent, payé par vous et non par les artisans, qui le distingue fondamentalement du constructeur, lequel se rémunère sur la vente de la maison elle-même.</p>`,
+    },
+    {
+      h2: "Le comparatif sur 8 critères",
+      html: `<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr><th class="text-left py-2 pr-4">Critère</th><th class="text-left py-2 pr-4">Maître d'œuvre</th><th class="text-left py-2">Constructeur</th></tr></thead><tbody>
+<tr class="border-t"><td class="py-2 pr-4">Rémunération</td><td class="py-2 pr-4">Honoraires affichés (souvent 12 % du coût)</td><td class="py-2">Marge intégrée au prix global, peu visible</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Plan</td><td class="py-2 pr-4">Sur-mesure, libre</td><td class="py-2">Souvent un modèle du catalogue</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Choix des artisans</td><td class="py-2 pr-4">Vous choisissez avec lui</td><td class="py-2">Imposés par le constructeur</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Garantie décennale</td><td class="py-2 pr-4">Oui (chaque entreprise)</td><td class="py-2">Oui (chaque entreprise)</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Assurance dommage-ouvrage</td><td class="py-2 pr-4">À votre charge</td><td class="py-2">À votre charge</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Garantie de livraison à prix et délai</td><td class="py-2 pr-4">Non automatique</td><td class="py-2">Oui, incluse au contrat</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Gestion des avenants</td><td class="py-2 pr-4">Transparente, au cas par cas</td><td class="py-2">Cadrée par le contrat</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Liberté des matériaux</td><td class="py-2 pr-4">Totale</td><td class="py-2">Limitée aux gammes proposées</td></tr>
+</tbody></table></div>
+<p class="mt-4">Aucun modèle n'est « meilleur » dans l'absolu. Tout dépend de ce que vous cherchez : maîtrise et sur-mesure d'un côté, sécurité contractuelle et simplicité de l'autre.</p>`,
+    },
+    {
+      h2: "Côté prix : ce que cache la marge intégrée",
+      html: `<p>C'est le point le plus mal compris. Un constructeur n'affiche pas sa marge : elle est fondue dans le prix global de la maison. Selon les acteurs, elle représente souvent 15 à 25 % du coût réel des travaux. Vous payez un prix « tout compris », mais vous ne voyez ni le coût réel de chaque lot, ni la part qui revient au constructeur.</p>
+<p>Un maître d'œuvre, lui, facture des honoraires affichés. Chez Maison de Nacre, c'est 12 % du coût de construction, et vous voyez les devis réels de chaque artisan. À projet équivalent, des honoraires transparents de 12 % pèsent généralement moins lourd qu'une marge opaque de 15 à 25 %.</p>
+<p>Une nuance honnête : une partie de la marge du constructeur paie sa garantie de livraison (voir plus bas). Vous ne comparez donc pas seulement deux prix, mais deux niveaux de service. Pour les chiffres détaillés d'un projet dans le département, voir notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a>.</p>`,
+    },
+    {
+      h2: "Côté garanties : ce que vous gardez dans les deux cas",
+      html: `<p>Bonne nouvelle : les protections essentielles existent quel que soit le modèle, parce qu'elles sont attachées aux entreprises qui interviennent, pas au mode de contrat.</p>
+<p>Dans les deux cas, vous bénéficiez de la <strong>garantie décennale</strong> (dix ans sur les éléments structurels, portée par chaque entreprise), de la <strong>garantie de parfait achèvement</strong> (un an) et de la <strong>garantie biennale</strong> (deux ans sur les équipements). L'<strong>assurance dommage-ouvrage</strong>, obligatoire, est à votre charge dans les deux modèles : elle avance le financement des réparations couvertes par la décennale.</p>
+<p>La vraie différence se joue sur la <strong>garantie de livraison à prix et délai convenus</strong>. Le constructeur l'inclut dans son contrat : si le chantier dérape, un assureur prend le relais pour livrer la maison au prix prévu. C'est un vrai filet de sécurité, et c'est l'argument le plus solide en faveur du constructeur. Avec un maître d'œuvre, vous signez des contrats séparés avec chaque artisan : pas de garantie de livraison unique, mais un pilotage rapproché qui réduit le risque, et une transparence totale sur chaque poste.</p>`,
+    },
+    {
+      h2: "Côté liberté : pourquoi le sur-mesure passe par le maître d'œuvre",
+      html: `<p>Si vous voulez une maison qui vous ressemble plutôt qu'un modèle, le maître d'œuvre est la voie naturelle. Le plan part d'une page blanche, pensé pour votre terrain, votre mode de vie et votre budget. Vous choisissez vos artisans, vos matériaux, vos équipements, sans être limité à un catalogue ou à des partenaires imposés.</p>
+<p>Un constructeur peut personnaliser à la marge, mais sa logique reste celle du modèle reproductible : c'est ce qui lui permet de tenir ses prix et ses délais. Le sur-mesure, lui, demande la souplesse d'un projet piloté lot par lot.</p>`,
+    },
+    {
+      h2: "Les cas où le constructeur reste pertinent",
+      html: `<p>Jouons franc-jeu : le constructeur est parfois le meilleur choix. Si votre terrain est dans un lotissement qui impose un modèle ou un partenaire, si vous êtes pressé et que la simplicité d'un interlocuteur unique prime, ou si votre budget est très serré (sous 200 000 €) et que vous acceptez un modèle standard, le constructeur fait le travail. Sa garantie de livraison rassure aussi les personnes qui veulent zéro prise de risque sur le prix final.</p>
+<p>À l'inverse, dès que vous avez un terrain libre, une envie de plan unique et le souhait de comprendre où va chaque euro, le maître d'œuvre prend l'avantage.</p>`,
+    },
+    {
+      h2: "Comment choisir : 4 questions à se poser",
+      html: `<ol class="list-decimal pl-6 space-y-2">
+<li><strong>Votre terrain est-il libre ou contraint ?</strong> Un terrain libre ouvre le sur-mesure (maître d'œuvre). Un lotissement à modèle imposé oriente vers le constructeur.</li>
+<li><strong>Voulez-vous un plan unique ou un modèle vous convient-il ?</strong> Plan unique : maître d'œuvre. Modèle éprouvé : constructeur.</li>
+<li><strong>Quelle est votre tolérance à la marge opaque ?</strong> Si voir le coût réel de chaque lot compte pour vous, le maître d'œuvre est plus transparent.</li>
+<li><strong>Privilégiez-vous la sécurité contractuelle ou la maîtrise ?</strong> La garantie de livraison du constructeur sécurise le prix. Le maître d'œuvre offre maîtrise et transparence, avec un pilotage rapproché.</li>
+</ol>
+<p class="mt-4">Si vous hésitez encore entre construire et acheter dans l'ancien avant même cette question, notre guide <a href="/guides/construire-ou-acheter-maison" class="text-primary underline">construire neuf ou acheter</a> vous aide à trancher en amont.</p>`,
+    },
+    {
+      h2: "Le modèle Maison de Nacre",
+      html: `<p>Maison de Nacre est un accompagnement en maîtrise d'œuvre dans la région de Caen : conception sur-mesure avec un architecte, mise en concurrence des artisans, gestion complète du chantier jusqu'à la remise des clés, et des honoraires clairs de 12 % du coût de construction. Notre parti pris : un projet unique, des comptes transparents, et un interlocuteur qui défend vos intérêts du premier plan à la dernière clé. Pour le détail, voir notre <a href="/services/maitre-d-oeuvre-construction-maison" class="text-primary underline">accompagnement en maîtrise d'œuvre</a>.</p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Quelle est la différence juridique entre un maître d'œuvre et un constructeur ?",
+      answer:
+        "Le maître d'œuvre est un prestataire que vous mandatez : vous restez maître d'ouvrage et signez les contrats avec les artisans. Le constructeur vous vend une maison via un contrat unique qui l'engage sur un prix et un délai, avec une garantie de livraison incluse.",
+    },
+    {
+      question: "Le maître d'œuvre est-il moins cher ?",
+      answer:
+        "Souvent, oui, à projet équivalent : des honoraires affichés de 12 % pèsent généralement moins qu'une marge intégrée de 15 à 25 %. Mais le constructeur inclut une garantie de livraison que le maître d'œuvre ne fournit pas automatiquement.",
+    },
+    {
+      question: "Quelles garanties offre un maître d'œuvre ?",
+      answer:
+        "Vous conservez la garantie décennale, la garantie de parfait achèvement, la garantie biennale et l'assurance dommage-ouvrage, car elles sont portées par les entreprises et par vous, maître d'ouvrage. La garantie de livraison à prix convenu, elle, reste propre au modèle du constructeur.",
+    },
+    {
+      question: "Peut-on choisir ses artisans avec un maître d'œuvre ?",
+      answer:
+        "Oui. C'est l'un de ses atouts : il met les artisans en concurrence et vous choisissez ensemble, sans partenaires imposés ni catalogue fermé.",
+    },
+    {
+      question: "Combien coûtent les honoraires d'un maître d'œuvre dans le Calvados ?",
+      answer:
+        "Ils tournent généralement autour de 10 à 12 % du coût de construction. Chez Maison de Nacre, c'est 12 % tout compris, sans marge cachée sur les travaux.",
+    },
+  ],
+  relatedGuideSlugs: ["prix-maison-neuve-calvados", "construire-ou-acheter-maison"],
+};
+
+// ────────────────────────────────────────────────────────────────────────────────
 // Registre
 // ────────────────────────────────────────────────────────────────────────────────
 
-export const GUIDES: Guide[] = [G11];
+export const GUIDES: Guide[] = [G11, G6];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
