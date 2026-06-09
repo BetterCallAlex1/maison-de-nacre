@@ -92,7 +92,96 @@ const S2: Service = {
   relatedGuideSlugs: ["prix-maison-neuve-calvados", "maitre-doeuvre-ou-constructeur", "etapes-construction-maison"],
 };
 
-export const SERVICES: Service[] = [S2];
+// ────────────────────────────────────────────────────────────────────────────────
+// S1 — Maître d'œuvre construction maison (service générique, 140/mo, KD 17)
+// ────────────────────────────────────────────────────────────────────────────────
+
+const S1: Service = {
+  slug: "maitre-doeuvre-construction-maison",
+  title: "Maître d'œuvre construction maison | Maison de Nacre",
+  metaDescription:
+    "Maître d'œuvre pour construire votre maison dans le Calvados : conception sur-mesure, artisans coordonnés, chantier piloté. Honoraires 12 %, de A à Z.",
+  h1: "Maître d'œuvre pour construire votre maison",
+  primaryKeyword: "maître d'œuvre construction maison",
+  searchVolume: 140,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Vous voulez faire construire une maison qui vous ressemble, sans gérer seul les plans, les artisans et le chantier ? C'est exactement notre métier. En tant que maître d'œuvre, nous concevons votre projet, coordonnons les corps de métier et pilotons la construction de bout en bout, pour vous livrer une maison sur-mesure dans les meilleures conditions.",
+  sections: [
+    {
+      h2: "Le maître d'œuvre, votre chef d'orchestre",
+      html: `<p>Le maître d'œuvre est l'intermédiaire qui transforme votre idée en maison terminée. Il conçoit les plans (seul ou avec un architecte), chiffre le coût réel de chaque corps de métier, consulte et met en concurrence les artisans, puis suit le chantier semaine après semaine : qualité, planning, paiements, imprévus. Vous restez décideur et maître d'ouvrage ; il gère l'opérationnel et défend vos intérêts face aux entreprises. Pour bien comprendre ce métier face aux autres modèles, voir notre comparatif <a href="/guides/maitre-doeuvre-ou-constructeur" class="text-primary underline">maître d'œuvre ou constructeur</a>.</p>`,
+    },
+    {
+      h2: "Notre accompagnement, de A à Z",
+      html: `<p>Nous prenons en charge l'intégralité du parcours :</p>
+<ol class="list-decimal pl-6 space-y-2">
+<li><strong>Conception sur-mesure</strong> avec un architecte, pensée pour votre terrain, votre mode de vie et votre budget, en RE2020.</li>
+<li><strong>Montage du permis de construire</strong> et suivi de l'instruction.</li>
+<li><strong>Consultation des artisans</strong>, mise en concurrence et présentation de devis transparents.</li>
+<li><strong>Coordination et suivi du chantier</strong>, de la première pierre aux finitions.</li>
+<li><strong>Réception et remise des clés</strong>, avec levée des éventuelles réserves.</li>
+</ol>
+<p class="mt-4">Pour visualiser l'ensemble du parcours, voir notre guide <a href="/guides/etapes-construction-maison" class="text-primary underline">les étapes d'une construction</a>.</p>`,
+    },
+    {
+      h2: "Pourquoi choisir un maître d'œuvre",
+      html: `<p>Trois raisons principales. D'abord, le <strong>sur-mesure</strong> : votre maison part d'une page blanche, sans modèle imposé ni catalogue. Ensuite, la <strong>transparence</strong> : vous voyez les devis réels de chaque artisan, et notre rémunération est affichée, sans marge cachée sur les travaux. Enfin, la <strong>sérénité</strong> : un interlocuteur unique pilote tout, et vous évite de courir après les entreprises et les administrations. Vous gardez le contrôle des décisions, sans le poids de la gestion.</p>`,
+    },
+    {
+      h2: "Le coût d'un maître d'œuvre",
+      html: `<p>Notre rémunération est claire : <strong>12 % du coût de construction, tout compris, sans marge sur les matériaux ou la main-d'œuvre</strong>. À projet équivalent, des honoraires affichés pèsent généralement moins lourd qu'une marge globale opaque. Pour situer le budget complet d'un projet, voir notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a>.</p>`,
+    },
+    {
+      h2: "Dans quelle région nous intervenons",
+      html: `<p>Nous accompagnons les projets de construction dans le Calvados et toute la région de Caen, du littoral de la Côte de Nacre à l'arrière-pays. Cette connaissance fine du territoire, des communes et des contraintes locales fait partie de notre valeur ajoutée. Retrouvez les communes où nous intervenons sur notre page <a href="/construire-dans-le-calvados" class="text-primary underline">faire construire dans le Calvados</a>.</p>`,
+    },
+    {
+      h2: "Quand faire appel à un maître d'œuvre",
+      html: `<p>Le maître d'œuvre est particulièrement pertinent dans plusieurs situations. Si vous avez un <strong>terrain libre</strong> (hors lotissement à modèle imposé) et que vous voulez une maison vraiment sur-mesure, c'est la voie naturelle. Si vous tenez à <strong>comprendre où va chaque euro</strong> plutôt que de payer un prix global opaque, sa transparence fait la différence. Si vous souhaitez <strong>choisir vos artisans</strong> et vos matériaux sans catalogue fermé, il vous en laisse la liberté. Et si vous n'avez ni le temps ni l'envie de coordonner vous-même architecte, entreprises et administrations, il vous décharge de toute la gestion tout en vous laissant la décision. À l'inverse, pour un budget très serré sur un modèle standard, d'autres formules peuvent convenir : nous le disons franchement dans notre <a href="/guides/maitre-doeuvre-ou-constructeur" class="text-primary underline">comparatif des modèles</a>.</p>`,
+    },
+    {
+      h2: "Pourquoi Maison de Nacre",
+      html: `<p>Notre engagement tient en trois mots : sur-mesure, transparence, accompagnement. Un projet unique qui vous ressemble, des comptes clairs du premier devis à la facture finale, et un interlocuteur présent à chaque étape. Que vous soyez primo-accédant, famille en quête d'espace ou porteur d'un projet de résidence secondaire, nous adaptons notre accompagnement à votre situation et à votre budget.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous avez un projet de construction et vous cherchez un maître d'œuvre de confiance ? Confiez-nous votre maison. Première estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Que fait un maître d'œuvre pour la construction d'une maison ?",
+      answer:
+        "Il conçoit les plans, consulte et coordonne les artisans, pilote le chantier et vous accompagne jusqu'à la remise des clés. Vous décidez, il gère l'opérationnel.",
+    },
+    {
+      question: "Combien coûte un maître d'œuvre ?",
+      answer:
+        "Généralement autour de 10 à 12 % du coût de construction. Chez Maison de Nacre, c'est 12 % tout compris, sans marge cachée sur les travaux.",
+    },
+    {
+      question: "Quelle différence avec un constructeur ?",
+      answer:
+        "Le maître d'œuvre assemble pour vous une équipe sur-mesure et facture des honoraires affichés. Le constructeur vous vend une maison avec une marge intégrée et des modèles plus standardisés. Notre comparatif détaille tout cela.",
+    },
+    {
+      question: "Peut-on choisir ses artisans avec un maître d'œuvre ?",
+      answer:
+        "Oui. Nous mettons les artisans en concurrence et vous choisissez ensemble, sans partenaires imposés.",
+    },
+    {
+      question: "Le maître d'œuvre s'occupe-t-il du permis de construire ?",
+      answer:
+        "Oui. Nous montons le dossier de permis et suivons son instruction, dans le cadre de notre accompagnement complet.",
+    },
+  ],
+  relatedGuideSlugs: ["maitre-doeuvre-ou-constructeur", "etapes-construction-maison", "prix-maison-neuve-calvados"],
+};
+
+export const SERVICES: Service[] = [S2, S1];
 
 export const SERVICES_BY_SLUG: Record<string, Service> = Object.fromEntries(
   SERVICES.map((s) => [s.slug, s]),
