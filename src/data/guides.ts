@@ -906,7 +906,97 @@ const G14: Guide = {
   relatedGuideSlugs: ["prix-maison-neuve-calvados", "prix-construction-maison-m2", "viabilisation-terrain"],
 };
 
-export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14];
+// ────────────────────────────────────────────────────────────────────────────────
+// G5 — Combien coûte un maître d'œuvre (110/mo, KD 20)
+// ────────────────────────────────────────────────────────────────────────────────
+
+const G5: Guide = {
+  slug: "cout-maitre-doeuvre",
+  title: "Combien coûte un maître d'œuvre ? | Maison de Nacre",
+  metaDescription:
+    "Combien coûte un maître d'œuvre pour construire sa maison ? Honoraires, fourchettes, ce qu'ils comprennent et pourquoi ils peuvent vous faire économiser.",
+  h1: "Combien coûte un maître d'œuvre ?",
+  primaryKeyword: "coût maître d'œuvre",
+  searchVolume: 110,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Faire appel à un maître d'œuvre a un coût, mais celui-ci est souvent mal compris, et parfois confondu avec un surcoût alors qu'il peut au contraire vous faire économiser. Voici comment se calcule sa rémunération, les fourchettes à connaître, ce qu'elles comprennent, et comment situer ce coût face aux autres façons de faire construire.",
+  sections: [
+    {
+      h2: "Comment se calcule le coût d'un maître d'œuvre",
+      html: `<p>La rémunération d'un maître d'œuvre se calcule en général en <strong>pourcentage du coût des travaux</strong>, c'est-à-dire du montant total de la construction hors terrain. Ce pourcentage rémunère son travail de conception, de consultation des artisans et de suivi du chantier. Il ne s'agit pas d'une marge sur les matériaux ou la main-d'œuvre : le maître d'œuvre ne se paie pas sur le dos des artisans, mais par des honoraires affichés, payés par vous, le maître d'ouvrage.</p>`,
+    },
+    {
+      h2: "Les fourchettes : de la mission partielle à la mission complète",
+      html: `<p>Le pourcentage varie selon l'étendue de la mission. Pour une <strong>mission complète</strong>, qui couvre la conception, la consultation des artisans et le suivi du chantier jusqu'à la réception, les honoraires se situent le plus souvent entre <strong>8 et 15 % du coût des travaux</strong>. Pour une mission partielle (par exemple la seule conception, ou le seul suivi), le pourcentage est plus faible, mais vous reprenez à votre charge les tâches non couvertes. Plus la mission est complète, plus le pourcentage est élevé, mais plus vous êtes déchargé et accompagné.</p>`,
+    },
+    {
+      h2: "Ce que comprend la rémunération du maître d'œuvre",
+      html: `<p>Sur une mission complète, les honoraires couvrent un travail dense et continu : la conception des plans (seul ou avec un architecte), le chiffrage du coût réel de chaque lot, la consultation et la mise en concurrence des artisans, le montage du dossier de permis, la coordination du chantier semaine après semaine, le contrôle de la qualité et des délais, la gestion des imprévus, et l'accompagnement jusqu'à la réception. C'est un accompagnement de bout en bout, pas une simple prestation ponctuelle.</p>`,
+    },
+    {
+      h2: "Mission complète ou partielle : ce que vous payez",
+      html: `<p>Le coût dépend directement de ce que vous confiez au maître d'œuvre. Deux grandes options existent. La <strong>mission complète</strong> couvre tout, de la conception jusqu'à la réception du chantier : c'est l'option la plus chère en pourcentage, mais celle qui vous décharge entièrement et sécurise le projet de bout en bout. La <strong>mission partielle</strong> ne couvre qu'une partie du parcours, par exemple la seule conception des plans, ou le seul suivi de chantier : le pourcentage est plus faible, mais vous reprenez à votre charge les tâches non couvertes, avec le temps et les risques que cela suppose.</p>
+<p class="mt-4">Pour un particulier qui n'a ni le temps ni l'expérience de piloter un chantier, la mission complète est presque toujours le meilleur calcul : le surcoût apparent par rapport à une mission partielle est compensé par la tranquillité, la mise en concurrence des artisans et l'absence de mauvaises surprises. C'est le format que nous privilégions chez Maison de Nacre, parce que c'est là que l'accompagnement apporte le plus de valeur. Pour visualiser tout ce qu'il recouvre, voir notre guide <a href="/guides/etapes-construction-maison" class="text-primary underline">les étapes d'une construction</a>.</p>`,
+    },
+    {
+      h2: "Honoraires du maître d'œuvre ou marge du constructeur",
+      html: `<p>C'est la comparaison à comprendre pour juger le coût. Un maître d'œuvre facture des honoraires affichés, et vous voyez les devis réels des artisans. Un autre modèle, celui où l'on vous vend une maison à prix global, intègre une marge non visible, souvent de 15 à 25 % du coût réel des travaux. Dans ce cas, vous ne payez pas « moins cher » parce qu'il n'y a pas d'honoraires affichés : la rémunération est simplement fondue dans le prix. À projet équivalent, des honoraires transparents pèsent souvent moins lourd qu'une marge opaque. Notre comparatif <a href="/guides/maitre-doeuvre-ou-constructeur" class="text-primary underline">maître d'œuvre ou constructeur</a> détaille cette différence.</p>`,
+    },
+    {
+      h2: "Un surcoût ou une économie ?",
+      html: `<p>Beaucoup voient les honoraires comme une dépense en plus. C'est une lecture incomplète. Le maître d'œuvre met les artisans en concurrence pour votre compte et négocie les devis : cette mise en concurrence permet souvent d'obtenir des prix plus justes que ceux qu'un particulier seul aurait obtenus. L'économie réalisée sur les travaux peut compenser tout ou partie des honoraires. À cela s'ajoute la valeur d'un chantier bien piloté, sans dépassement ni malfaçon, qui évite des surcoûts cachés. Le coût d'un maître d'œuvre doit donc se juger au regard de ce qu'il fait économiser et sécuriser, pas seulement de la ligne d'honoraires.</p>`,
+    },
+    {
+      h2: "Exemple chiffré",
+      html: `<p>Prenons une maison de 120 m² dont le coût de construction (les travaux, hors terrain) s'élève à 300 000 €. Des honoraires de maîtrise d'œuvre à 12 % représentent <strong>36 000 €</strong>. Pour ce montant, vous bénéficiez de la conception sur-mesure, de la mise en concurrence des artisans, du suivi complet du chantier et de l'accompagnement jusqu'aux clés. Rapporté à l'ampleur d'un projet de construction et aux économies réalisées sur les devis, ce montant prend tout son sens. Pour situer ce poste dans le budget global, voir notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a>.</p>`,
+    },
+    {
+      h2: "Maître d'œuvre ou architecte : quel coût ?",
+      html: `<p>Les honoraires d'un architecte se calculent aussi en pourcentage du coût des travaux, dans des fourchettes comparables. La différence tient au périmètre : un architecte est avant tout concepteur, tandis qu'un maître d'œuvre conçoit et coordonne l'exécution jusqu'à la livraison. Pour un projet clé en main, le maître d'œuvre couvre un champ plus large, ce qui explique que sa mission complète englobe le suivi de chantier.</p>`,
+    },
+    {
+      h2: "Notre tarif chez Maison de Nacre",
+      html: `<p>Nous appliquons un tarif clair et unique : <strong>12 % du coût de construction, tout compris, sans marge cachée sur les matériaux ou la main-d'œuvre</strong>. Vous savez exactement combien coûte notre accompagnement et ce qu'il couvre, du premier plan à la remise des clés. Pour le détail de notre prestation, voir notre <a href="/services/maitre-doeuvre-construction-maison" class="text-primary underline">accompagnement en maîtrise d'œuvre</a>.</p>`,
+    },
+    {
+      h2: "Estimez le coût de votre projet",
+      html: `<p>Vous voulez savoir ce que coûterait l'accompagnement de votre projet ? Parlons-en. Maison de Nacre vous propose un tarif clair et une estimation gratuite, de la conception à la remise des clés.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Combien coûte un maître d'œuvre pour une maison ?",
+      answer:
+        "En général entre 8 et 15 % du coût des travaux pour une mission complète. Chez Maison de Nacre, c'est 12 % tout compris. Pour une construction de 300 000 €, cela représente 36 000 €.",
+    },
+    {
+      question: "Les honoraires du maître d'œuvre sont-ils un surcoût ?",
+      answer:
+        "Pas nécessairement. La mise en concurrence des artisans permet souvent d'obtenir des prix plus justes, dont l'économie peut compenser tout ou partie des honoraires.",
+    },
+    {
+      question: "Sur quoi se calculent les honoraires ?",
+      answer:
+        "Sur le coût des travaux (la construction hors terrain), en pourcentage. Le maître d'œuvre ne prend pas de marge sur les devis des artisans.",
+    },
+    {
+      question: "Quelle différence de coût avec un constructeur ?",
+      answer:
+        "Le maître d'œuvre facture des honoraires affichés ; l'autre modèle intègre une marge non visible, souvent de 15 à 25 %. À projet équivalent, les honoraires transparents pèsent souvent moins lourd.",
+    },
+    {
+      question: "Le maître d'œuvre coûte-t-il plus cher qu'un architecte ?",
+      answer:
+        "Les pourcentages sont comparables, mais le maître d'œuvre couvre un périmètre plus large en intégrant le suivi de chantier jusqu'à la livraison.",
+    },
+  ],
+  relatedGuideSlugs: ["maitre-doeuvre-ou-constructeur", "prix-maison-neuve-calvados"],
+};
+
+export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
