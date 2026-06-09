@@ -34,13 +34,26 @@ export function LeadForm() {
     setStatus("loading");
     setErrorMsg("");
     try {
-      const res = await fetch("/api/public/send-lead", {
+      // Bascule SSG-ready : si VITE_FORMSPREE_ID est défini, on poste vers Formspree
+      // (endpoint statique, fonctionne sans Worker, requis pour l'hébergement
+      // 100 % statique post-abonnement Lovable). Sinon, fallback sur l'endpoint
+      // interne /api/public/send-lead (utilisé tant que le site tourne sur Lovable).
+      const formspreeId = import.meta.env.VITE_FORMSPREE_ID as string | undefined;
+      const endpoint = formspreeId
+        ? `https://formspree.io/f/${formspreeId}`
+        : "/api/public/send-lead";
+
+      const res = await fetch(endpoint, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          ...(formspreeId ? { Accept: "application/json" } : {}),
+        },
         body: JSON.stringify(values),
       });
       const data = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
-      if (!res.ok || !data.ok) {
+      const success = formspreeId ? res.ok : res.ok && data.ok;
+      if (!success) {
         setErrorMsg(data.error || "Une erreur est survenue. Réessayez dans un instant.");
         setStatus("error");
         return;
