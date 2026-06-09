@@ -1,29 +1,50 @@
-## Intégration G6 — Maître d'œuvre ou constructeur
+# Plan G12 — Prix construction maison au m²
 
-### Fichiers modifiés
+Intégration du contenu fourni (1 470 mots, 0 em-dash, chiffres alignés sur G11) au même format que G11/G6.
 
-**1. `src/data/guides.ts`** — ajouter l'objet `G6` puis l'inscrire dans `GUIDES`.
-- `slug: "maitre-doeuvre-ou-constructeur"`
-- `title` (54 c.) : `Maître d'œuvre ou constructeur : que choisir | Maison de Nacre`
-- `metaDescription` (152 c.) : meta fournie
-- `h1` : `Maître d'œuvre ou constructeur : le vrai comparatif`
-- `primaryKeyword: "maître d'œuvre ou constructeur"`, `searchVolume: 170`
-- `publishedAt` / `updatedAt: "2026-06-09"`
-- `intro` : 1er paragraphe du markdown
-- `sections` (8 H2) : Les deux modèles / Qu'est-ce qu'un maître d'œuvre / Comparatif 8 critères (tableau HTML) / Côté prix / Côté garanties / Côté liberté / Cas où le constructeur reste pertinent / Comment choisir / Le modèle Maison de Nacre — contenu converti md→HTML (`<p>`, `<strong>`, `<ol>`, `<table>` réutilisant les classes Tailwind de G11, liens internes vers `/guides/prix-maison-neuve-calvados`, `/guides/construire-ou-acheter-maison`, `/services/maitre-d-oeuvre-construction-maison`)
-- `faq` : 5 questions/réponses
-- `relatedGuideSlugs: ["prix-maison-neuve-calvados", "construire-ou-acheter-maison"]`
+## 1. `src/data/guides.ts`
 
-**2. `public/sitemap.xml`** — ajouter l'URL `/guides/maitre-doeuvre-ou-constructeur` (priority 0.8, monthly).
+Ajouter `const G12: Guide` après G6, et l'inclure dans l'export du tableau de guides.
 
-### Non inclus
+- **slug** : `prix-construction-maison-m2`
+- **title** (56 c.) : `Prix de construction d'une maison au m² | Maison de Nacre`
+- **metaDescription** (149 c.) : `Combien coûte la construction d'une maison au m² en 2026 ? Fourchettes par standing, ce que comprend le prix, écart entrée et haut de gamme.`
+- **h1** : `Prix de construction d'une maison au m² : le vrai coût en 2026`
+- **primaryKeyword** : `prix construction maison au m²`
+- **searchVolume** : `1900`
+- **publishedAt / updatedAt** : `2026-06-09`
+- **intro** : paragraphe d'accroche du doc (« Combien coûte une maison… »)
+- **sections** (8 H2) :
+  1. Quel est le prix de construction au m² en 2026 ? (tableau 3 lignes par standing)
+  2. Construction seule ou clé en main : ne pas confondre (lien interne G6)
+  3. Ce que comprend (et ne comprend pas) le prix au m²
+  4. Ce qui fait varier le prix au m²
+  5. Plain-pied ou étage : quel impact sur le m² ?
+  6. L'effet de la surface : pourquoi les petites maisons coûtent plus cher au m² (lien G13 — 404 assumé)
+  7. Du prix au m² au budget de votre maison (tableau 3×3 surfaces×standing, lien G_budget — 404 assumé)
+  8. Et dans le Calvados ? (lien interne G11)
+  9. Comment lire un prix au m² dans un devis (lien G5 — 404 assumé)
+- **faq** : 5 Q/R (prix 2026, terrain inclus, petite maison, plain-pied, surcoût RE2020)
+- **CTA final** : « Estimez votre projet » avec bouton `[Demander mon estimation gratuite]` → `/#contact`
+- **relatedGuideSlugs** : `["prix-maison-neuve-calvados", "maitre-doeuvre-ou-constructeur"]`
 
-- Le prerender se met à jour automatiquement (la liste lit `getAllGuideSlugs()`).
-- Pas de nouveaux composants : `GuideArticle` rend tout via `dangerouslySetInnerHTML`, le tableau passe sans modification.
-- Liens 404 vers G7 / S1 assumés (créés plus tard).
-- G12 (prix construction maison au m²) : **pas d'action côté code maintenant**. Tu rédiges en parallèle, on intègre quand tu colles le contenu — même format qu'ici.
+**Correction collatérale** : dans G11 (section "Prix de construction au m²"), corriger le lien interne `/guides/prix-construction-maison-au-m2` → `/guides/prix-construction-maison-m2` pour pointer vers G12.
 
-### Vérification post-build
+Tableaux et listes formatés en HTML avec les mêmes classes Tailwind que G11/G6 (`overflow-x-auto`, `w-full text-sm`, `border-t`, etc.).
 
-- `bun run build` puis `grep "Maître d'œuvre ou constructeur" dist/guides/maitre-doeuvre-ou-constructeur/index.html` pour confirmer SSG.
-- Vérifier que les 2 blocs JSON-LD (Article + FAQPage) sont présents dans le HTML statique.
+## 2. `public/sitemap.xml`
+
+Ajouter l'entrée :
+```xml
+<url>
+  <loc>https://maison-de-nacre.fr/guides/prix-construction-maison-m2</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+```
+
+## Hors scope
+
+- Pas de nouveau composant (réutilise `GuideArticle.tsx`).
+- Pas de modif du prerender (couvert par `prerender-routes.ts` qui lit `guides.ts`).
+- Liens vers G13 / G5 / G_budget laissés en 404 assumé (s'activeront à la publication).
