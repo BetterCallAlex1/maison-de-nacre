@@ -66,7 +66,9 @@ export default defineConfig({
     pages: getPrerenderPages(),
     prerender: {
       enabled: true,
-      crawlLinks: true,
+      // Liste exhaustive fournie via `pages` ; on n'auto-découvre pas, sinon
+      // les liens internes vers des guides à venir (404) cassent le build.
+      crawlLinks: false,
     },
   },
 });
