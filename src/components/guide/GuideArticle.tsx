@@ -4,9 +4,10 @@ import { Header } from "@/components/landing/Header";
 import { Footer } from "@/components/landing/Footer";
 import type { Guide } from "@/data/guides";
 
-type Props = { guide: Guide };
+type Props = { guide: Guide; kind?: "guide" | "service" };
 
-export function GuideArticle({ guide }: Props) {
+export function GuideArticle({ guide, kind = "guide" }: Props) {
+  const breadcrumbLabel = kind === "service" ? "Services" : "Guides";
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -16,7 +17,7 @@ export function GuideArticle({ guide }: Props) {
             <nav aria-label="Fil d'Ariane" className="flex items-center gap-1.5 text-xs text-muted-foreground">
               <Link to="/" className="hover:text-foreground">Accueil</Link>
               <ChevronRight className="h-3 w-3" aria-hidden="true" />
-              <span>Guides</span>
+              <span>{breadcrumbLabel}</span>
               <ChevronRight className="h-3 w-3" aria-hidden="true" />
               <span className="text-deep">{guide.h1}</span>
             </nav>

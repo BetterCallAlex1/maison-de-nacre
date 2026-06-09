@@ -6,6 +6,7 @@
 // (objectif : hébergement 100 % statique post-abonnement) DOIT figurer ici.
 
 import { getAllGuideSlugs } from "../data/guides";
+import { getAllServiceSlugs } from "../data/services";
 
 export type PrerenderPage = {
   path: string;
@@ -27,7 +28,14 @@ export function getPrerenderPages(): PrerenderPage[] {
     });
   }
 
-  // Quand communes.ts / services.ts arrivent, on ajoute leurs slugs ici.
+  for (const slug of getAllServiceSlugs()) {
+    pages.push({
+      path: `/services/${slug}`,
+      sitemap: { priority: 0.8, changefreq: "monthly" },
+    });
+  }
+
+  // Quand communes.ts arrive, on ajoute leurs slugs ici.
 
   return pages;
 }
