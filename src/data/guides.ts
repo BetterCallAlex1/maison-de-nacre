@@ -587,7 +587,107 @@ const G23: Guide = {
   relatedGuideSlugs: ["delai-construction-maison", "prix-maison-neuve-calvados", "maitre-doeuvre-ou-constructeur"],
 };
 
-export const GUIDES: Guide[] = [G11, G6, G12, G17, G23];
+// ────────────────────────────────────────────────────────────────────────────────
+// G24 — Délai construction maison (paire G23, 390/mo, KD 19)
+// ────────────────────────────────────────────────────────────────────────────────
+
+const G24: Guide = {
+  slug: "delai-construction-maison",
+  title: "Combien de temps pour construire une maison | Maison de Nacre",
+  metaDescription:
+    "Combien de temps pour construire une maison ? De 12 à 18 mois selon les étapes : terrain, permis, chantier. Le détail des délais et comment les tenir.",
+  h1: "Combien de temps pour construire une maison ?",
+  primaryKeyword: "délai construction maison",
+  searchVolume: 390,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "C'est l'une des premières questions que l'on se pose : combien de temps entre la décision de faire construire et l'emménagement ? La réponse honnête est de douze à dix-huit mois en moyenne, mais ce délai recouvre des étapes très différentes, dont certaines se chevauchent. Voici le détail, phase par phase, et les leviers pour ne pas perdre de mois inutilement.",
+  sections: [
+    {
+      h2: "La réponse courte : 12 à 18 mois au total",
+      html: `<p>Pour un projet classique, comptez entre un an et un an et demi entre la signature du terrain et la remise des clés. Le chantier lui-même représente six à dix mois ; le reste se joue sur la conception, le permis de construire et le montage financier, qui se déroulent en partie en parallèle. Un projet bien préparé tend vers le bas de la fourchette, un projet semé d'imprévus vers le haut.</p>`,
+    },
+    {
+      h2: "Le détail phase par phase",
+      html: `<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr><th class="text-left py-2 pr-4">Phase</th><th class="text-left py-2">Durée indicative</th></tr></thead><tbody>
+<tr class="border-t"><td class="py-2 pr-4">Recherche et achat du terrain</td><td class="py-2">1 à 6 mois</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Conception des plans</td><td class="py-2">1 à 3 mois</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Instruction du permis de construire</td><td class="py-2">2 à 3 mois</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Financement et assurances</td><td class="py-2">1 à 2 mois (en parallèle)</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Consultation et signature des artisans</td><td class="py-2">3 à 6 semaines</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Chantier</td><td class="py-2">6 à 10 mois</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Réception et levée des réserves</td><td class="py-2">Quelques jours à semaines</td></tr>
+</tbody></table></div>
+<p class="mt-4">Ces durées ne s'additionnent pas bêtement : la conception, le permis et le financement avancent souvent en même temps. C'est justement cette gestion en parallèle qui permet de comprimer le délai total. Pour le détail de chaque étape, voir notre guide <a href="/guides/etapes-construction-maison" class="text-primary underline">les étapes d'une construction de maison</a>.</p>`,
+    },
+    {
+      h2: "Zoom sur la durée du chantier",
+      html: `<p>Le chantier est la phase la plus visible, et la plus régulière dans sa durée : six à dix mois pour une maison individuelle. Il s'enchaîne dans un ordre précis. Le terrassement et les fondations prennent quelques semaines. Le gros œuvre (murs et planchers) occupe ensuite deux à trois mois. La charpente et la couverture mettent la maison hors d'eau, les menuiseries extérieures la mettent hors d'air. Vient enfin le second œuvre (cloisons, isolation, électricité, plomberie, chauffage) puis les finitions (sols, peintures, cuisine, salle de bains), qui s'étalent sur plusieurs mois. La coordination des corps de métier est ce qui fait tenir ou déraper ce calendrier.</p>`,
+    },
+    {
+      h2: "Ce qui rallonge un projet de construction",
+      html: `<p>Plusieurs facteurs allongent les délais, et la plupart s'anticipent. L'<strong>instruction du permis</strong> peut s'étirer en cas de demande de pièces complémentaires, et un recours de tiers suspend le démarrage. Le <strong>financement</strong> retarde tout si l'accord de prêt tarde. La <strong>viabilisation</strong> d'un terrain isolé, surtout le raccordement électrique, prend parfois plusieurs mois. La <strong>disponibilité des artisans</strong> joue beaucoup selon la période et la tension du marché local. Les <strong>modifications en cours de route</strong> (changer un plan, ajouter une option) génèrent des avenants et décalent le planning. Enfin, la <strong>météo</strong> peut suspendre le gros œuvre en cas de gel ou de fortes pluies.</p>`,
+    },
+    {
+      h2: "La météo et la saison de démarrage",
+      html: `<p>La saison de démarrage influe sur le confort du chantier plus que sur sa durée totale. Lancer le gros œuvre à l'automne expose au risque d'intempéries hivernales (gel, pluie) qui ralentissent le terrassement et la maçonnerie. Démarrer au printemps permet souvent d'enchaîner le gros œuvre dans de bonnes conditions et de finir le second œuvre, protégé des intempéries, pendant l'hiver suivant. Ce n'est pas une règle absolue, mais un bon maître d'œuvre cale le démarrage en tenant compte de ce paramètre.</p>`,
+    },
+    {
+      h2: "Plain-pied ou maison à étage : un impact limité sur le délai",
+      html: `<p>Contrairement à une idée reçue, le choix entre plain-pied et étage ne change pas fondamentalement la durée du chantier. Une maison à étage ajoute un plancher intermédiaire et un escalier, mais réduit l'emprise des fondations et de la toiture. Au final, les deux se construisent dans des délais comparables. Ce qui pèse davantage, c'est la surface totale et le niveau de finition.</p>`,
+    },
+    {
+      h2: "Exemple de calendrier type sur 14 mois",
+      html: `<p>Pour rendre les choses concrètes, voici à quoi peut ressembler un projet bien mené, terrain déjà trouvé au départ.</p>
+<p>Les mois 1 à 3 sont consacrés à la conception des plans, en parallèle des premières démarches de financement. Au mois 3, on dépose le permis de construire. Pendant son instruction (mois 3 à 5), on finalise l'accord de prêt et on consulte les artisans. Le permis obtenu au mois 5, on signe les devis et on souscrit l'assurance dommage-ouvrage. Le chantier démarre vers le mois 6 : terrassement et fondations, puis gros œuvre jusqu'au mois 9, mise hors d'eau et hors d'air, second œuvre du mois 9 au mois 12, et finitions jusqu'au mois 13. La réception intervient au mois 14, suivie de la remise des clés.</p>
+<p>Ce séquencement montre l'intérêt de la parallélisation : sans elle, en enchaînant chaque étape l'une après l'autre, le même projet dépasserait facilement dix-huit mois. Si le terrain reste à trouver, ajoutez la durée de recherche en amont.</p>`,
+    },
+    {
+      h2: "Comment tenir les délais",
+      html: `<p>Trois leviers permettent de rester dans le bas de la fourchette. D'abord, <strong>anticiper</strong> : lancer la conception, le permis et la recherche de financement le plus tôt possible, sans attendre que l'étape précédente soit totalement bouclée. Ensuite, <strong>paralléliser</strong> ce qui peut l'être, plutôt que d'enchaîner les démarches en série. Enfin, <strong>coordonner</strong> rigoureusement le chantier pour que chaque artisan intervienne au bon moment, sans temps mort entre les lots. C'est précisément le rôle d'un maître d'œuvre, qui pilote le calendrier de bout en bout. Pour comprendre ce métier, voir notre comparatif <a href="/guides/maitre-doeuvre-ou-constructeur" class="text-primary underline">maître d'œuvre ou constructeur</a>.</p>`,
+    },
+    {
+      h2: "Et après la remise des clés ?",
+      html: `<p>La remise des clés ne clôt pas tout. Pendant l'année qui suit, la garantie de parfait achèvement vous permet de faire corriger les désordres signalés. Les équipements sont couverts deux ans, et la structure dix ans par la garantie décennale. Vous emménagez donc dans une maison protégée, même si quelques finitions se règlent dans les semaines suivant la réception.</p>`,
+    },
+    {
+      h2: "Estimez le calendrier de votre projet",
+      html: `<p>Chaque projet a son propre rythme, selon le terrain, le permis et vos choix. Pour un calendrier réaliste adapté à votre situation, parlons-en. Maison de Nacre pilote votre projet de la conception à la remise des clés, en tenant les délais.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Combien de temps faut-il pour construire une maison ?",
+      answer:
+        "En moyenne douze à dix-huit mois entre la signature du terrain et la remise des clés, dont six à dix mois de chantier. Le reste se partage entre conception, permis et financement, en partie menés en parallèle.",
+    },
+    {
+      question: "Combien de temps dure le chantier d'une maison ?",
+      answer:
+        "Six à dix mois pour une maison individuelle, du terrassement aux finitions, selon la surface, le niveau de finition et la coordination des artisans.",
+    },
+    {
+      question: "Quelle est l'étape la plus longue ?",
+      answer:
+        "Le chantier en valeur absolue, mais l'instruction du permis (deux à trois mois) et la recherche de terrain (jusqu'à six mois) pèsent aussi lourd dans le délai total.",
+    },
+    {
+      question: "La météo peut-elle retarder la construction ?",
+      answer:
+        "Oui, surtout le gros œuvre : gel et fortes pluies suspendent le terrassement et la maçonnerie. D'où l'intérêt de bien choisir la saison de démarrage.",
+    },
+    {
+      question: "Comment réduire le délai de construction ?",
+      answer:
+        "En anticipant les démarches, en menant conception, permis et financement en parallèle, et en coordonnant le chantier sans temps mort entre les corps de métier.",
+    },
+  ],
+  relatedGuideSlugs: ["etapes-construction-maison", "maitre-doeuvre-ou-constructeur"],
+};
+
+export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
