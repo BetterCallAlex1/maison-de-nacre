@@ -41,14 +41,17 @@ const aliasServerEntryPlugin: PluginOption = {
       if (!existsSync(src)) return;
 
       let code = readFileSync(src, "utf8");
-      const target = 'req.ip = cfReq.headers.get("cf-connecting-ip") || void 0;';
-      if (code.includes(target)) {
+      const ipTarget = 'req.ip = cfReq.headers.get("cf-connecting-ip") || void 0;';
+      if (code.includes(ipTarget)) {
         code = code.replace(
-          target,
-          `try { ${target} } catch { /* srvx NodeRequest in preview server */ }`,
+          ipTarget,
+          `try { ${ipTarget} } catch { /* srvx NodeRequest in preview server */ }`,
         );
-        writeFileSync(src, code);
       }
+      // env est undefined dans le preview server (pas de bindings Cloudflare) :
+      // évite "Cannot read properties of undefined (reading 'ASSETS')".
+      code = code.replace(/\bif \(env\.ASSETS /g, "if (env?.ASSETS ");
+      writeFileSync(src, code);
       copyFileSync(src, dst);
     },
   },
