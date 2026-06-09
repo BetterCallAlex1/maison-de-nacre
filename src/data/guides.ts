@@ -788,7 +788,125 @@ const G29: Guide = {
   relatedGuideSlugs: ["permis-de-construire-maison", "etapes-construction-maison", "delai-construction-maison"],
 };
 
-export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29];
+// ────────────────────────────────────────────────────────────────────────────────
+// G14 — Budget construction maison (vue d'ensemble, 720/mo, KD 34)
+// ────────────────────────────────────────────────────────────────────────────────
+
+const G14: Guide = {
+  slug: "budget-construction-maison",
+  title: "Budget construction maison : tous les postes | Maison de Nacre",
+  metaDescription:
+    "Quel budget pour faire construire ? Terrain, construction, frais de notaire, viabilisation, taxes : tous les postes détaillés, avec un exemple chiffré complet.",
+  h1: "Quel budget pour faire construire sa maison ?",
+  primaryKeyword: "budget construction maison",
+  searchVolume: 720,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Beaucoup de projets de construction démarrent sur un budget trop juste, parce qu'on a chiffré la maison en oubliant tout le reste. Or le prix de la maison ne représente qu'une partie de l'enveloppe : il faut y ajouter le terrain, les frais de notaire, la viabilisation, les taxes, les assurances et les aménagements extérieurs. Voici tous les postes à prévoir, avec un exemple complet chiffré, pour bâtir un budget réaliste dès le départ.",
+  sections: [
+    {
+      h2: "Les grands postes d'un budget de construction",
+      html: `<p>Un budget de construction se compose de quatre grandes familles : le <strong>terrain</strong> et ses frais d'acquisition, la <strong>construction</strong> de la maison elle-même, les <strong>frais annexes</strong> (viabilisation, étude de sol, taxes, assurances), et les <strong>aménagements extérieurs</strong>. Chacune pèse, et c'est leur somme qui détermine le budget réel à présenter à la banque. Les oublier expose à de mauvaises surprises en cours de projet.</p>`,
+    },
+    {
+      h2: "Poste 1 : le terrain",
+      html: `<p>C'est souvent le premier poste, et le plus variable selon le secteur. Dans le Calvados, le prix médian du terrain à bâtir va d'environ 150 €/m² dans l'arrière-pays à 250 €/m² en première couronne caennaise, et davantage dans Caen même. À l'achat s'ajoutent les frais de notaire, de l'ordre de 7 à 8 % du prix du terrain. Pour les fourchettes détaillées par secteur, voir notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a>.</p>`,
+    },
+    {
+      h2: "Poste 2 : la construction de la maison",
+      html: `<p>C'est le cœur du budget. Une maison neuve sur-mesure, clé en main et conforme à la RE2020 revient à environ 2 800 €/m² livré, honoraires de maîtrise d'œuvre inclus, hors terrain. Pour une maison de 120 m², comptez donc de l'ordre de 310 000 à 370 000 € selon le niveau de finition. La méthode de calcul au mètre carré est détaillée dans notre guide <a href="/guides/prix-construction-maison-m2" class="text-primary underline">prix de construction au m²</a>.</p>`,
+    },
+    {
+      h2: "Poste 3 : les frais annexes",
+      html: `<p>Ce sont les grands oubliés des budgets trop justes. Plusieurs postes s'ajoutent systématiquement :</p>
+<ul class="list-disc pl-6 space-y-2 mt-2">
+<li><strong>Frais de notaire sur le terrain</strong> : environ 7 à 8 % du prix du terrain.</li>
+<li><strong>Viabilisation</strong> : raccordement aux réseaux, souvent 5 000 à 15 000 € selon la distance, davantage pour un terrain isolé. Voir notre guide <a href="/guides/viabilisation-terrain" class="text-primary underline">la viabilisation d'un terrain</a>.</li>
+<li><strong>Étude de sol</strong> : obligatoire dans de nombreux cas, de l'ordre de 1 000 à 2 000 €.</li>
+<li><strong>Assurance dommage-ouvrage</strong> : obligatoire, généralement 2 à 4 % du coût de construction.</li>
+<li><strong>Taxe d'aménagement</strong> : due après le permis, souvent quelques milliers d'euros selon la surface et la commune.</li>
+</ul>`,
+    },
+    {
+      h2: "Poste 4 : les aménagements extérieurs",
+      html: `<p>Une fois la maison livrée, le terrain est rarement fini. Clôture, portail, allée, terrasse, plantations et parfois assainissement de surface représentent un budget réel, souvent de 10 000 à 20 000 €. Mieux vaut le prévoir dès le départ que le découvrir le jour de l'emménagement.</p>`,
+    },
+    {
+      h2: "Exemple de budget complet chiffré",
+      html: `<p>Voici un exemple réaliste pour une maison de 120 m² milieu de gamme, sur un terrain de 500 m² en première couronne caennaise.</p>
+<div class="overflow-x-auto mt-4"><table class="w-full text-sm"><thead><tr><th class="text-left py-2 pr-4">Poste</th><th class="text-right py-2">Montant indicatif</th></tr></thead><tbody>
+<tr><td class="py-2 pr-4">Terrain (500 m² à 250 €/m²)</td><td class="text-right py-2">125 000 €</td></tr>
+<tr><td class="py-2 pr-4">Frais de notaire sur le terrain</td><td class="text-right py-2">9 400 €</td></tr>
+<tr><td class="py-2 pr-4">Construction clé en main (120 m²)</td><td class="text-right py-2">336 000 €</td></tr>
+<tr><td class="py-2 pr-4">Viabilisation</td><td class="text-right py-2">8 000 €</td></tr>
+<tr><td class="py-2 pr-4">Étude de sol</td><td class="text-right py-2">1 500 €</td></tr>
+<tr><td class="py-2 pr-4">Assurance dommage-ouvrage</td><td class="text-right py-2">7 500 €</td></tr>
+<tr><td class="py-2 pr-4">Taxe d'aménagement</td><td class="text-right py-2">3 000 €</td></tr>
+<tr><td class="py-2 pr-4">Aménagements extérieurs</td><td class="text-right py-2">15 000 €</td></tr>
+<tr class="font-semibold border-t"><td class="py-2 pr-4">Budget total</td><td class="text-right py-2">environ 505 000 €</td></tr>
+</tbody></table></div>
+<p class="mt-4">Ce total illustre l'écart entre le seul prix de la maison (336 000 €) et le budget réel du projet (environ 505 000 €). Selon le secteur et le niveau de finition, ce budget peut descendre vers 350 000 € dans l'arrière-pays ou dépasser 600 000 € sur le littoral prisé.</p>`,
+    },
+    {
+      h2: "Le budget total selon votre profil de projet",
+      html: `<p>Le budget complet, terrain et frais annexes compris, dépend surtout du secteur et de la surface. Voici trois profils repères dans le Calvados.</p>
+<div class="overflow-x-auto mt-4"><table class="w-full text-sm"><thead><tr><th class="text-left py-2 pr-4">Profil</th><th class="text-left py-2 pr-4">Secteur et surface</th><th class="text-right py-2">Budget total indicatif</th></tr></thead><tbody>
+<tr><td class="py-2 pr-4">Budget maîtrisé</td><td class="py-2 pr-4">Arrière-pays, 90 à 100 m²</td><td class="text-right py-2">320 000 à 380 000 €</td></tr>
+<tr><td class="py-2 pr-4">Milieu de gamme</td><td class="py-2 pr-4">Première couronne ou Côte de Nacre, 110 à 120 m²</td><td class="text-right py-2">450 000 à 550 000 €</td></tr>
+<tr><td class="py-2 pr-4">Haut de gamme</td><td class="py-2 pr-4">Littoral prisé ou Caen, 140 à 160 m²</td><td class="text-right py-2">600 000 € et plus</td></tr>
+</tbody></table></div>
+<p class="mt-4">Ces fourchettes incluent le terrain, la construction et les frais annexes. Elles montrent que le secteur pèse autant que la surface : un même 120 m² coûte bien plus cher à construire sur le littoral qu'en plaine, à cause du foncier.</p>`,
+    },
+    {
+      h2: "Les postes que l'on sous-estime le plus",
+      html: `<p>Trois postes reviennent systématiquement dans les budgets dépassés. La <strong>viabilisation</strong> d'abord, quand on achète un terrain isolé sans vérifier la distance aux réseaux. Les <strong>aménagements extérieurs</strong> ensuite, repoussés à plus tard puis chiffrés en urgence une fois la maison livrée. Et les <strong>options de finition</strong>, accumulées au fil des choix (cuisine, sols, domotique) jusqu'à faire glisser le budget de plusieurs dizaines de milliers d'euros. Les anticiper dès le départ évite l'effet boule de neige.</p>`,
+    },
+    {
+      h2: "L'apport et le financement",
+      html: `<p>Les banques demandent généralement un apport, souvent de l'ordre de 10 % du projet, et au minimum de quoi couvrir les frais de notaire et de garantie. Un primo-accédant peut compléter son financement avec le prêt à taux zéro, sous conditions de ressources et de zone. L'accord de prêt doit être obtenu avant de signer les devis et de lancer les travaux. Nous détaillerons le financement et le PTZ dans des guides dédiés.</p>`,
+    },
+    {
+      h2: "Comment maîtriser son budget",
+      html: `<p>Trois leviers permettent de tenir l'enveloppe. D'abord, <strong>chiffrer tous les postes dès le départ</strong>, terrain et frais annexes compris, plutôt que de raisonner sur le seul prix de la maison. Ensuite, <strong>mettre les artisans en concurrence</strong> pour obtenir des devis justes, sans marge cachée. Enfin, <strong>se faire accompagner</strong> par un maître d'œuvre, qui anticipe les frais annexes, pilote les coûts et évite les dépassements en cours de chantier. Pour comprendre ce métier, voir notre comparatif <a href="/guides/maitre-doeuvre-ou-constructeur" class="text-primary underline">maître d'œuvre ou constructeur</a>.</p>`,
+    },
+    {
+      h2: "Estimez le budget de votre projet",
+      html: `<p>Un budget bien posé dès le départ, c'est un projet serein. Pour une estimation complète et gratuite, terrain et frais annexes compris, parlons de votre projet. Maison de Nacre vous accompagne de la conception à la remise des clés.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Quel budget pour faire construire une maison ?",
+      answer:
+        "Au-delà du prix de la maison (environ 2 800 €/m² livré), il faut compter le terrain, les frais de notaire, la viabilisation, l'étude de sol, l'assurance, les taxes et les aménagements extérieurs. Pour une maison de 120 m² en région caennaise, le budget total tourne souvent autour de 450 000 à 550 000 €, terrain compris.",
+    },
+    {
+      question: "Quels frais annexes prévoir en plus de la maison ?",
+      answer:
+        "Frais de notaire sur le terrain (7 à 8 %), viabilisation (5 000 à 15 000 €), étude de sol, assurance dommage-ouvrage, taxe d'aménagement et aménagements extérieurs.",
+    },
+    {
+      question: "Le prix de la maison inclut-il le terrain ?",
+      answer:
+        "Non. Le coût de construction au m² ne comprend jamais le terrain ni ses frais d'acquisition, qui se budgétisent à part.",
+    },
+    {
+      question: "Quel apport pour faire construire ?",
+      answer:
+        "Souvent autour de 10 % du projet, et au minimum de quoi couvrir les frais de notaire et de garantie. Le PTZ peut compléter pour un primo-accédant.",
+    },
+    {
+      question: "Comment éviter de dépasser son budget ?",
+      answer:
+        "En chiffrant tous les postes dès le départ, en mettant les artisans en concurrence et en se faisant accompagner par un maître d'œuvre qui pilote les coûts.",
+    },
+  ],
+  relatedGuideSlugs: ["prix-maison-neuve-calvados", "prix-construction-maison-m2", "viabilisation-terrain"],
+};
+
+export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
