@@ -1284,7 +1284,99 @@ const G16: Guide = {
   relatedGuideSlugs: ["viabilisation-terrain", "prix-maison-neuve-calvados", "etapes-construction-maison"],
 };
 
-export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16];
+const G13: Guide = {
+  slug: "prix-maison-120m2",
+  title: "Combien coûte une maison de 120 m² ? | Maison de Nacre",
+  metaDescription:
+    "Combien coûte une maison de 120 m² ? Budget clé en main, décomposition des postes, prix par standing et exemple chiffré, de 240 000 à 400 000 € selon les finitions.",
+  h1: "Combien coûte une maison de 120 m² ?",
+  primaryKeyword: "prix maison 120m2",
+  searchVolume: 110,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Le 120 m² est l'une des surfaces les plus demandées pour une maison familiale : assez d'espace pour quatre personnes, sans excès. Mais son prix varie fortement selon le niveau de finition et le secteur. Voici un budget clair pour une maison de 120 m², la décomposition des postes et ce qui fait bouger l'addition.",
+  sections: [
+    {
+      h2: "Le budget d'une maison de 120 m²",
+      html: `<p>Pour la construction seule, clé en main et conforme à la RE2020, hors terrain, une maison de 120 m² revient en moyenne à environ <strong>336 000 €</strong>, soit autour de 2 800 €/m² livré, honoraires de maîtrise d'œuvre inclus. Selon le niveau de finition, la fourchette s'étend d'environ <strong>240 000 € en entrée de gamme à 400 000 € en haut de gamme</strong>. À ce montant, il faut ajouter le terrain et les frais annexes pour obtenir le budget total du projet.</p>`,
+    },
+    {
+      h2: "Pourquoi 120 m² est une surface populaire",
+      html: `<p>Le 120 m² s'impose comme un standard pour une bonne raison : il permet un séjour confortable, une cuisine ouverte, trois à quatre chambres et deux salles d'eau, sans pousser le budget vers des sommets. C'est le bon compromis entre confort de vie et coût maîtrisé pour une famille, ce qui en fait la surface de référence d'une grande partie des projets de construction neuve.</p>`,
+    },
+    {
+      h2: "La décomposition du budget",
+      html: `<p>Un budget de construction se répartit grossièrement entre trois grandes phases. Le <strong>gros œuvre</strong> (terrassement, fondations, murs, charpente, couverture) représente souvent un peu moins de la moitié du coût. Le <strong>second œuvre</strong> (isolation, cloisons, électricité, plomberie, chauffage, menuiseries) en représente une part comparable. Les <strong>finitions</strong> (sols, peintures, cuisine, salle de bains) complètent l'ensemble. À cela s'ajoutent les honoraires de maîtrise d'œuvre, qui rémunèrent la conception et le pilotage. Comprendre cette répartition aide à voir où se jouent les arbitrages de prix.</p>`,
+    },
+    {
+      h2: "Le prix d'une maison de 120 m² selon le standing",
+      html: `<p>Le niveau de finition fait l'essentiel de l'écart. Voici les fourchettes pour une maison de 120 m² clé en main, hors terrain.</p>
+<div class="overflow-x-auto mt-3"><table class="w-full text-sm"><thead><tr><th class="text-left py-2 pr-4">Standing</th><th class="text-left py-2">Budget construction (120 m²)</th></tr></thead><tbody>
+<tr class="border-t"><td class="py-2 pr-4">Entrée de gamme</td><td class="py-2">240 000 à 280 000 €</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Milieu de gamme</td><td class="py-2">280 000 à 340 000 €</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Haut de gamme</td><td class="py-2">340 000 à 400 000 €</td></tr>
+</tbody></table></div>
+<p class="mt-3">L'entrée de gamme correspond à des finitions standard, le milieu de gamme à des prestations soignées, et le haut de gamme à des matériaux et équipements premium. Pour la méthode de calcul au mètre carré, voir notre guide <a href="/guides/prix-construction-maison-m2" class="text-primary underline">prix de construction au m²</a>.</p>`,
+    },
+    {
+      h2: "N'oubliez pas le terrain",
+      html: `<p>Le budget ci-dessus ne comprend que la construction. Le terrain s'ajoute, et c'est lui qui creuse l'écart d'un secteur à l'autre. Dans le Calvados, comptez de l'ordre de 55 000 à 80 000 € dans l'arrière-pays, et 120 000 à 180 000 € en première couronne caennaise, plus les frais de notaire. Notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a> détaille ces fourchettes par zone, et notre guide <a href="/guides/budget-construction-maison" class="text-primary underline">budget d'un projet de construction</a> couvre l'ensemble des postes, terrain et frais annexes compris.</p>`,
+    },
+    {
+      h2: "Plain-pied ou étage en 120 m²",
+      html: `<p>Le choix influe légèrement sur le coût. Un 120 m² de plain-pied demande une emprise au sol plus grande, donc davantage de fondations et de toiture, et coûte généralement un peu plus cher au mètre carré qu'un 120 m² à étage. L'étage, lui, économise du terrain en empilant la surface. Le choix dépend autant du mode de vie et du terrain que du budget.</p>`,
+    },
+    {
+      h2: "Ce qui fait varier le prix d'une maison de 120 m²",
+      html: `<p>À surface égale, plusieurs facteurs déplacent le curseur : le niveau de finition et d'équipement en premier lieu, la forme de la maison (une maison compacte coûte moins cher qu'une maison à décrochements), la nature du terrain (pente, sol argileux), et le niveau de performance énergétique. La RE2020 ajoute de l'ordre de 5 à 10 %, compensé à l'usage par des factures réduites.</p>`,
+    },
+    {
+      h2: "Comment réduire le coût d'une maison de 120 m² sans rogner la qualité",
+      html: `<p>Maîtriser le budget d'une 120 m² ne veut pas dire construire au rabais. Plusieurs leviers permettent d'optimiser sans sacrifier l'essentiel. Privilégier une <strong>forme compacte</strong> (proche du carré, sans décrochements) réduit la longueur de murs et de toiture à surface égale, donc le coût. <strong>Concentrer les pièces d'eau</strong> (cuisine, salles de bains à proximité) limite les réseaux de plomberie. Choisir un <strong>étage plutôt qu'un plain-pied</strong> économise fondations, toiture et terrain. Et arbitrer les <strong>finitions par priorité</strong> : investir dans ce qui dure et ce qui se voit au quotidien, rester sobre sur le reste, quitte à faire évoluer plus tard.</p>
+<p class="mt-4">Le meilleur levier reste un <strong>plan bien conçu</strong> : un mètre carré bien pensé vaut mieux que deux mètres carrés mal utilisés. C'est tout l'intérêt d'une conception sur-mesure, qui ajuste la maison à votre budget réel plutôt que de partir d'un modèle figé. La mise en concurrence des artisans par un maître d'œuvre permet aussi d'obtenir des prix justes, sans rogner sur la qualité d'exécution.</p>`,
+    },
+    {
+      h2: "Exemple d'aménagement d'une maison de 120 m²",
+      html: `<p>Concrètement, 120 m² permettent d'aménager un séjour-cuisine d'environ 40 à 45 m², trois à quatre chambres, une à deux salles d'eau, et les rangements et circulations nécessaires. C'est une surface qui laisse de la souplesse pour adapter le plan à votre famille, ce qui est tout l'intérêt d'une conception sur-mesure plutôt que d'un modèle figé.</p>`,
+    },
+    {
+      h2: "Estimez votre maison de 120 m²",
+      html: `<p>Vous avez un projet de maison de 120 m² ? Pour une estimation précise adaptée à votre terrain et à vos envies, parlons-en. Maison de Nacre conçoit et réalise votre maison sur-mesure, de A à Z. Estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Combien coûte une maison de 120 m² ?",
+      answer:
+        "En moyenne environ 336 000 € clé en main, hors terrain, soit 2 800 €/m² livré. La fourchette va de 240 000 € en entrée de gamme à 400 000 € en haut de gamme.",
+    },
+    {
+      question: "Le prix inclut-il le terrain ?",
+      answer:
+        "Non. Le terrain et ses frais de notaire s'ajoutent à la construction, et varient fortement selon le secteur.",
+    },
+    {
+      question: "Un 120 m² de plain-pied est-il plus cher ?",
+      answer:
+        "Légèrement, car il demande plus de fondations et de toiture qu'un 120 m² à étage, et consomme plus de terrain.",
+    },
+    {
+      question: "Combien de chambres dans une maison de 120 m² ?",
+      answer:
+        "Généralement trois à quatre chambres, avec un grand séjour-cuisine et une à deux salles d'eau, selon l'agencement.",
+    },
+    {
+      question: "Quel budget total pour une maison de 120 m² dans le Calvados ?",
+      answer:
+        "En ajoutant le terrain et les frais annexes, comptez souvent 450 000 à 550 000 € en région caennaise, selon le secteur et les finitions.",
+    },
+  ],
+  relatedGuideSlugs: ["prix-construction-maison-m2", "prix-maison-neuve-calvados", "budget-construction-maison"],
+};
+
+export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
