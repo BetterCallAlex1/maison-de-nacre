@@ -2226,7 +2226,76 @@ const G9: Guide = {
   relatedGuideSlugs: ["construire-ou-acheter-maison", "prix-maison-neuve-calvados"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9];
+const G31: Guide = {
+  slug: "dpe-maison-neuve",
+  title: "DPE et maison neuve | Maison de Nacre",
+  metaDescription:
+    "DPE d'une maison neuve : quelle classe attendre, pourquoi la RE2020 garantit un bon diagnostic, et ce que cela change pour le confort et la revente.",
+  h1: "DPE et maison neuve : à quoi s'attendre",
+  primaryKeyword: "dpe maison neuve",
+  searchVolume: 170,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Le diagnostic de performance énergétique (DPE) est devenu un critère majeur pour les logements. Quand on fait construire neuf, une bonne nouvelle s'impose : une maison RE2020 vise par construction les meilleures classes. Voici ce qu'il faut savoir sur le DPE d'une maison neuve.",
+  sections: [
+    {
+      h2: "Qu'est-ce que le DPE ?",
+      html: `<p>Le DPE évalue la performance énergétique d'un logement et le classe de A (très performant) à G (très énergivore). Il prend en compte la consommation d'énergie et les émissions de gaz à effet de serre. Devenu incontournable lors d'une vente ou d'une location, il pèse de plus en plus sur la valeur des biens : les logements mal classés se vendent moins bien et subissent des restrictions croissantes.</p>`,
+    },
+    {
+      h2: "Quelle classe DPE pour une maison neuve ?",
+      html: `<p>Une maison neuve construite selon la RE2020 vise les <strong>meilleures classes</strong>, typiquement A ou B. C'est logique : la RE2020 impose une isolation renforcée, une étanchéité soignée et un chauffage décarboné, exactement ce que le DPE récompense. Construire neuf, c'est donc partir directement au sommet du classement, là où l'ancien doit souvent engager de lourds travaux pour s'en approcher.</p>`,
+    },
+    {
+      h2: "Pourquoi la RE2020 garantit un bon DPE",
+      html: `<p>La RE2020 et le DPE évaluent des choses proches : la sobriété énergétique et l'empreinte carbone. Une maison conçue pour la RE2020 coche par avance les critères d'un bon DPE. La conception bioclimatique, l'isolation, la pompe à chaleur et la ventilation performante se traduisent directement par une excellente note. Notre guide <a href="/guides/re2020" class="text-primary underline">la RE2020 expliquée</a> détaille ces exigences.</p>`,
+    },
+    {
+      h2: "Ce que le DPE change pour vous",
+      html: `<p>Un bon DPE a des effets très concrets. Des <strong>factures d'énergie basses</strong>, puisque la maison consomme peu. Un <strong>confort élevé</strong>, été comme hiver. Une <strong>valeur préservée</strong>, voire valorisée, à la revente : à l'heure où les passoires énergétiques se déprécient, une maison classée A ou B est un atout. Et l'absence des contraintes (interdictions de location, obligations de travaux) qui pèsent sur les logements mal classés.</p>`,
+    },
+    {
+      h2: "DPE neuf et revente",
+      html: `<p>Si vous revendez votre maison neuve, son excellent DPE devient un argument de vente fort. Les acquéreurs, de plus en plus attentifs à la performance énergétique et au coût d'usage, valorisent une maison économe et bien classée. C'est l'un des avantages durables du neuf face à l'ancien à rénover. Notre comparatif <a href="/guides/construire-ou-acheter-maison" class="text-primary underline">construire neuf ou acheter dans l'ancien</a> développe ce point.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous voulez une maison neuve performante et bien classée, économe et valorisée ? Maison de Nacre la conçoit sur-mesure et la réalise clé en main. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Quelle classe DPE pour une maison neuve ?",
+      answer:
+        "Généralement A ou B, car la RE2020 impose une isolation, une étanchéité et un chauffage décarboné qui correspondent aux meilleures notes.",
+    },
+    {
+      question: "Une maison neuve a-t-elle besoin d'un DPE ?",
+      answer:
+        "Le DPE devient utile lors d'une vente ou d'une location. Une maison neuve RE2020 affiche par construction un excellent diagnostic.",
+    },
+    {
+      question: "Pourquoi le DPE est-il important ?",
+      answer:
+        "Il classe la performance énergétique du logement, pèse sur sa valeur et conditionne certaines obligations. Les logements mal classés se déprécient.",
+    },
+    {
+      question: "La RE2020 garantit-elle un bon DPE ?",
+      answer:
+        "Oui, car les deux évaluent la sobriété énergétique et le carbone. Une maison RE2020 vise par construction les meilleures classes.",
+    },
+    {
+      question: "Un bon DPE aide-t-il à la revente ?",
+      answer:
+        "Oui. Une maison économe et bien classée se vend mieux, à l'heure où les passoires énergétiques subissent une forte décote.",
+    },
+  ],
+  relatedGuideSlugs: ["re2020", "construire-ou-acheter-maison"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
