@@ -2368,7 +2368,80 @@ const G33: Guide = {
   relatedGuideSlugs: ["re2020", "maison-passive"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33];
+const GEtudeSol: Guide = {
+  slug: "etude-de-sol-construction",
+  title: "L'étude de sol pour construire | Maison de Nacre",
+  metaDescription:
+    "L'étude de sol avant de construire : à quoi elle sert, quand elle est obligatoire (loi ELAN), son coût et ce qu'elle change pour vos fondations.",
+  h1: "L'étude de sol : obligation et utilité avant de construire",
+  primaryKeyword: "étude de sol construction",
+  searchVolume: 50,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Avant de construire, connaître la nature de son sol évite de coûteuses mauvaises surprises. L'étude de sol, désormais souvent obligatoire, détermine le type de fondations adapté à votre terrain. Voici à quoi elle sert, quand elle s'impose et ce qu'elle coûte.",
+  sections: [
+    {
+      h2: "Qu'est-ce qu'une étude de sol ?",
+      html: `<p>Une étude de sol, ou étude géotechnique, analyse la composition et le comportement du terrain sur lequel vous allez construire. Elle révèle la nature du sol (argileux, sableux, rocheux), sa stabilité, la présence d'eau, et le risque de mouvements de terrain. À partir de ces données, elle préconise le type de fondations adapté pour que la maison repose sur une base sûre.</p>`,
+    },
+    {
+      h2: "Pourquoi est-elle importante ?",
+      html: `<p>Le sol détermine la stabilité de votre maison. Un sol argileux, par exemple, gonfle et se rétracte avec l'humidité, ce qui peut provoquer des fissures si les fondations ne sont pas adaptées. L'étude de sol permet d'anticiper ces risques et de dimensionner les fondations en conséquence, plutôt que de découvrir un problème une fois le chantier engagé, quand les corrections coûtent très cher.</p>`,
+    },
+    {
+      h2: "Quand l'étude de sol est-elle obligatoire ?",
+      html: `<p>Depuis la loi ELAN, une étude de sol est <strong>obligatoire</strong> dans les zones exposées au phénomène de retrait-gonflement des argiles, qui couvrent une large partie du territoire, dont des secteurs du Calvados. Concrètement, dans ces zones, l'étude est exigée lors de la vente d'un terrain constructible et avant la construction. Même hors zone obligatoire, elle reste vivement recommandée : son coût est sans commune mesure avec celui d'un sinistre de fondations.</p>`,
+    },
+    {
+      h2: "Ce qu'elle change pour vos fondations",
+      html: `<p>Selon les résultats, l'étude préconise des fondations standard ou renforcées (semelles plus profondes, pieux, radier). Cela a un impact direct sur le budget : un sol difficile renchérit les fondations. Mieux vaut le savoir avant d'acheter le terrain, pour intégrer ce poste au budget global. Nos guides <a href="/guides/choisir-terrain-constructible" class="text-primary underline">comment choisir son terrain</a> et <a href="/guides/budget-construction-maison" class="text-primary underline">budget d'un projet</a> en tiennent compte.</p>`,
+    },
+    {
+      h2: "Combien coûte une étude de sol ?",
+      html: `<p>Le coût d'une étude de sol pour une maison individuelle reste modéré au regard de l'enjeu, de l'ordre de quelques centaines à un peu plus de mille euros selon le niveau d'étude. C'est un investissement de précaution : il sécurise tout le reste du projet et évite des réparations qui se chiffrent en dizaines de milliers d'euros.</p>`,
+    },
+    {
+      h2: "L'étude de sol dans votre projet",
+      html: `<p>L'étude de sol s'intègre tôt dans le parcours, idéalement avant ou juste après l'achat du terrain, pour caler la conception et le budget. Un maître d'œuvre coordonne cette étape et adapte le projet à ses conclusions. Maison de Nacre intègre cette vérification dans l'accompagnement, pour bâtir sur des bases sûres. Voir notre guide <a href="/guides/etapes-construction-maison" class="text-primary underline">les étapes d'une construction</a>.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous avez un terrain ou un projet en vue ? Maison de Nacre coordonne l'étude de sol et adapte votre maison à votre terrain, pour bâtir sereinement. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "À quoi sert une étude de sol ?",
+      answer:
+        "À connaître la nature et la stabilité du terrain, et à déterminer le type de fondations adapté pour éviter fissures et désordres.",
+    },
+    {
+      question: "L'étude de sol est-elle obligatoire ?",
+      answer:
+        "Oui, depuis la loi ELAN, dans les zones exposées au retrait-gonflement des argiles, fréquentes en France. Elle est recommandée partout ailleurs.",
+    },
+    {
+      question: "Combien coûte une étude de sol ?",
+      answer:
+        "De quelques centaines à un peu plus de mille euros selon le niveau d'étude, un coût modéré au regard du risque évité.",
+    },
+    {
+      question: "Que se passe-t-il si le sol est difficile ?",
+      answer:
+        "L'étude préconise des fondations renforcées, ce qui augmente le budget. D'où l'intérêt de connaître le sol avant d'acheter le terrain.",
+    },
+    {
+      question: "Quand faire l'étude de sol ?",
+      answer:
+        "Idéalement avant ou juste après l'achat du terrain, pour caler la conception et le budget sur des données fiables.",
+    },
+  ],
+  relatedGuideSlugs: ["choisir-terrain-constructible", "viabilisation-terrain"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
