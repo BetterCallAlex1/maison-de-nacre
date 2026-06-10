@@ -2863,7 +2863,76 @@ const GPret: Guide = {
   relatedGuideSlugs: ["budget-construction-maison", "ptz-construction-maison"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage, G20, G26, GDemarches, GPtz, GPret];
+const GOuConstruire: Guide = {
+  slug: "ou-construire-autour-de-caen",
+  title: "Où faire construire autour de Caen | Maison de Nacre",
+  metaDescription:
+    "Où faire construire autour de Caen ? Comparatif des secteurs (couronne, littoral, arrière-pays) : prix du terrain, cadre de vie et distance, data DVF.",
+  h1: "Où faire construire autour de Caen ?",
+  primaryKeyword: "où construire autour de caen",
+  searchVolume: 50,
+  publishedAt: "2026-06-10",
+  updatedAt: "2026-06-10",
+  intro:
+    "Choisir le secteur où construire est une décision aussi importante que le choix de la maison. Autour de Caen, chaque zone a son marché, son cadre de vie et ses prix. Voici un comparatif des grands secteurs, appuyé sur les prix réels des terrains issus des ventes notariées, pour vous aider à trouver le bon compromis.",
+  sections: [
+    {
+      h2: "Caen et la première couronne",
+      html: `<p>C'est le secteur le plus demandé et le plus cher en foncier. Dans Caen, le terrain à bâtir se négocie autour de 480 €/m², et reste recherché en première couronne (Hérouville-Saint-Clair, Mondeville, Ifs, Bretteville-sur-Odon, Cormelles-le-Royal), où il tourne autour de 250 €/m². L'avantage : la proximité immédiate des services, des emplois et des écoles. La contrepartie : un foncier rare et un budget terrain élevé. Idéal pour qui veut rester au cœur de l'agglomération.</p>`,
+    },
+    {
+      h2: "Le littoral, Côte de Nacre et Côte Fleurie",
+      html: `<p>De Ouistreham à Cabourg en passant par Courseulles, Hermanville, Luc-sur-Mer ou Colleville, le littoral séduit par son cadre de vie et la mer à proximité. Le terrain y est souvent plus abordable qu'au cœur de Caen, autour de 230 €/m² en médiane, avec des écarts selon les communes les plus prisées. C'est le secteur des résidences principales recherchées comme des secondaires. À ne pas négliger : la demande y est forte et le foncier tourne vite.</p>`,
+    },
+    {
+      h2: "L'arrière-pays et la plaine",
+      html: `<p>Vers Bayeux, Thue et Mue, Argences ou la plaine, le foncier devient nettement plus accessible, autour de 150 €/m² en médiane, et descend plus bas encore dans certains secteurs. C'est là que le budget terrain pèse le moins, laissant plus de marge pour la maison. La contrepartie est l'éloignement relatif de Caen, à arbitrer selon votre quotidien (trajets, écoles, services). Pour qui privilégie l'espace et le budget, c'est le secteur le plus intéressant.</p>`,
+    },
+    {
+      h2: "Comment choisir son secteur",
+      html: `<p>Le bon secteur est celui qui équilibre votre <strong>budget</strong>, votre <strong>cadre de vie</strong> et vos <strong>trajets</strong>. Plus on s'éloigne de Caen, plus le terrain est abordable, mais plus les distances s'allongent. Plus on se rapproche du centre ou du littoral prisé, plus le cadre est recherché, mais plus le foncier coûte. Définir ses priorités (proximité, mer, budget, espace) aide à trancher.</p>`,
+    },
+    {
+      h2: "Explorer commune par commune",
+      html: `<p>Au-delà des grands secteurs, chaque commune a son marché. Nous avons préparé une page par commune, avec son prix de l'ancien et notre positionnement neuf. Retrouvez-les sur notre page <a href="/construire-dans-le-calvados" class="text-primary underline">faire construire dans le Calvados</a>, organisée par bassin.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous cherchez le bon secteur pour construire autour de Caen ? Maison de Nacre connaît le marché local et vous oriente selon votre budget et vos priorités. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Où construire pas cher autour de Caen ?",
+      answer:
+        "Dans l'arrière-pays et la plaine (vers Bayeux, Thue et Mue, Argences), où le terrain tourne autour de 150 €/m², bien moins qu'à Caen ou sur le littoral prisé.",
+    },
+    {
+      question: "Quel est le secteur le plus cher ?",
+      answer:
+        "Caen même (autour de 480 €/m² pour le terrain) et les communes littorales les plus recherchées.",
+    },
+    {
+      question: "Le littoral est-il plus cher que Caen ?",
+      answer:
+        "Le foncier littoral (environ 230 €/m² en médiane) est souvent plus abordable que le cœur de Caen, sauf dans les communes les plus prisées de la Côte Fleurie.",
+    },
+    {
+      question: "Comment choisir entre proximité et budget ?",
+      answer:
+        "En arbitrant entre distance de Caen, cadre de vie et budget terrain. Plus on s'éloigne, plus c'est abordable, mais plus les trajets s'allongent.",
+    },
+    {
+      question: "Où trouver les prix par commune ?",
+      answer:
+        "Sur notre page dédiée regroupant les communes du Calvados, avec les repères de marché de chacune.",
+    },
+  ],
+  relatedGuideSlugs: ["maison-neuve-caen", "prix-construction-maison-m2"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage, G20, G26, GDemarches, GPtz, GPret, GOuConstruire];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
