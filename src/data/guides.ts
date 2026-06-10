@@ -1560,7 +1560,121 @@ const G7: Guide = {
   relatedGuideSlugs: ["prix-maison-neuve-calvados", "re2020", "budget-construction-maison"],
 };
 
-export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7];
+const G22: Guide = {
+  slug: "faire-construire-sa-maison",
+  title: "Faire construire sa maison : guide complet | Maison de Nacre",
+  metaDescription:
+    "Comment faire construire sa maison, de A à Z : budget, terrain, conception, permis, financement, chantier, réception. Le guide complet pour réussir son projet.",
+  h1: "Comment faire construire sa maison : le guide complet",
+  primaryKeyword: "faire construire sa maison",
+  searchVolume: 2400,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Faire construire sa maison est un projet enthousiasmant, mais qui peut sembler complexe quand on débute. Entre le terrain, la conception, le permis, le financement et le chantier, beaucoup de décisions s'enchaînent. Ce guide vous donne la vue d'ensemble, étape par étape, pour aborder votre projet sereinement et savoir quoi faire à chaque moment.",
+  sections: [
+    {
+      h2: "Faire construire : par où commencer ?",
+      html: `<p>Avant tout, deux questions structurent le projet : qu'est-ce que je veux, et avec quel budget ? Définir vos besoins (surface, nombre de chambres, plain-pied ou étage, style) et une enveloppe budgétaire réaliste, terrain compris, oriente toutes les décisions suivantes. C'est le socle du projet, et c'est là que tout commence. Nos guides <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a> et <a href="/guides/budget-construction-maison" class="text-primary underline">budget d'un projet de construction</a> aident à poser ces premiers chiffres.</p>`,
+    },
+    {
+      h2: "Étape 1 : définir son projet et son budget",
+      html: `<p>Commencez par lister vos besoins et vos priorités, puis confrontez-les à un budget global incluant le terrain, la construction et les frais annexes. Mieux vaut un budget honnête dès le départ qu'une enveloppe trop juste qui bloque le projet en cours de route. Cette étape détermine la surface, le secteur et le niveau de finition accessibles.</p>`,
+    },
+    {
+      h2: "Étape 2 : trouver et sécuriser le terrain",
+      html: `<p>Sans terrain, pas de projet. Cherchez une parcelle constructible adaptée à votre budget, puis vérifiez avant de signer sa constructibilité (plan local d'urbanisme) et l'état des réseaux. Deux points décisifs à ne pas négliger : le choix du terrain et sa viabilisation. Nos guides <a href="/guides/choisir-terrain-constructible" class="text-primary underline">comment choisir son terrain constructible</a> et <a href="/guides/viabilisation-terrain" class="text-primary underline">la viabilisation d'un terrain</a> détaillent ces vérifications.</p>`,
+    },
+    {
+      h2: "Étape 3 : choisir comment faire construire",
+      html: `<p>C'est une décision clé. Vous pouvez faire construire avec un maître d'œuvre, qui conçoit et coordonne tout pour vous, ou par d'autres formules plus standardisées. Ce choix détermine votre liberté de plan, la transparence des prix et le niveau d'accompagnement. Notre comparatif <a href="/guides/maitre-doeuvre-ou-constructeur" class="text-primary underline">maître d'œuvre ou constructeur</a> vous aide à trancher selon votre projet.</p>`,
+    },
+    {
+      h2: "Étape 4 : concevoir la maison",
+      html: `<p>Vient ensuite la conception : plans, implantation sur le terrain, orientation, choix techniques. Travailler avec un architecte garantit une maison sur-mesure, optimisée pour votre parcelle et conforme à la RE2020 dès le départ. Nos guides <a href="/services/maison-architecte" class="text-primary underline">maison d'architecte</a> et <a href="/guides/re2020" class="text-primary underline">la RE2020 expliquée</a> éclairent cette étape, où se joue une grande part de la qualité finale.</p>`,
+    },
+    {
+      h2: "Étape 5 : obtenir le permis de construire",
+      html: `<p>Le projet conçu, on dépose le permis de construire en mairie. L'instruction dure environ deux mois pour une maison individuelle. C'est une étape incompressible à anticiper. Nos guides <a href="/guides/permis-de-construire-maison" class="text-primary underline">le permis de construire</a> et <a href="/guides/delai-permis-de-construire" class="text-primary underline">délai d'obtention d'un permis</a> expliquent le dossier et les durées.</p>`,
+    },
+    {
+      h2: "Étape 6 : financer le projet",
+      html: `<p>En parallèle, on boucle le financement : prêt immobilier, apport, et éventuellement prêt à taux zéro pour un primo-accédant. C'est aussi le moment de souscrire l'assurance dommage-ouvrage, obligatoire. Mieux vaut avoir l'accord de prêt avant de signer les devis et de lancer les travaux.</p>`,
+    },
+    {
+      h2: "Étape 7 : le chantier",
+      html: `<p>Le permis obtenu et le financement en place, on consulte les artisans, on signe les devis, puis le chantier démarre : terrassement, gros œuvre, mise hors d'eau et hors d'air, second œuvre, finitions. La coordination des corps de métier est la clé pour tenir les délais. Le détail de cet enchaînement figure dans notre guide <a href="/guides/etapes-construction-maison" class="text-primary underline">les étapes d'une construction</a>, et les durées dans <a href="/guides/delai-construction-maison" class="text-primary underline">combien de temps pour construire</a>.</p>`,
+    },
+    {
+      h2: "Étape 8 : la réception et la remise des clés",
+      html: `<p>Le chantier terminé, vous réceptionnez la maison : vous vérifiez la conformité, consignez d'éventuelles réserves, puis recevez les clés une fois les reprises faites. Cette étape déclenche vos garanties. Notre guide <a href="/guides/reception-travaux-maison-neuve" class="text-primary underline">réception de chantier et levée des réserves</a> explique comment bien la mener.</p>`,
+    },
+    {
+      h2: "Combien ça coûte et combien de temps ?",
+      html: `<p>Deux questions reviennent toujours. Côté budget, une maison neuve sur-mesure clé en main revient à environ 2 800 €/m² livré, hors terrain, soit de l'ordre de 336 000 € pour 120 m². Côté délai, comptez douze à dix-huit mois entre l'achat du terrain et la remise des clés, dont six à dix mois de chantier. Nos guides <a href="/guides/prix-construction-maison-m2" class="text-primary underline">prix de construction au m²</a> et <a href="/guides/delai-construction-maison" class="text-primary underline">combien de temps pour construire</a> donnent tous les repères.</p>`,
+    },
+    {
+      h2: "Faire construire quand on est primo-accédant",
+      html: `<p>Faire construire son premier logement est tout à fait accessible, et même encouragé. Le prêt à taux zéro (PTZ) peut compléter votre financement sous conditions de ressources et de zone, et certaines communes offrent des exonérations temporaires de taxe foncière sur les constructions neuves. L'essentiel est de bâtir un plan de financement solide : un apport, souvent autour de 10 % du projet, et un accord de prêt obtenu avant de signer les devis. Un primo-accédant a tout intérêt à se faire accompagner dès le départ, pour calibrer un budget réaliste et éviter les faux pas qui coûtent cher quand on découvre le processus.</p>`,
+    },
+    {
+      h2: "Pourquoi faire construire plutôt qu'acheter ?",
+      html: `<p>Beaucoup hésitent entre faire construire et acheter une maison existante. Faire construire offre une maison sur-mesure, performante selon la RE2020, sans travaux à prévoir, et couverte par les garanties de la construction neuve. À l'inverse, l'ancien permet d'emménager plus vite, mais impose souvent des travaux et une performance énergétique à améliorer. Dans les communes recherchées, où l'ancien est cher, le neuf devient très compétitif une fois tout intégré. Notre guide <a href="/guides/construire-ou-acheter-maison" class="text-primary underline">construire neuf ou acheter dans l'ancien</a> compare les deux options en détail.</p>`,
+    },
+    {
+      h2: "Les erreurs fréquentes à éviter",
+      html: `<p>Quelques pièges reviennent souvent. Acheter un terrain sans vérifier sa constructibilité ni sa viabilisation. Bâtir un budget trop juste en oubliant les frais annexes. Enchaîner les démarches en série au lieu de les mener en parallèle, ce qui rallonge le projet. Signer des devis sans mise en concurrence. Et bâcler la réception. Anticiper ces points, ou se faire accompagner, fait toute la différence entre un projet serein et un parcours du combattant.</p>`,
+    },
+    {
+      h2: "Se faire accompagner de A à Z",
+      html: `<p>Faire construire seul est possible, mais demande du temps, des compétences et une grande disponibilité. Un maître d'œuvre pilote l'ensemble pour vous : conception, permis, consultation des artisans, suivi du chantier et réception. Vous gardez la décision, il gère l'opérationnel et défend vos intérêts. C'est le métier de Maison de Nacre, dans la région de Caen, de la première esquisse à la remise des clés.</p>`,
+    },
+    {
+      h2: "Lancez votre projet de construction",
+      html: `<p>Vous voulez faire construire dans la région de Caen, sereinement et sans surprise ? Parlons de votre projet. Maison de Nacre vous accompagne de la conception à la remise des clés. Première estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Par où commencer pour faire construire sa maison ?",
+      answer:
+        "Par la définition de vos besoins et d'un budget global réaliste, terrain compris. Ce cadrage oriente ensuite la recherche de terrain et la conception.",
+    },
+    {
+      question: "Quelles sont les étapes pour faire construire ?",
+      answer:
+        "Définir le projet et le budget, trouver le terrain, choisir comment construire, concevoir la maison, obtenir le permis, financer, réaliser le chantier, puis réceptionner et recevoir les clés.",
+    },
+    {
+      question: "Combien de temps pour faire construire une maison ?",
+      answer:
+        "En général douze à dix-huit mois entre l'achat du terrain et la remise des clés, dont six à dix mois de chantier.",
+    },
+    {
+      question: "Combien coûte la construction d'une maison ?",
+      answer:
+        "Environ 2 800 €/m² livré clé en main, hors terrain, soit de l'ordre de 336 000 € pour une maison de 120 m², auquel s'ajoutent terrain et frais annexes.",
+    },
+    {
+      question: "Faut-il se faire accompagner pour faire construire ?",
+      answer:
+        "Ce n'est pas obligatoire, mais un maître d'œuvre fait gagner du temps, sécurise le budget et le chantier, et évite les erreurs coûteuses à chaque étape.",
+    },
+  ],
+  relatedGuideSlugs: [
+    "prix-maison-neuve-calvados",
+    "budget-construction-maison",
+    "choisir-terrain-constructible",
+    "maitre-doeuvre-ou-constructeur",
+    "etapes-construction-maison",
+    "permis-de-construire-maison",
+    "reception-travaux-maison-neuve",
+    "construire-ou-acheter-maison",
+  ],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
