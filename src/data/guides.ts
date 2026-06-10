@@ -2794,7 +2794,76 @@ const GPtz: Guide = {
   relatedGuideSlugs: ["budget-construction-maison", "prix-construction-maison-m2"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage, G20, G26, GDemarches, GPtz];
+const GPret: Guide = {
+  slug: "pret-construction-maison",
+  title: "Financer la construction de sa maison | Maison de Nacre",
+  metaDescription:
+    "Comment financer la construction de sa maison : prêt immobilier, apport, PTZ, déblocage des fonds. Le guide pour monter un plan de financement solide.",
+  h1: "Comment financer la construction de sa maison",
+  primaryKeyword: "prêt construction maison",
+  searchVolume: 140,
+  publishedAt: "2026-06-10",
+  updatedAt: "2026-06-10",
+  intro:
+    "Faire construire suppose un financement bien préparé. Entre le prêt immobilier, l'apport, les aides et le déblocage progressif des fonds, le montage diffère un peu de l'achat d'un bien existant. Voici comment bâtir un plan de financement solide pour votre projet.",
+  sections: [
+    {
+      h2: "Le prêt immobilier, socle du financement",
+      html: `<p>La majeure partie d'un projet de construction se finance par un <strong>prêt immobilier</strong> classique, souscrit auprès d'une banque. Le montant, la durée et le taux dépendent de votre situation et de votre capacité de remboursement. Pour une construction, le prêt couvre le terrain et les travaux, et se débloque par étapes au fur et à mesure de l'avancement. Comparer les offres, éventuellement via un courtier, permet d'optimiser le coût total.</p>`,
+    },
+    {
+      h2: "L'apport personnel",
+      html: `<p>Les banques demandent généralement un <strong>apport</strong>, souvent de l'ordre de 10 % du projet, et au minimum de quoi couvrir les frais de notaire sur le terrain et les frais de garantie. Un apport plus élevé améliore les conditions du prêt et rassure la banque. C'est un élément clé du dossier.</p>`,
+    },
+    {
+      h2: "Les aides : PTZ et dispositifs locaux",
+      html: `<p>Selon votre profil, des aides peuvent compléter le financement. Le <strong>prêt à taux zéro</strong> (PTZ) est le plus connu, réservé aux primo-accédants sous conditions de ressources et de zone. Certaines collectivités proposent aussi des aides locales, et le neuf bénéficie parfois d'exonérations temporaires de taxe foncière. Notre guide <a href="/guides/ptz-construction-maison" class="text-primary underline">le PTZ pour faire construire</a> détaille ce dispositif.</p>`,
+    },
+    {
+      h2: "Le déblocage des fonds en construction",
+      html: `<p>Contrairement à un achat classique, le prêt construction se débloque <strong>progressivement</strong>, en suivant l'avancement du chantier : ouverture, fondations, mise hors d'eau, hors d'air, finitions. Pendant cette période, vous remboursez généralement des intérêts intercalaires sur les sommes débloquées, avant le remboursement complet à la livraison. Ce calendrier suit les appels de fonds, qui rythment le chantier.</p>`,
+    },
+    {
+      h2: "Bien préparer son dossier",
+      html: `<p>Un financement réussi se prépare en amont. Estimez un budget global réaliste, terrain et frais annexes compris, rassemblez vos justificatifs, et obtenez un <strong>accord de prêt avant de signer les devis</strong> et de lancer les travaux. Mieux vaut sécuriser le financement avant d'engager le projet. Notre guide <a href="/guides/budget-construction-maison" class="text-primary underline">budget d'un projet de construction</a> aide à chiffrer l'ensemble.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous montez votre financement et préparez votre projet ? Maison de Nacre vous aide à chiffrer un budget réaliste et vous accompagne de la conception aux clés. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Comment financer la construction d'une maison ?",
+      answer:
+        "Principalement par un prêt immobilier, complété par un apport et d'éventuelles aides comme le PTZ. Le prêt se débloque par étapes selon l'avancement.",
+    },
+    {
+      question: "Quel apport pour faire construire ?",
+      answer:
+        "Souvent autour de 10 % du projet, et au minimum de quoi couvrir les frais de notaire et de garantie.",
+    },
+    {
+      question: "Comment se débloquent les fonds en construction ?",
+      answer:
+        "Progressivement, au fil de l'avancement du chantier, avec souvent des intérêts intercalaires avant le remboursement complet à la livraison.",
+    },
+    {
+      question: "Faut-il l'accord de prêt avant de commencer ?",
+      answer:
+        "Oui, il est prudent d'obtenir l'accord de prêt avant de signer les devis et de lancer les travaux.",
+    },
+    {
+      question: "Quelles aides pour faire construire ?",
+      answer:
+        "Le PTZ pour les primo-accédants, d'éventuelles aides locales et parfois des exonérations temporaires de taxe foncière dans le neuf.",
+    },
+  ],
+  relatedGuideSlugs: ["budget-construction-maison", "ptz-construction-maison"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage, G20, G26, GDemarches, GPtz, GPret];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
