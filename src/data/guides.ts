@@ -1376,7 +1376,93 @@ const G13: Guide = {
   relatedGuideSlugs: ["prix-construction-maison-m2", "prix-maison-neuve-calvados", "budget-construction-maison"],
 };
 
-export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13];
+const G30: Guide = {
+  slug: "reception-travaux-maison-neuve",
+  title: "Réception de chantier et levée des réserves | Maison de Nacre",
+  metaDescription:
+    "Réception de chantier d'une maison neuve : déroulé, procès-verbal, réserves et levée des réserves. Le point de départ de vos garanties, bien réussi.",
+  h1: "Réception de chantier et levée des réserves",
+  primaryKeyword: "réception travaux maison neuve",
+  searchVolume: 320,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "La réception des travaux est le grand moment d'un projet de construction : c'est là que vous prenez officiellement possession de votre maison. C'est aussi une étape juridique majeure, qui déclenche vos garanties. Bien la préparer évite des litiges et protège vos droits. Voici comment elle se déroule, comment émettre des réserves et comment les faire lever.",
+  sections: [
+    {
+      h2: "Qu'est-ce que la réception des travaux ?",
+      html: `<p>La réception est l'acte par lequel vous, maître d'ouvrage, déclarez accepter la maison telle qu'elle a été construite, avec ou sans réserves. Elle se matérialise par une visite et la signature d'un procès-verbal. C'est un moment officiel, pas une simple formalité : à partir de la réception, la maison est juridiquement considérée comme livrée, et plusieurs compteurs juridiques se déclenchent.</p>`,
+    },
+    {
+      h2: "Pourquoi la réception est une étape clé",
+      html: `<p>La réception est le point de départ des garanties qui protègent votre maison. Tant qu'elle n'a pas eu lieu, ces garanties ne courent pas. C'est aussi le moment où vous pouvez exiger la correction des défauts visibles, avant de prendre possession des lieux. Bâcler la réception, c'est risquer de passer à côté de défauts qu'il sera ensuite plus difficile de faire reprendre. D'où l'importance de la préparer sérieusement.</p>`,
+    },
+    {
+      h2: "Comment se déroule la réception",
+      html: `<p>La réception prend la forme d'une visite complète de la maison, idéalement en bonnes conditions de lumière et sans précipitation. Vous parcourez chaque pièce, vous testez les équipements (ouvertures, robinets, prises, chauffage), vous vérifiez les finitions et la conformité au projet. Tout ce qui ne va pas est noté. À l'issue de la visite, un procès-verbal de réception est rédigé et signé.</p>`,
+    },
+    {
+      h2: "Le procès-verbal de réception",
+      html: `<p>Le procès-verbal est le document clé. Il peut être signé <strong>sans réserves</strong>, si tout est conforme, ou <strong>avec réserves</strong>, si des défauts ou des malfaçons sont constatés. Dans ce second cas, les réserves y sont listées précisément. Le procès-verbal date la réception, ce qui fixe le point de départ des garanties. Conservez-le soigneusement : c'est une pièce essentielle en cas de litige ultérieur.</p>`,
+    },
+    {
+      h2: "Émettre des réserves : comment et pourquoi",
+      html: `<p>Une réserve est la mention écrite d'un défaut constaté lors de la réception : finition bâclée, équipement défectueux, non-conformité au projet, malfaçon visible. Mieux vaut être méticuleux et tout noter, même les détails : ce qui n'est pas réservé sera plus difficile à faire corriger ensuite. Décrivez chaque réserve précisément (localisation, nature du défaut) pour qu'il n'y ait pas d'ambiguïté sur ce qui doit être repris.</p>`,
+    },
+    {
+      h2: "La levée des réserves",
+      html: `<p>Une fois les réserves notées, l'entreprise doit corriger les défauts dans un délai convenu. La <strong>levée des réserves</strong> est constatée lorsque chaque point a été repris à votre satisfaction, par un document écrit. Tant que les réserves ne sont pas levées, vous pouvez généralement retenir une partie du paiement (retenue de garantie) en garantie de la bonne exécution des reprises. C'est un levier important pour s'assurer que les corrections sont bien faites.</p>`,
+    },
+    {
+      h2: "Les garanties qui démarrent à la réception",
+      html: `<p>La réception déclenche trois garanties protectrices. La <strong>garantie de parfait achèvement</strong> couvre, pendant un an, la reprise de tous les désordres signalés à la réception ou apparus dans l'année. La <strong>garantie biennale</strong> couvre pendant deux ans le bon fonctionnement des équipements dissociables (volets, robinetterie, chauffage). La <strong>garantie décennale</strong> couvre pendant dix ans les dommages graves affectant la solidité de l'ouvrage ou le rendant impropre à sa destination. Ces protections font de la réception un moment juridiquement décisif. Notre comparatif <a href="/guides/maitre-doeuvre-ou-constructeur" class="text-primary underline">maître d'œuvre ou constructeur</a> détaille ces garanties.</p>`,
+    },
+    {
+      h2: "La check-list de la réception, point par point",
+      html: `<p>Le jour de la réception, mieux vaut une méthode qu'un coup d'œil rapide. Vérifiez les <strong>ouvertures</strong> : portes et fenêtres qui ferment bien, sans jeu ni frottement, joints en place. Les <strong>sols et murs</strong> : pas de fissure, de carrelage fêlé, de défaut de peinture ou de raccord visible. La <strong>plomberie</strong> : eau chaude et froide à chaque point d'eau, pas de fuite sous les éviers, évacuations qui s'écoulent. L'<strong>électricité</strong> : chaque prise et interrupteur fonctionne, le tableau est conforme et étiqueté. Le <strong>chauffage et la ventilation</strong> : mise en route, fonctionnement de la pompe à chaleur, grilles de ventilation en place. Les <strong>équipements</strong> : cuisine, salle de bains, volets, conformes au descriptif.</p>
+<p class="mt-4">Au-delà des pièces, contrôlez la <strong>conformité au projet</strong> : surfaces, agencement, prestations prévues au contrat. Et n'oubliez pas l'<strong>extérieur</strong> : enduits, raccordements, écoulement des eaux. Munissez-vous du descriptif et des plans pour comparer point par point. Prenez le temps, notez tout, photographiez les défauts : un procès-verbal précis vaut bien mieux qu'une réserve vague que l'entreprise pourra contester.</p>`,
+    },
+    {
+      h2: "Réceptionner seul ou accompagné",
+      html: `<p>Réceptionner une maison demande un œil exercé : un particulier non averti passe facilement à côté de défauts qu'un professionnel repère immédiatement. Se faire accompagner par un maître d'œuvre, qui a suivi le chantier et connaît le projet, permet une réception rigoureuse, des réserves bien formulées et un suivi des reprises. C'est ce que nous faisons chez Maison de Nacre, jusqu'à la levée complète des réserves. Pour situer cette étape dans le parcours, voir notre guide <a href="/guides/etapes-construction-maison" class="text-primary underline">les étapes d'une construction</a>.</p>`,
+    },
+    {
+      h2: "Réussissez la réception de votre maison",
+      html: `<p>Une réception bien menée, c'est une maison livrée sans défaut et des garanties bien enclenchées. Maison de Nacre suit votre chantier et vous accompagne jusqu'à la levée des réserves. Parlons de votre projet.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Qu'est-ce que la réception des travaux ?",
+      answer:
+        "L'acte par lequel vous acceptez officiellement la maison, avec ou sans réserves, matérialisé par un procès-verbal. Elle déclenche vos garanties.",
+    },
+    {
+      question: "Que sont les réserves à la réception ?",
+      answer:
+        "Les défauts ou malfaçons constatés lors de la visite, notés précisément dans le procès-verbal, que l'entreprise doit corriger.",
+    },
+    {
+      question: "Combien de temps pour lever les réserves ?",
+      answer:
+        "Les réserves doivent être levées dans un délai convenu après la réception. Une retenue de garantie peut être conservée jusqu'à la reprise complète.",
+    },
+    {
+      question: "Quelles garanties démarrent à la réception ?",
+      answer:
+        "La garantie de parfait achèvement (un an), la garantie biennale (deux ans) et la garantie décennale (dix ans).",
+    },
+    {
+      question: "Faut-il se faire accompagner pour la réception ?",
+      answer:
+        "C'est fortement recommandé. Un maître d'œuvre repère les défauts, formule les réserves et suit les reprises, là où un particulier risque de passer à côté.",
+    },
+  ],
+  relatedGuideSlugs: ["etapes-construction-maison", "maitre-doeuvre-ou-constructeur"],
+};
+
+export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
