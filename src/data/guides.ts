@@ -2929,7 +2929,7 @@ const GOuConstruire: Guide = {
         "Sur notre page dédiée regroupant les communes du Calvados, avec les repères de marché de chacune.",
     },
   ],
-  relatedGuideSlugs: ["maison-neuve-caen", "prix-construction-maison-m2"],
+  relatedGuideSlugs: ["construire-ou-acheter-maison", "prix-construction-maison-m2"],
 };
 
 export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage, G20, G26, GDemarches, GPtz, GPret, GOuConstruire];
