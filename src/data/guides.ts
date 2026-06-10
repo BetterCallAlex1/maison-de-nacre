@@ -1763,7 +1763,93 @@ const G25: Guide = {
   relatedGuideSlugs: ["assurance-dommage-ouvrage", "reception-travaux-maison-neuve", "maitre-doeuvre-ou-constructeur"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25];
+const G27: Guide = {
+  slug: "assurance-dommage-ouvrage",
+  title: "L'assurance dommage-ouvrage expliquée | Maison de Nacre",
+  metaDescription:
+    "L'assurance dommage-ouvrage expliquée : à quoi elle sert, ce qu'elle couvre, son coût et pourquoi elle est obligatoire pour construire. Le guide complet.",
+  h1: "L'assurance dommage-ouvrage : à quoi elle sert",
+  primaryKeyword: "assurance dommage-ouvrage",
+  searchVolume: 6600,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Quand on fait construire, l'assurance dommage-ouvrage revient vite dans les démarches. Obligatoire et parfois mal comprise, elle est pourtant l'une de vos meilleures protections : elle vous permet d'être indemnisé rapidement en cas de gros sinistre, sans attendre des années de procédure. Voici à quoi elle sert, ce qu'elle couvre, ce qu'elle coûte et pourquoi vous ne devriez pas vous en passer.",
+  sections: [
+    {
+      h2: "Qu'est-ce que l'assurance dommage-ouvrage ?",
+      html: `<p>L'assurance dommage-ouvrage est une assurance que vous souscrivez en tant que maître d'ouvrage, c'est-à-dire la personne qui fait construire, avant l'ouverture du chantier. Son rôle est de <strong>préfinancer rapidement</strong> les réparations des dommages relevant de la garantie décennale, sans attendre qu'un tribunal détermine quel professionnel est responsable. Elle est le pendant pratique de la décennale : là où la décennale engage la responsabilité des professionnels, la dommage-ouvrage vous fait avancer l'argent des réparations.</p>`,
+    },
+    {
+      h2: "Pourquoi elle est obligatoire et à quoi elle sert",
+      html: `<p>La dommage-ouvrage est <strong>légalement obligatoire</strong> pour toute personne qui fait construire. Son utilité est concrète : en cas de sinistre grave (fissures structurelles, infiltrations majeures, défaut rendant la maison inhabitable), elle déclenche rapidement une expertise et le financement des travaux, sans que vous ayez à prouver une faute ni à attendre l'issue des recours entre assureurs. C'est la garantie d'être réparé vite, ce qui change tout face à un sinistre lourd.</p>`,
+    },
+    {
+      h2: "Ce que couvre la dommage-ouvrage",
+      html: `<p>La dommage-ouvrage couvre les mêmes dommages que la garantie décennale : ceux qui <strong>compromettent la solidité</strong> de la maison ou la <strong>rendent impropre à l'habitation</strong>. Elle prend en charge le coût des réparations de ces désordres pendant la durée de la décennale, soit dix ans à compter de la réception. Elle ne couvre pas les défauts esthétiques, l'usure normale ou les petits désordres relevant des garanties de parfait achèvement et biennale. Notre guide <a href="/guides/garantie-decennale" class="text-primary underline">la garantie décennale expliquée</a> détaille ce périmètre commun.</p>`,
+    },
+    {
+      h2: "Quand et comment la souscrire",
+      html: `<p>La dommage-ouvrage se souscrit <strong>avant l'ouverture du chantier</strong>. C'est à vous, maître d'ouvrage, de la prendre, même si vous pouvez en déléguer la souscription. Pour l'obtenir, l'assureur examine le projet et les assurances des entreprises intervenantes. C'est l'une des raisons de vérifier que tous les artisans disposent d'une décennale valable : sans cela, la dommage-ouvrage est plus difficile à obtenir.</p>`,
+    },
+    {
+      h2: "Combien coûte l'assurance dommage-ouvrage ?",
+      html: `<p>Son coût représente généralement de l'ordre de <strong>2 à 4 % du coût de construction</strong>. Pour une construction de 300 000 €, comptez donc souvent entre 6 000 et 12 000 €. C'est un poste à intégrer dans le budget global du projet, au même titre que les frais de notaire et la viabilisation. Notre guide <a href="/guides/budget-construction-maison" class="text-primary underline">budget d'un projet de construction</a> recense tous ces postes.</p>`,
+    },
+    {
+      h2: "Dommage-ouvrage et garantie décennale",
+      html: `<p>Les deux fonctionnent ensemble. La <strong>décennale</strong> est l'assurance de responsabilité des professionnels : elle dit qui paie en cas de faute. La <strong>dommage-ouvrage</strong> est votre assurance : elle paie d'abord, vite, puis se retourne vers les responsables et leurs décennales. Sans dommage-ouvrage, vous devriez engager vous-même les recours et avancer les frais, parfois pendant des années. C'est cette rapidité d'indemnisation qui justifie son obligation.</p>`,
+    },
+    {
+      h2: "Les autres assurances de la construction",
+      html: `<p>Au-delà de la dommage-ouvrage, plusieurs assurances entourent un projet. La <strong>responsabilité décennale</strong> de chaque entreprise et artisan, obligatoire, couvre les dommages graves pendant dix ans. La <strong>responsabilité civile</strong> des professionnels couvre les dommages causés pendant le chantier. Et dès la réception, votre <strong>assurance habitation</strong> prend le relais pour la vie courante de la maison. Bien vérifier ces couvertures avant et pendant le chantier protège votre projet.</p>`,
+    },
+    {
+      h2: "Que risque-t-on sans dommage-ouvrage ?",
+      html: `<p>Construire sans dommage-ouvrage est une prise de risque réelle. En cas de sinistre grave, vous devriez avancer le coût des réparations et engager seul les recours, ce qui peut prendre des années. À la revente, l'absence de dommage-ouvrage inquiète les acquéreurs et peut faire échouer une vente, car la garantie suit la maison. Bref, s'en passer expose à des conséquences lourdes, pour une économie qui n'en vaut pas le risque.</p>`,
+    },
+    {
+      h2: "La déclaration de sinistre : comment ça se passe",
+      html: `<p>Si un dommage grave apparaît dans les dix ans, la dommage-ouvrage suit un circuit balisé. Vous <strong>déclarez le sinistre</strong> à votre assureur dommage-ouvrage, par écrit, en décrivant les désordres constatés. L'assureur <strong>mandate un expert</strong> qui vient constater les dommages et déterminer s'ils relèvent bien de la garantie. S'ils sont couverts, l'assureur vous fait une <strong>proposition d'indemnisation</strong> dans des délais encadrés par la loi, puis <strong>finance les réparations</strong>. Il se retourne ensuite, de son côté, vers les entreprises responsables et leurs assurances décennales, sans que cela vous concerne.</p>
+<p>L'intérêt majeur de ce mécanisme est sa rapidité : la loi impose à l'assureur des délais pour se prononcer et indemniser, ce qui vous évite d'attendre l'issue, souvent longue, des litiges entre professionnels. Conservez précieusement votre contrat de dommage-ouvrage, le procès-verbal de réception et toutes les attestations : ce sont les pièces qui permettront de faire jouer la garantie sans accroc le jour où vous en aurez besoin.</p>`,
+    },
+    {
+      h2: "Construisez bien assuré",
+      html: `<p>Une maison bien assurée, c'est dix ans de tranquillité. Maison de Nacre vérifie les assurances des artisans, vous guide sur la dommage-ouvrage et sécurise votre projet jusqu'à la réception. Parlons-en.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Qu'est-ce que l'assurance dommage-ouvrage ?",
+      answer:
+        "Une assurance souscrite par celui qui fait construire, avant le chantier, qui préfinance rapidement les réparations des dommages relevant de la décennale, sans attendre la détermination des responsabilités.",
+    },
+    {
+      question: "L'assurance dommage-ouvrage est-elle obligatoire ?",
+      answer:
+        "Oui, pour toute personne qui fait construire une maison. Elle protège aussi les futurs acquéreurs en cas de revente.",
+    },
+    {
+      question: "Combien coûte la dommage-ouvrage ?",
+      answer:
+        "En général de 2 à 4 % du coût de construction, soit souvent 6 000 à 12 000 € pour une construction de 300 000 €.",
+    },
+    {
+      question: "Quelle différence avec la garantie décennale ?",
+      answer:
+        "La décennale engage la responsabilité des professionnels. La dommage-ouvrage, souscrite par le propriétaire, préfinance les réparations rapidement, puis se retourne vers les responsables.",
+    },
+    {
+      question: "Que risque-t-on sans dommage-ouvrage ?",
+      answer:
+        "Devoir avancer les frais de réparation et engager seul les recours en cas de sinistre, et compliquer une éventuelle revente, la garantie suivant la maison.",
+    },
+  ],
+  relatedGuideSlugs: ["garantie-decennale", "reception-travaux-maison-neuve", "budget-construction-maison"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
