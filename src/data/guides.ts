@@ -2579,7 +2579,76 @@ const G20: Guide = {
   relatedGuideSlugs: ["re2020", "prix-construction-maison-m2"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage, G20];
+const G26: Guide = {
+  slug: "ccmi-c-est-quoi",
+  title: "Qu'est-ce que le CCMI ? | Maison de Nacre",
+  metaDescription:
+    "Le CCMI (contrat de construction de maison individuelle) expliqué : définition, garanties, à qui il s'adresse et ses différences avec la maîtrise d'œuvre.",
+  h1: "Qu'est-ce que le CCMI ?",
+  primaryKeyword: "ccmi c'est quoi",
+  searchVolume: 30,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Le CCMI, ou contrat de construction de maison individuelle, revient souvent quand on se renseigne pour faire construire. C'est un contrat très encadré par la loi, propre à un mode de construction précis. Voici ce qu'il est, ce qu'il garantit, et en quoi il diffère d'un accompagnement en maîtrise d'œuvre.",
+  sections: [
+    {
+      h2: "Définition du CCMI",
+      html: `<p>Le CCMI est un contrat réglementé par la loi de 1990, conçu pour protéger les particuliers qui font construire. Il lie le client à un constructeur de maison individuelle qui s'engage sur un prix et un délai fermes, pour la réalisation d'une maison souvent issue d'un catalogue ou d'un modèle. C'est le cadre juridique du modèle « constructeur » au sens strict.</p>`,
+    },
+    {
+      h2: "Les garanties du CCMI",
+      html: `<p>Le CCMI offre des garanties fortes, c'est son grand atout. La principale est la <strong>garantie de livraison à prix et délais convenus</strong> : si le chantier dérape, un assureur prend le relais pour livrer la maison au prix prévu. S'y ajoutent la garantie de remboursement d'acompte, l'encadrement des paiements, et bien sûr les garanties légales de la construction (parfait achèvement, biennale, décennale). Ce cadre sécurise fortement le client sur le prix final.</p>`,
+    },
+    {
+      h2: "À qui s'adresse le CCMI ?",
+      html: `<p>Le CCMI convient particulièrement à ceux qui veulent la <strong>sécurité d'un prix ferme</strong> et la simplicité d'un interlocuteur unique, sur un modèle de maison défini. C'est rassurant pour qui craint les dépassements de budget et accepte un projet moins personnalisé. En contrepartie, la liberté de conception et le choix des artisans sont limités, et la marge du constructeur est intégrée dans le prix global.</p>`,
+    },
+    {
+      h2: "CCMI et maîtrise d'œuvre : la différence",
+      html: `<p>Le CCMI et la maîtrise d'œuvre répondent à deux logiques. Le CCMI est un <strong>contrat de vente d'une maison</strong> avec garantie de livraison, sur un modèle. La <strong>maîtrise d'œuvre</strong> est un accompagnement sur-mesure : le maître d'œuvre conçoit votre maison, consulte les artisans que vous choisissez et pilote le chantier, pour des honoraires affichés, sans marge sur les travaux. L'un privilégie la sécurité contractuelle et le standard, l'autre la liberté, le sur-mesure et la transparence. Notre comparatif <a href="/guides/maitre-doeuvre-ou-constructeur" class="text-primary underline">maître d'œuvre ou constructeur</a> détaille ce choix.</p>`,
+    },
+    {
+      h2: "Faut-il choisir le CCMI ?",
+      html: `<p>Tout dépend de vos priorités. Le CCMI est pertinent si la garantie de prix ferme et la simplicité priment, sur un modèle qui vous convient. La maîtrise d'œuvre l'emporte dès que vous voulez une maison unique, choisir vos artisans et comprendre où va chaque euro. Il n'y a pas de mauvaise réponse, seulement celle qui correspond à votre projet.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous hésitez sur le bon cadre pour faire construire ? Maison de Nacre vous éclaire et vous accompagne en maîtrise d'œuvre, sur-mesure et transparent. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Que signifie CCMI ?",
+      answer:
+        "Contrat de construction de maison individuelle, un contrat réglementé par la loi de 1990 qui encadre la construction par un constructeur.",
+    },
+    {
+      question: "Quelle est la principale garantie du CCMI ?",
+      answer:
+        "La garantie de livraison à prix et délais convenus : un assureur livre la maison au prix prévu si le chantier dérape.",
+    },
+    {
+      question: "Le CCMI est-il obligatoire pour construire ?",
+      answer:
+        "Non. Il s'applique quand on passe par un constructeur sur ce contrat. Faire construire avec un maître d'œuvre relève d'un autre cadre.",
+    },
+    {
+      question: "Quelle différence entre CCMI et maîtrise d'œuvre ?",
+      answer:
+        "Le CCMI vend une maison avec garantie de prix ferme, souvent sur modèle. La maîtrise d'œuvre est un accompagnement sur-mesure aux honoraires affichés.",
+    },
+    {
+      question: "Quel cadre choisir ?",
+      answer:
+        "Le CCMI pour la sécurité d'un prix ferme sur un modèle ; la maîtrise d'œuvre pour le sur-mesure, le choix des artisans et la transparence.",
+    },
+  ],
+  relatedGuideSlugs: ["maitre-doeuvre-ou-constructeur", "role-maitre-doeuvre"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage, G20, G26];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
