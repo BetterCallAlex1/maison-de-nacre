@@ -2648,7 +2648,84 @@ const G26: Guide = {
   relatedGuideSlugs: ["maitre-doeuvre-ou-constructeur", "role-maitre-doeuvre"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage, G20, G26];
+const GDemarches: Guide = {
+  slug: "demarches-apres-achat-terrain",
+  title: "Démarches après l'achat d'un terrain | Maison de Nacre",
+  metaDescription:
+    "Vous avez acheté un terrain : quelles démarches pour construire ? Étude de sol, conception, permis, viabilisation, financement. L'ordre des étapes à suivre.",
+  h1: "Les démarches après l'achat d'un terrain à bâtir",
+  primaryKeyword: "démarches après achat terrain",
+  searchVolume: 40,
+  publishedAt: "2026-06-10",
+  updatedAt: "2026-06-10",
+  intro:
+    "Vous venez d'acheter un terrain, et maintenant ? Entre l'acte chez le notaire et le premier coup de pelle, plusieurs démarches s'enchaînent dans un ordre logique. Voici la marche à suivre pour construire sereinement, sans perdre de temps ni oublier d'étape.",
+  sections: [
+    {
+      h2: "Étape 1 : faire l'étude de sol",
+      html: `<p>Si elle n'a pas été réalisée à l'achat, l'étude de sol est la première démarche utile. Elle détermine la nature du terrain et le type de fondations adapté, ce qui conditionne la conception et le budget. Dans de nombreuses zones, elle est obligatoire. Notre guide <a href="/guides/etude-de-sol-construction" class="text-primary underline">l'étude de sol</a> en détaille l'enjeu.</p>`,
+    },
+    {
+      h2: "Étape 2 : concevoir la maison",
+      html: `<p>Vient la conception : plans, implantation sur la parcelle, orientation, en tenant compte du terrain et des règles d'urbanisme. C'est l'étape où la maison prend forme, idéalement avec un architecte et un maître d'œuvre, pour un projet sur-mesure et conforme à la RE2020.</p>`,
+    },
+    {
+      h2: "Étape 3 : déposer le permis de construire",
+      html: `<p>Le projet conçu, on dépose la demande de permis en mairie. L'instruction dure environ deux mois pour une maison individuelle. Un dossier complet et conforme évite les retards. Notre guide <a href="/guides/permis-de-construire-maison" class="text-primary underline">le permis de construire</a> explique le dossier et la procédure.</p>`,
+    },
+    {
+      h2: "Étape 4 : viabiliser le terrain",
+      html: `<p>Si le terrain n'est pas viabilisé, il faut engager les raccordements aux réseaux (eau, électricité, assainissement, télécom). Ces démarches se mènent en parallèle du permis pour ne pas perdre de mois. Notre guide <a href="/guides/viabilisation-terrain" class="text-primary underline">la viabilisation d'un terrain</a> détaille les étapes et les coûts.</p>`,
+    },
+    {
+      h2: "Étape 5 : boucler le financement et les assurances",
+      html: `<p>En parallèle, finalisez votre financement (prêt, apport, éventuel PTZ) et souscrivez l'assurance dommage-ouvrage, obligatoire avant l'ouverture du chantier. Mieux vaut avoir l'accord de prêt avant de signer les devis.</p>`,
+    },
+    {
+      h2: "Étape 6 : consulter les artisans et lancer le chantier",
+      html: `<p>Le permis obtenu et le financement en place, on consulte les artisans, on compare et signe les devis, puis le chantier démarre. La coordination des corps de métier est la clé pour tenir les délais. Notre guide <a href="/guides/etapes-construction-maison" class="text-primary underline">les étapes d'une construction</a> détaille la suite jusqu'aux clés.</p>`,
+    },
+    {
+      h2: "Mener les démarches en parallèle",
+      html: `<p>Le secret pour ne pas rallonger le projet : ne pas tout faire en série. Conception, permis, financement et viabilisation se chevauchent en partie. Un maître d'œuvre orchestre ces démarches simultanément, ce qui fait gagner plusieurs mois par rapport à un enchaînement linéaire.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous avez un terrain et vous voulez avancer sans fausse note ? Maison de Nacre orchestre toutes les démarches, de l'étude de sol à la remise des clés. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Que faire juste après avoir acheté un terrain ?",
+      answer:
+        "Réaliser l'étude de sol si ce n'est pas fait, puis lancer la conception de la maison, en vue du dépôt de permis.",
+    },
+    {
+      question: "Dans quel ordre se font les démarches ?",
+      answer:
+        "Étude de sol, conception, permis de construire, viabilisation et financement en parallèle, puis consultation des artisans et chantier.",
+    },
+    {
+      question: "Faut-il viabiliser avant ou après le permis ?",
+      answer:
+        "Les deux se mènent souvent en parallèle. Certaines demandes de raccordement se finalisent une fois le permis obtenu.",
+    },
+    {
+      question: "Quand souscrire l'assurance dommage-ouvrage ?",
+      answer:
+        "Avant l'ouverture du chantier. Elle est obligatoire et protège votre maison pendant dix ans.",
+    },
+    {
+      question: "Comment éviter de perdre du temps ?",
+      answer:
+        "En menant conception, permis, financement et viabilisation en parallèle plutôt qu'en série. Un maître d'œuvre coordonne le tout.",
+    },
+  ],
+  relatedGuideSlugs: ["permis-de-construire-maison", "viabilisation-terrain", "etapes-construction-maison"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage, G20, G26, GDemarches];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
