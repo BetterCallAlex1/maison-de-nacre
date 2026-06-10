@@ -589,7 +589,76 @@ const S7: Service = {
   relatedGuideSlugs: ["choisir-terrain-constructible", "viabilisation-terrain", "prix-maison-neuve-calvados"],
 };
 
-export const SERVICES: Service[] = [S6, S2, S1, S4, SArchi, S3, S7];
+const S10: Service = {
+  slug: "suivi-de-chantier",
+  title: "Coordination et suivi de chantier | Maison de Nacre",
+  metaDescription:
+    "Coordination des artisans et suivi de chantier de votre maison : planning, qualité, paiements, jusqu'à la réception. Un maître d'œuvre pilote pour vous.",
+  h1: "Coordination des artisans et suivi de chantier",
+  primaryKeyword: "suivi de chantier construction maison",
+  searchVolume: 90,
+  publishedAt: "2026-06-10",
+  updatedAt: "2026-06-10",
+  intro:
+    "Un chantier de maison, c'est une dizaine de corps de métier à faire intervenir dans le bon ordre, au bon moment, avec le bon niveau de qualité. C'est là que tout peut déraper, ou bien se dérouler. Nous coordonnons les artisans et suivons votre chantier de la première pierre à la remise des clés, pour un projet tenu et serein.",
+  sections: [
+    {
+      h2: "Pourquoi la coordination est décisive",
+      html: `<p>Sur un chantier, chaque corps de métier dépend du précédent : le second œuvre attend le hors d'eau, les finitions attendent le second œuvre. Une intervention mal séquencée, un artisan en retard ou un défaut non repéré, et c'est tout le planning qui glisse, avec des surcoûts à la clé. Une coordination rigoureuse est ce qui sépare un chantier maîtrisé d'un chantier subi.</p>`,
+    },
+    {
+      h2: "Ce que comprend notre suivi de chantier",
+      html: `<p>Nous prenons en charge le pilotage complet : l'<strong>ordonnancement</strong> des interventions dans le bon ordre, le <strong>suivi du planning</strong> pour tenir les délais, le <strong>contrôle de la qualité</strong> à chaque étape, la <strong>validation des situations de paiement</strong> (vous ne payez que ce qui est réellement fait), la <strong>gestion des imprévus</strong> et des arbitrages techniques, et le lien permanent avec vous, tenu informé de l'avancement. Notre guide <a href="/guides/etapes-construction-maison" class="text-primary underline">les étapes d'une construction</a> détaille ces phases.</p>`,
+    },
+    {
+      h2: "Vous payez ce qui est réellement réalisé",
+      html: `<p>Le suivi de chantier protège aussi votre budget. Avant chaque appel de fonds, nous vérifions que la phase est bien achevée et conforme, ce qui évite de payer d'avance des travaux non réalisés. C'est une sécurité concrète sur votre trésorerie et la bonne exécution.</p>`,
+    },
+    {
+      h2: "Jusqu'à la réception et la levée des réserves",
+      html: `<p>Notre suivi ne s'arrête pas à la dernière finition. Nous vous accompagnons à la <strong>réception</strong> de la maison, pour vérifier la conformité et formuler les réserves nécessaires, puis nous suivons leur <strong>levée</strong> jusqu'à ce que tout soit conforme. Vous emménagez dans une maison terminée, sans réserve en suspens. Notre guide <a href="/guides/reception-travaux-maison-neuve" class="text-primary underline">réception de chantier et levée des réserves</a> détaille cette étape.</p>`,
+    },
+    {
+      h2: "Un interlocuteur unique, du début à la fin",
+      html: `<p>Le grand avantage de confier le suivi à votre maître d'œuvre est la continuité : la personne qui a conçu le projet et consulté les artisans est celle qui pilote le chantier. Rien ne se perd entre les étapes, et vous avez un seul interlocuteur responsable de l'ensemble. C'est le cœur de l'accompagnement Maison de Nacre. Voir notre <a href="/services/maitre-doeuvre-construction-maison" class="text-primary underline">accompagnement en maîtrise d'œuvre</a>.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous voulez un chantier piloté, tenu et de qualité, sans stress ? Maison de Nacre coordonne vos artisans et suit votre chantier jusqu'aux clés. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Qu'est-ce que la coordination de chantier ?",
+      answer:
+        "L'organisation des interventions des artisans dans le bon ordre et au bon moment, avec le suivi du planning, de la qualité et des paiements jusqu'à la livraison.",
+    },
+    {
+      question: "Pourquoi faire suivre son chantier par un maître d'œuvre ?",
+      answer:
+        "Pour tenir les délais, garantir la qualité, gérer les imprévus et ne payer que ce qui est réellement réalisé, sans avoir à coordonner soi-même les entreprises.",
+    },
+    {
+      question: "Le suivi inclut-il la réception ?",
+      answer:
+        "Oui. Nous vous accompagnons à la réception, formulons les réserves et suivons leur levée jusqu'à la mise en conformité.",
+    },
+    {
+      question: "Comment êtes-vous tenu informé de l'avancement ?",
+      answer:
+        "Nous faisons le lien permanent avec vous tout au long du chantier, à chaque étape clé.",
+    },
+    {
+      question: "Le suivi protège-t-il mon budget ?",
+      answer:
+        "Oui. En validant l'avancement réel avant chaque paiement, il évite de régler d'avance des travaux non faits.",
+    },
+  ],
+  relatedGuideSlugs: ["etapes-construction-maison", "reception-travaux-maison-neuve"],
+};
+
+export const SERVICES: Service[] = [S6, S2, S1, S4, SArchi, S3, S7, S10];
 
 export const SERVICES_BY_SLUG: Record<string, Service> = Object.fromEntries(
   SERVICES.map((s) => [s.slug, s]),
