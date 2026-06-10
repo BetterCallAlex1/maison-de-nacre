@@ -521,7 +521,75 @@ const S6: Service = {
   relatedGuideSlugs: ["re2020", "prix-construction-maison-m2"],
 };
 
-export const SERVICES: Service[] = [S6, S2, S1, S4, SArchi, S3];
+const S7: Service = {
+  slug: "terrain-a-batir-calvados",
+  title: "Recherche de terrain à bâtir Calvados | Maison de Nacre",
+  metaDescription:
+    "Recherche de terrain à bâtir dans le Calvados : nous vous aidons à trouver et vérifier votre terrain constructible, puis à y construire votre maison sur-mesure.",
+  h1: "Recherche de terrain à bâtir dans le Calvados",
+  primaryKeyword: "terrain à bâtir Calvados",
+  searchVolume: 70,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Trouver le bon terrain est souvent l'étape la plus délicate d'un projet de construction. Le foncier est rare dans les communes recherchées, et tous les terrains ne se valent pas. Nous vous aidons à trouver, vérifier et sécuriser un terrain à bâtir adapté à votre projet, dans la région de Caen et tout le Calvados.",
+  sections: [
+    {
+      h2: "Trouver le bon terrain, un enjeu majeur",
+      html: `<p>Le terrain conditionne tout : l'emplacement, le budget, et même la conception de la maison. Un bon terrain rend le projet fluide ; un mauvais choix peut renchérir la construction ou compliquer la vie pendant des années. Dans le Calvados, où le foncier est tendu près de Caen et sur le littoral, savoir où chercher et comment évaluer un terrain fait toute la différence.</p>`,
+    },
+    {
+      h2: "Comment nous vous aidons à trouver votre terrain",
+      html: `<p>Nous mettons notre connaissance du marché local au service de votre recherche. Nous suivons l'offre foncière de la région, nous vous orientons vers les secteurs cohérents avec votre budget et votre projet, et nous évaluons chaque terrain avant que vous ne vous engagiez. L'objectif : vous éviter les fausses bonnes affaires et identifier les parcelles à réel potentiel pour votre future maison.</p>`,
+    },
+    {
+      h2: "La vérification de faisabilité avant l'achat",
+      html: `<p>C'est l'étape clé, trop souvent négligée. Avant de signer, nous vérifions la <strong>constructibilité</strong> du terrain au regard du plan local d'urbanisme, l'état de la <strong>viabilisation</strong> et la distance aux réseaux, la <strong>nature du sol</strong> et son impact sur les fondations, ainsi que l'<strong>orientation</strong> et la topographie. Cette analyse vous évite de découvrir des surcoûts ou des contraintes après l'achat. Nos guides <a href="/guides/choisir-terrain-constructible" class="text-primary underline">comment choisir son terrain constructible</a> et <a href="/guides/viabilisation-terrain" class="text-primary underline">la viabilisation d'un terrain</a> détaillent ces points.</p>`,
+    },
+    {
+      h2: "Penser le terrain et le projet ensemble",
+      html: `<p>Un terrain ne se choisit pas indépendamment de la maison qu'on veut y construire. Une parcelle en pente, une orientation particulière ou une forme atypique appellent une conception adaptée. En réunissant la recherche de terrain et la conception de la maison, nous nous assurons que le projet exploite au mieux les atouts de la parcelle, plutôt que de plaquer un plan standard sur un terrain qui ne s'y prête pas.</p>`,
+    },
+    {
+      h2: "Où construire dans le Calvados ?",
+      html: `<p>De Caen et sa première couronne au littoral de la Côte de Nacre, en passant par l'arrière-pays, chaque secteur a son marché, ses prix et son cadre de vie. Pour explorer les communes où nous intervenons, avec leurs repères de marché, voir notre page <a href="/construire-dans-le-calvados" class="text-primary underline">faire construire dans le Calvados</a>.</p>`,
+    },
+    {
+      h2: "Notre accompagnement, de la recherche aux clés",
+      html: `<p>Trouver le terrain n'est que le début. Une fois la parcelle sécurisée, nous enchaînons sur la conception sur-mesure, le permis, la consultation des artisans et le suivi du chantier, jusqu'à la remise des clés. Un seul interlocuteur, du terrain à la maison terminée. Découvrez notre <a href="/services/maison-cle-en-main" class="text-primary underline">accompagnement clé en main</a>.</p>`,
+    },
+    {
+      h2: "Trouvons votre terrain",
+      html: `<p>Vous cherchez un terrain à bâtir dans le Calvados, ou vous hésitez sur une parcelle ? Parlons-en. Nous vous aidons à trouver le bon terrain et à y construire votre maison sur-mesure. Première estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Aidez-vous à trouver un terrain à bâtir ?",
+      answer:
+        "Oui. Nous vous orientons dans votre recherche, suivons l'offre foncière locale et évaluons les terrains avant votre engagement, dans la région de Caen et le Calvados.",
+    },
+    {
+      question: "Vérifiez-vous la faisabilité d'un terrain avant l'achat ?",
+      answer:
+        "Oui. Nous contrôlons la constructibilité, la viabilisation, la nature du sol et l'orientation, pour éviter les mauvaises surprises après l'achat.",
+    },
+    {
+      question: "Faut-il avoir un terrain avant de vous contacter ?",
+      answer:
+        "Non. Nous pouvons intervenir dès la recherche du terrain, ou plus tard si vous en avez déjà un.",
+    },
+    {
+      question: "Quel budget pour un terrain dans le Calvados ?",
+      answer:
+        "De l'ordre de 150 €/m² dans l'arrière-pays à 250 €/m² en première couronne caennaise, davantage dans Caen et sur le littoral, plus les frais de notaire.",
+    },
+  ],
+  relatedGuideSlugs: ["choisir-terrain-constructible", "viabilisation-terrain", "prix-maison-neuve-calvados"],
+};
+
+export const SERVICES: Service[] = [S6, S2, S1, S4, SArchi, S3, S7];
 
 export const SERVICES_BY_SLUG: Record<string, Service> = Object.fromEntries(
   SERVICES.map((s) => [s.slug, s]),
