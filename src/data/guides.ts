@@ -2510,7 +2510,76 @@ const GChauffage: Guide = {
   relatedGuideSlugs: ["re2020", "maison-basse-consommation"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage];
+const G20: Guide = {
+  slug: "re2020-prix-maison",
+  title: "RE2020 : quel impact sur le prix | Maison de Nacre",
+  metaDescription:
+    "RE2020 et prix d'une maison : quel surcoût réel, pourquoi il se rentabilise à l'usage, et comment l'optimiser. Le point sur le coût de la norme.",
+  h1: "RE2020 : quel impact sur le prix de votre maison ?",
+  primaryKeyword: "re2020 prix maison",
+  searchVolume: 50,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "La RE2020 a-t-elle renchéri la construction ? Oui, mais moins qu'on ne le craint, et pour de bonnes raisons. Voici le point honnête sur le surcoût de la norme, pourquoi il se rentabilise, et comment le maîtriser.",
+  sections: [
+    {
+      h2: "Un surcoût réel mais mesuré",
+      html: `<p>Par rapport aux anciennes normes, la RE2020 ajoute de l'ordre de <strong>5 à 10 %</strong> au coût de construction. Ce surcoût provient de l'isolation renforcée, de l'étanchéité soignée, des menuiseries performantes, du chauffage décarboné et de la ventilation maîtrisée. C'est un investissement supplémentaire à la construction, qu'il faut intégrer au budget, mais qui reste mesuré au regard de ses bénéfices.</p>`,
+    },
+    {
+      h2: "Pourquoi ce surcoût se rentabilise",
+      html: `<p>Le surcoût de la RE2020 n'est pas une dépense perdue : il se rattrape à l'usage. Une maison RE2020 consomme <strong>bien moins d'énergie</strong> qu'une maison ancienne, ce qui réduit fortement les factures de chauffage et d'eau chaude, année après année. Sur la durée de vie de la maison, ces économies compensent largement le surcoût initial. À cela s'ajoute une <strong>valeur préservée</strong> : une maison performante, bien classée au DPE, se revend mieux. Notre guide <a href="/guides/dpe-maison-neuve" class="text-primary underline">DPE et maison neuve</a> développe ce point.</p>`,
+    },
+    {
+      h2: "Ce qui fait varier le surcoût",
+      html: `<p>L'ampleur du surcoût dépend du niveau d'ambition. Respecter la RE2020 a un coût ; viser au-delà (vers le passif) en a un plus élevé. Le terrain, la forme de la maison et les choix d'équipement jouent aussi. Une conception intelligente permet d'atteindre la performance sans surenchère, en jouant d'abord sur l'orientation et la compacité, gratuites, avant les équipements coûteux.</p>`,
+    },
+    {
+      h2: "Comment maîtriser le coût de la RE2020",
+      html: `<p>Le meilleur levier est la <strong>conception</strong>. Une maison bien orientée, compacte et bien pensée atteint la performance à moindre coût qu'une maison mal conçue qu'on rattrape à coups d'équipements. Investir dans une bonne conception dès le départ, avec un architecte et un maître d'œuvre, optimise le rapport performance/prix. Nos guides <a href="/guides/prix-construction-maison-m2" class="text-primary underline">prix de construction au m²</a> et <a href="/guides/re2020" class="text-primary underline">la RE2020 expliquée</a> complètent ce point.</p>`,
+    },
+    {
+      h2: "Le bon raisonnement : coût global",
+      html: `<p>Plutôt que de regarder le seul prix de construction, raisonnez en <strong>coût global</strong> : prix d'achat plus coût d'usage sur des années. Sous cet angle, une maison RE2020 légèrement plus chère à construire mais bien moins coûteuse à habiter est gagnante. C'est le calcul qui compte vraiment quand on s'installe pour longtemps.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous voulez une maison performante au juste prix, pensée en coût global ? Maison de Nacre optimise la conception pour le meilleur rapport performance/budget. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Quel est le surcoût de la RE2020 ?",
+      answer:
+        "De l'ordre de 5 à 10 % du coût de construction, lié à l'isolation, l'étanchéité, les équipements et la ventilation.",
+    },
+    {
+      question: "Ce surcoût se rentabilise-t-il ?",
+      answer:
+        "Oui, par des factures d'énergie nettement plus basses et une meilleure valeur à la revente, qui compensent l'investissement initial.",
+    },
+    {
+      question: "Comment réduire le coût d'une maison RE2020 ?",
+      answer:
+        "Par une bonne conception (orientation, compacité) qui atteint la performance avant de recourir aux équipements coûteux.",
+    },
+    {
+      question: "Une maison RE2020 est-elle rentable ?",
+      answer:
+        "En coût global (achat plus usage sur des années), oui : le léger surcoût de construction est compensé par les économies d'usage.",
+    },
+    {
+      question: "La RE2020 va-t-elle encore renchérir le neuf ?",
+      answer:
+        "La norme se durcit par paliers. Une maison bien conçue aujourd'hui anticipe ces évolutions et garde de la valeur.",
+    },
+  ],
+  relatedGuideSlugs: ["re2020", "prix-construction-maison-m2"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage, G20];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
