@@ -2295,7 +2295,80 @@ const G31: Guide = {
   relatedGuideSlugs: ["re2020", "construire-ou-acheter-maison"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31];
+const G33: Guide = {
+  slug: "maison-basse-consommation",
+  title: "Maison basse consommation : le guide | Maison de Nacre",
+  metaDescription:
+    "Maison basse consommation : principes, isolation, chauffage et ventilation pour réduire ses factures. Comment concevoir une maison neuve économe en énergie.",
+  h1: "Maison basse consommation : comment construire économe",
+  primaryKeyword: "maison basse consommation",
+  searchVolume: 260,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Une maison basse consommation, c'est une maison qui consomme très peu d'énergie pour le chauffage, l'eau chaude et le confort. Avec la RE2020, le neuf part déjà à un bon niveau, mais quelques principes permettent d'aller plus loin. Voici comment concevoir une maison réellement économe.",
+  sections: [
+    {
+      h2: "Qu'est-ce qu'une maison basse consommation ?",
+      html: `<p>Une maison basse consommation limite au maximum ses besoins en énergie, par une conception et des équipements performants. L'objectif est double : réduire les factures et améliorer le confort, tout en limitant l'empreinte environnementale. Aujourd'hui, toute maison neuve RE2020 est déjà une maison basse consommation par rapport à l'ancien ; il s'agit ensuite d'optimiser chaque levier.</p>`,
+    },
+    {
+      h2: "Les piliers d'une maison économe",
+      html: `<p>Quatre leviers font la performance. L'<strong>isolation</strong>, d'abord : murs, toiture et sol bien isolés limitent les déperditions. L'<strong>étanchéité à l'air</strong>, ensuite, pour éviter les fuites de chaleur. La <strong>conception bioclimatique</strong> : orientation, ouvertures et protections solaires pour capter la chaleur l'hiver et s'en protéger l'été. Et des <strong>équipements performants</strong> : pompe à chaleur, ventilation maîtrisée, eau chaude efficace. Bien combinés, ces leviers réduisent fortement la consommation.</p>`,
+    },
+    {
+      h2: "Le rôle de l'isolation et de l'étanchéité",
+      html: `<p>L'isolation est le premier poste d'économie : une maison bien isolée garde la chaleur en hiver et la fraîcheur en été. L'étanchéité à l'air complète l'isolation en supprimant les fuites, souvent sous-estimées. Ensemble, elles réduisent les besoins de chauffage avant même de parler d'équipements. C'est pourquoi la performance se joue d'abord sur l'enveloppe de la maison.</p>`,
+    },
+    {
+      h2: "Le chauffage et la ventilation",
+      html: `<p>Une maison basse consommation privilégie un <strong>chauffage décarboné et efficace</strong>, le plus souvent une pompe à chaleur, dimensionnée au plus juste puisque les besoins sont faibles. La <strong>ventilation</strong> joue aussi un rôle clé : une ventilation maîtrisée, voire double flux, renouvelle l'air sans gaspiller la chaleur. Notre guide <a href="/guides/chauffage-maison-re2020" class="text-primary underline">quel chauffage pour une maison RE2020</a> approfondit ce point.</p>`,
+    },
+    {
+      h2: "Basse consommation, RE2020 et passif",
+      html: `<p>Ces notions se recoupent. La <strong>RE2020</strong> est la base obligatoire et garantit déjà une maison économe. Aller plus loin mène vers la <strong>maison passive</strong>, le standard le plus exigeant. Entre les deux, on peut optimiser une maison RE2020 pour tendre vers le passif sur certains postes, selon le budget et les priorités. Nos guides <a href="/guides/re2020" class="text-primary underline">la RE2020 expliquée</a> et <a href="/guides/maison-passive" class="text-primary underline">la maison passive</a> situent ces niveaux.</p>`,
+    },
+    {
+      h2: "Bien concevoir dès le départ",
+      html: `<p>La sobriété énergétique se décide à la conception, pas après. Orientation, compacité, isolation, équipements : tout se pense ensemble, dès les premiers plans. C'est le travail d'un architecte et d'un maître d'œuvre qui intègrent la performance comme un objectif, pas une contrainte. Maison de Nacre conçoit votre maison économe sur-mesure. Voir notre page <a href="/services/maison-re2020" class="text-primary underline">construire une maison RE2020</a>.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous voulez une maison économe, confortable et tournée vers l'avenir ? Maison de Nacre la conçoit sur-mesure et la réalise clé en main. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Qu'est-ce qu'une maison basse consommation ?",
+      answer:
+        "Une maison qui consomme très peu d'énergie grâce à une bonne isolation, une étanchéité soignée, une conception bioclimatique et des équipements performants.",
+    },
+    {
+      question: "Une maison neuve est-elle basse consommation ?",
+      answer:
+        "Oui, par rapport à l'ancien : la RE2020 impose déjà un haut niveau de performance. On peut ensuite optimiser chaque levier.",
+    },
+    {
+      question: "Comment réduire la consommation d'une maison ?",
+      answer:
+        "En agissant d'abord sur l'enveloppe (isolation, étanchéité), puis sur les équipements (pompe à chaleur, ventilation maîtrisée) et la conception bioclimatique.",
+    },
+    {
+      question: "Quel chauffage pour une maison économe ?",
+      answer:
+        "Le plus souvent une pompe à chaleur, dimensionnée au plus juste car les besoins sont faibles, associée à une ventilation performante.",
+    },
+    {
+      question: "Quelle différence avec une maison passive ?",
+      answer:
+        "La maison passive est le niveau le plus exigeant. Une maison basse consommation peut s'en approcher selon le budget, en partant de la base RE2020.",
+    },
+  ],
+  relatedGuideSlugs: ["re2020", "maison-passive"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
