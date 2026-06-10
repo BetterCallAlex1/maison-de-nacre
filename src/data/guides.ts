@@ -1995,7 +1995,84 @@ const GArchi: Guide = {
   relatedGuideSlugs: ["role-maitre-doeuvre", "maitre-doeuvre-ou-constructeur"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi];
+const G10: Guide = {
+  slug: "maison-ossature-bois-ou-traditionnelle",
+  title: "Maison ossature bois ou traditionnelle | Maison de Nacre",
+  metaDescription:
+    "Maison ossature bois ou maçonnerie traditionnelle : avantages, coûts, performance et idées reçues. Le comparatif pour choisir le bon mode de construction.",
+  h1: "Maison ossature bois ou traditionnelle : comment choisir ?",
+  primaryKeyword: "maison ossature bois ou traditionnelle",
+  searchVolume: 50,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Faut-il construire en ossature bois ou en maçonnerie traditionnelle ? Les deux modes de construction permettent des maisons de qualité, conformes à la RE2020, mais ils n'ont pas les mêmes atouts. Voici un comparatif clair, sans idée reçue, pour choisir en connaissance de cause.",
+  sections: [
+    {
+      h2: "Les deux modes de construction en bref",
+      html: `<p>La <strong>maison traditionnelle</strong> est construite en maçonnerie : parpaing, brique ou béton, avec une isolation rapportée. C'est le mode le plus répandu en France, robuste et éprouvé. La <strong>maison à ossature bois</strong> repose sur une structure en bois, garnie d'isolant, et habillée selon le rendu souhaité. Plus légère et rapide à monter, elle séduit par sa performance et son caractère naturel.</p>`,
+    },
+    {
+      h2: "Les avantages de la maison traditionnelle",
+      html: `<p>La maçonnerie traditionnelle offre une grande <strong>inertie thermique</strong> : les murs lourds emmagasinent la chaleur et la restituent, un atout pour le confort d'été. Elle rassure par sa <strong>solidité</strong> perçue et sa longévité, et bénéficie d'un large vivier d'artisans maîtrisant ce savoir-faire. C'est aussi souvent le choix le plus économique à surface égale, selon les régions.</p>`,
+    },
+    {
+      h2: "Les avantages de la maison ossature bois",
+      html: `<p>L'ossature bois brille par sa <strong>performance thermique</strong> : à épaisseur de mur égale, elle isole mieux, ce qui sert la RE2020. Le chantier est <strong>plus rapide</strong> et plus sec, car la structure peut être préfabriquée. Le bois est un matériau <strong>bas carbone</strong> et renouvelable, valorisé par la RE2020. Enfin, l'ossature bois offre une grande <strong>liberté architecturale</strong> et des murs plus fins à performance égale, donc un peu plus de surface habitable.</p>`,
+    },
+    {
+      h2: "Les idées reçues à dépasser",
+      html: `<p>Plusieurs croyances ont la vie dure. « Le bois brûle plus vite » : en réalité, une structure bois bien dimensionnée résiste très bien au feu, car elle se consume lentement et de façon prévisible. « Le bois ne dure pas » : correctement conçue et protégée de l'humidité, une maison ossature bois traverse les décennies. « Le bois, c'est forcément un chalet » : l'ossature bois se prête à tous les styles, du contemporain au traditionnel, son habillage étant libre.</p>`,
+    },
+    {
+      h2: "Le coût : ossature bois ou traditionnelle",
+      html: `<p>À surface et finition équivalentes, les deux modes se tiennent souvent dans des fourchettes proches. La traditionnelle peut être un peu moins chère sur le gros œuvre selon les régions ; l'ossature bois compense par la rapidité de chantier et la performance. Le coût final dépend surtout des finitions, de la complexité du plan et du terrain, plus que du seul mode constructif. Notre guide <a href="/guides/prix-construction-maison-m2" class="text-primary underline">prix de construction au m²</a> donne les repères.</p>`,
+    },
+    {
+      h2: "Performance énergétique et RE2020",
+      html: `<p>Les deux modes permettent d'atteindre la RE2020. L'ossature bois part avec un avantage sur l'isolation et le bilan carbone des matériaux ; la traditionnelle compense par son inertie, précieuse pour le confort d'été. Dans les deux cas, c'est la qualité de conception qui fait la performance réelle. Notre guide <a href="/guides/re2020" class="text-primary underline">la RE2020 expliquée</a> détaille ces critères.</p>`,
+    },
+    {
+      h2: "Comment trancher ?",
+      html: `<p>Le choix dépend de vos priorités : performance et rapidité penchent vers l'ossature bois, inertie et budget gros œuvre vers la traditionnelle. Le terrain, le style recherché et les artisans disponibles localement entrent aussi en jeu. L'essentiel est d'arbitrer en fonction de votre projet, pas d'un a priori. Un maître d'œuvre vous aide à choisir le mode le plus adapté, puis le met en œuvre.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Ossature bois ou traditionnelle, nous concevons et réalisons votre maison sur-mesure dans le mode le plus adapté à votre projet. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Ossature bois ou traditionnelle : laquelle est la moins chère ?",
+      answer:
+        "Les deux sont souvent proches à finition équivalente. La traditionnelle peut être un peu moins chère sur le gros œuvre, l'ossature bois compense par la rapidité et la performance.",
+    },
+    {
+      question: "La maison ossature bois est-elle aussi solide ?",
+      answer:
+        "Oui, une structure bois bien conçue est durable et résistante, y compris au feu, car elle se consume lentement et de façon prévisible.",
+    },
+    {
+      question: "Laquelle est la plus performante en énergie ?",
+      answer:
+        "L'ossature bois isole mieux à épaisseur égale et affiche un meilleur bilan carbone ; la traditionnelle offre plus d'inertie pour le confort d'été. Les deux atteignent la RE2020.",
+    },
+    {
+      question: "L'ossature bois convient-elle à tous les styles ?",
+      answer:
+        "Oui. Son habillage étant libre, elle se prête au contemporain comme au traditionnel, bien au-delà du chalet.",
+    },
+    {
+      question: "Comment choisir entre les deux ?",
+      answer:
+        "Selon vos priorités (performance, budget, inertie, rapidité), votre terrain et le style voulu. Un maître d'œuvre vous aide à arbitrer.",
+    },
+  ],
+  relatedGuideSlugs: ["prix-construction-maison-m2", "re2020"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
