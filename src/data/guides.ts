@@ -1849,7 +1849,80 @@ const G27: Guide = {
   relatedGuideSlugs: ["garantie-decennale", "reception-travaux-maison-neuve", "budget-construction-maison"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27];
+const G15: Guide = {
+  slug: "role-maitre-doeuvre",
+  title: "Le rôle du maître d'œuvre | Maison de Nacre",
+  metaDescription:
+    "Quel est le rôle du maître d'œuvre dans la construction d'une maison ? Ses missions étape par étape, ce qu'il fait pour vous et ce qui le distingue.",
+  h1: "Le rôle du maître d'œuvre dans un projet de construction",
+  primaryKeyword: "rôle maître d'œuvre",
+  searchVolume: 50,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Le maître d'œuvre est souvent présenté comme le chef d'orchestre de la construction. Mais que fait-il concrètement, à chaque étape ? Comprendre son rôle aide à savoir ce que vous pouvez attendre de lui, et pourquoi son accompagnement change la conduite d'un projet de maison.",
+  sections: [
+    {
+      h2: "Maître d'œuvre et maître d'ouvrage : deux rôles à distinguer",
+      html: `<p>Premier point pour ne pas confondre : le <strong>maître d'ouvrage</strong>, c'est vous, le propriétaire qui décide et finance le projet. Le <strong>maître d'œuvre</strong> est le professionnel que vous mandatez pour concevoir la maison et piloter sa réalisation. Vous gardez la décision sur tout ; lui met son expertise au service de votre projet et coordonne les intervenants. C'est une relation de confiance, où le maître d'œuvre travaille pour vous et défend vos intérêts.</p>`,
+    },
+    {
+      h2: "Le rôle du maître d'œuvre, étape par étape",
+      html: `<p>Son intervention couvre tout le parcours. En phase de <strong>conception</strong>, il traduit vos besoins en plans, seul ou avec un architecte, et veille à la cohérence avec votre terrain et votre budget. En phase de <strong>consultation</strong>, il chiffre le coût réel des travaux, consulte plusieurs artisans par corps de métier et compare les devis pour votre compte. Au moment du <strong>permis</strong>, il monte le dossier et suit son instruction. Pendant le <strong>chantier</strong>, il coordonne les artisans dans le bon ordre, contrôle la qualité, fait respecter le planning et valide les paiements. À la <strong>réception</strong>, il vous accompagne pour vérifier la conformité et faire lever les réserves.</p>`,
+    },
+    {
+      h2: "Ce que le maître d'œuvre fait pour vous",
+      html: `<p>Au quotidien, le maître d'œuvre vous décharge de la gestion sans vous retirer la décision. Il règle les imprévus de chantier, arbitre les questions techniques, fait l'interface avec les artisans et l'administration, et vous tient informé à chaque étape. Là où un particulier seul devrait coordonner une dizaine d'entreprises, suivre un planning et gérer les aléas, le maître d'œuvre s'en charge, avec l'expérience qui évite les erreurs coûteuses.</p>`,
+    },
+    {
+      h2: "Ce qui distingue le maître d'œuvre",
+      html: `<p>Sa particularité tient à sa position : il est rémunéré par des <strong>honoraires transparents</strong>, payés par vous, et ne prend pas de marge sur les travaux des artisans. Son intérêt rejoint donc le vôtre, à savoir un projet bien mené au juste prix. C'est ce qui le distingue d'autres modèles où la rémunération est fondue dans un prix global. Notre comparatif <a href="/guides/maitre-doeuvre-ou-constructeur" class="text-primary underline">maître d'œuvre ou constructeur</a> détaille ces différences.</p>`,
+    },
+    {
+      h2: "Maître d'œuvre et architecte : qui fait quoi ?",
+      html: `<p>Les deux interviennent en conception, mais leur périmètre diffère. L'architecte est avant tout concepteur : il dessine la maison. Le maître d'œuvre conçoit et surtout <strong>coordonne l'exécution</strong> jusqu'à la livraison. Beaucoup de projets associent les deux, l'architecte pour le plan, le maître d'œuvre pour le pilotage, ce qui offre le meilleur des deux mondes.</p>`,
+    },
+    {
+      h2: "Pourquoi faire appel à un maître d'œuvre",
+      html: `<p>Faire appel à un maître d'œuvre, c'est gagner du temps, de la sérénité et souvent de l'argent. Du temps, car vous n'avez pas à coordonner vous-même les intervenants. De la sérénité, car un professionnel veille à la qualité et aux délais. De l'argent, car la mise en concurrence des artisans permet d'obtenir des prix justes. C'est le métier de Maison de Nacre dans la région de Caen, de la conception à la remise des clés. Voir notre <a href="/services/maitre-doeuvre-construction-maison" class="text-primary underline">accompagnement en maîtrise d'œuvre</a>.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous voulez un projet piloté de bout en bout, sans stress ? Maison de Nacre joue ce rôle de chef d'orchestre, de la première esquisse à la remise des clés. Parlons-en, première estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Quel est le rôle du maître d'œuvre ?",
+      answer:
+        "Concevoir la maison, consulter et coordonner les artisans, monter le permis, piloter le chantier et accompagner jusqu'à la réception. Il gère l'opérationnel, vous gardez la décision.",
+    },
+    {
+      question: "Quelle différence entre maître d'œuvre et maître d'ouvrage ?",
+      answer:
+        "Le maître d'ouvrage est le propriétaire qui décide et finance. Le maître d'œuvre est le professionnel mandaté pour concevoir et piloter le projet.",
+    },
+    {
+      question: "Le maître d'œuvre prend-il une marge sur les travaux ?",
+      answer:
+        "Non. Il est rémunéré par des honoraires affichés et ne se paie pas sur les devis des artisans, que vous réglez à leur prix réel.",
+    },
+    {
+      question: "Maître d'œuvre ou architecte ?",
+      answer:
+        "L'architecte conçoit, le maître d'œuvre conçoit et coordonne l'exécution. Les deux peuvent travailler ensemble sur un même projet.",
+    },
+    {
+      question: "Pourquoi faire appel à un maître d'œuvre ?",
+      answer:
+        "Pour gagner du temps, sécuriser la qualité et les délais, et obtenir des prix justes grâce à la mise en concurrence des artisans.",
+    },
+  ],
+  relatedGuideSlugs: ["maitre-doeuvre-ou-constructeur", "cout-maitre-doeuvre"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
