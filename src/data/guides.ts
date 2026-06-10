@@ -1462,7 +1462,105 @@ const G30: Guide = {
   relatedGuideSlugs: ["etapes-construction-maison", "maitre-doeuvre-ou-constructeur"],
 };
 
-export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30];
+const G7: Guide = {
+  slug: "construire-ou-acheter-maison",
+  title: "Construire neuf ou acheter dans l'ancien | Maison de Nacre",
+  metaDescription:
+    "Construire neuf ou acheter dans l'ancien ? Prix, énergie, travaux, frais, délais : le comparatif honnête pour bien choisir, surtout dans la région de Caen.",
+  h1: "Construire neuf ou acheter dans l'ancien : comment choisir",
+  primaryKeyword: "construire ou acheter maison",
+  searchVolume: 90,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "C'est l'une des premières grandes décisions d'un projet immobilier : faut-il acheter une maison existante ou en faire construire une neuve ? Les deux ont leurs atouts, et la réponse dépend de votre budget, de vos priorités et de la commune visée. Voici un comparatif honnête, sans parti pris, pour décider en connaissance de cause.",
+  sections: [
+    {
+      h2: "Les deux options en bref",
+      html: `<p>Acheter dans l'<strong>ancien</strong>, c'est emménager vite dans une maison existante, souvent bien située, avec parfois du charme, mais à rénover et à remettre aux normes énergétiques. Faire construire <strong>neuf</strong>, c'est concevoir une maison sur-mesure, performante et sans travaux, mais avec un délai et la nécessité de trouver un terrain. Deux logiques différentes, pour deux profils de projet.</p>`,
+    },
+    {
+      h2: "Le prix : neuf ou ancien",
+      html: `<p>Au premier regard, l'ancien affiche souvent un prix au mètre carré plus bas. Mais la comparaison brute est trompeuse : à l'ancien, il faut presque toujours ajouter des travaux (rénovation énergétique, mise aux normes, rafraîchissement), parfois lourds. Le neuf, lui, part au meilleur niveau, sans travaux à prévoir. Dans les communes recherchées du Calvados, où l'ancien dépasse souvent le coût d'une construction neuve clé en main, le neuf devient très compétitif. Notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a> donne les chiffres réels par secteur.</p>`,
+    },
+    {
+      h2: "L'énergie et la performance",
+      html: `<p>C'est l'un des écarts les plus nets. Une maison neuve respecte la RE2020 : isolation renforcée, chauffage décarboné, confort d'été, et donc des factures d'énergie faibles. Une maison ancienne, surtout si elle est mal classée au DPE, peut imposer de gros travaux d'amélioration, et sa valeur se déprécie à mesure que les exigences se durcissent. Sur la durée, l'écart de coût énergétique est considérable. Notre guide <a href="/guides/re2020" class="text-primary underline">la RE2020 expliquée</a> détaille ces bénéfices.</p>`,
+    },
+    {
+      h2: "Les travaux : zéro contre à prévoir",
+      html: `<p>Dans le neuf, vous emménagez dans une maison terminée, sans travaux pendant des années, et couverte par les garanties (décennale, parfait achèvement). Dans l'ancien, les travaux sont fréquents, parfois imprévus une fois le chantier ouvert, et leur coût final dépasse souvent l'estimation initiale. C'est un facteur de stress et d'incertitude budgétaire à intégrer.</p>`,
+    },
+    {
+      h2: "Le sur-mesure contre l'existant",
+      html: `<p>Le neuf permet une maison pensée pour vous : plan, orientation, volumes, nombre de chambres, le tout adapté à votre mode de vie et à votre terrain. L'ancien, lui, impose son agencement : vous adaptez votre vie à la maison, ou vous engagez des travaux pour la transformer. Pour qui a une idée précise de la maison qu'il veut, le neuf offre une liberté que l'ancien n'a pas.</p>`,
+    },
+    {
+      h2: "Les frais et les taxes",
+      html: `<p>Un point souvent ignoré : dans le neuf en faisant construire, les frais de notaire ne portent que sur le <strong>terrain</strong>, pas sur la construction, alors que dans l'ancien ils portent sur la <strong>totalité</strong> du prix (7 à 8 %). Le neuf bénéficie aussi parfois d'avantages (exonérations temporaires de taxe foncière selon les communes, éligibilité au prêt à taux zéro pour un primo-accédant). Ces éléments réduisent l'écart de coût avec l'ancien.</p>`,
+    },
+    {
+      h2: "Le délai et la disponibilité",
+      html: `<p>C'est l'avantage clé de l'ancien : on emménage vite, une fois l'achat signé. Le neuf demande du temps : trouver le terrain, concevoir, obtenir le permis, construire, soit douze à dix-huit mois. Si vous êtes pressé, l'ancien a une longueur d'avance. Si vous pouvez anticiper, le neuf vous offre une maison taillée pour vous.</p>`,
+    },
+    {
+      h2: "Comparatif neuf et ancien",
+      html: `<div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr><th class="text-left py-2 pr-4">Critère</th><th class="text-left py-2 pr-4">Neuf (faire construire)</th><th class="text-left py-2">Ancien</th></tr></thead><tbody>
+<tr class="border-t"><td class="py-2 pr-4">Prix au m² affiché</td><td class="py-2 pr-4">Plus élevé</td><td class="py-2">Souvent plus bas</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Travaux à prévoir</td><td class="py-2 pr-4">Aucun</td><td class="py-2">Fréquents, parfois lourds</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Performance énergétique</td><td class="py-2 pr-4">RE2020, faibles factures</td><td class="py-2">Variable, souvent à améliorer</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Sur-mesure</td><td class="py-2 pr-4">Total</td><td class="py-2">Limité à l'existant</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Frais de notaire</td><td class="py-2 pr-4">Sur le terrain seulement</td><td class="py-2">Sur la totalité (7 à 8 %)</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Garanties</td><td class="py-2 pr-4">Décennale, parfait achèvement</td><td class="py-2">Aucune sur l'existant</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Délai d'emménagement</td><td class="py-2 pr-4">12 à 18 mois</td><td class="py-2">Rapide</td></tr>
+<tr class="border-t"><td class="py-2 pr-4">Emplacement</td><td class="py-2 pr-4">Selon terrain disponible</td><td class="py-2">Souvent plus central</td></tr>
+</tbody></table></div>`,
+    },
+    {
+      h2: "Dans quel cas choisir l'un ou l'autre",
+      html: `<p>Soyons honnêtes : l'ancien reste le bon choix si vous êtes pressé, si vous visez un emplacement central introuvable en neuf, ou si vous aimez le cachet d'une maison de caractère et acceptez des travaux. Le neuf prend l'avantage dès que vous voulez une maison sur-mesure, performante, sans travaux ni mauvaise surprise, et que vous pouvez attendre le temps d'un projet. Dans les communes recherchées, où l'ancien est cher, le calcul penche souvent en faveur du neuf une fois tout intégré.</p>`,
+    },
+    {
+      h2: "Et dans la région de Caen ?",
+      html: `<p>Le Calvados illustre bien ce raisonnement : dans les communes où l'ancien dépasse le coût d'une construction neuve clé en main, le neuf devient le choix le plus rationnel à confort égal. Ailleurs, l'arbitrage se fait au cas par cas. Pour explorer secteur par secteur, voir notre page <a href="/construire-dans-le-calvados" class="text-primary underline">faire construire dans le Calvados</a>.</p>`,
+    },
+    {
+      h2: "Faites le bon choix pour votre projet",
+      html: `<p>Vous hésitez entre construire et acheter dans la région de Caen ? Parlons de votre situation : nous vous aidons à comparer objectivement et, si vous choisissez le neuf, à le mener de A à Z. Estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Est-il moins cher de construire ou d'acheter dans l'ancien ?",
+      answer:
+        "L'ancien affiche souvent un prix plus bas, mais il faut y ajouter les travaux et la rénovation énergétique. Une fois tout intégré, le neuf devient compétitif, surtout dans les communes recherchées.",
+    },
+    {
+      question: "Quels sont les avantages du neuf ?",
+      answer:
+        "Maison sur-mesure, performance RE2020, zéro travaux, garanties, frais de notaire limités au terrain, et parfois exonérations fiscales.",
+    },
+    {
+      question: "Quels sont les avantages de l'ancien ?",
+      answer:
+        "Emménagement rapide, emplacements souvent plus centraux, et parfois du cachet. En contrepartie, des travaux et une performance énergétique à vérifier.",
+    },
+    {
+      question: "Les frais de notaire sont-ils plus élevés dans l'ancien ?",
+      answer:
+        "Oui. Dans l'ancien, ils portent sur la totalité du prix (7 à 8 %). En faisant construire, ils ne portent que sur le terrain.",
+    },
+    {
+      question: "Combien de temps pour faire construire ?",
+      answer:
+        "En général douze à dix-huit mois entre l'achat du terrain et la remise des clés, contre un emménagement rapide dans l'ancien.",
+    },
+  ],
+  relatedGuideSlugs: ["prix-maison-neuve-calvados", "re2020", "budget-construction-maison"],
+};
+
+export const GUIDES: Guide[] = [G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
