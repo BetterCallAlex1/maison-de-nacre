@@ -349,7 +349,93 @@ const SArchi: Service = {
   relatedGuideSlugs: ["prix-maison-neuve-calvados", "maitre-doeuvre-ou-constructeur", "cout-maitre-doeuvre"],
 };
 
-export const SERVICES: Service[] = [S2, S1, S4, SArchi];
+const S3: Service = {
+  slug: "maison-plain-pied",
+  title: "Maison de plain-pied sur-mesure | Maison de Nacre",
+  metaDescription:
+    "Construire une maison de plain-pied sur-mesure dans le Calvados : avantages, prix, conception, plain-pied ou étage. Avec un maître d'œuvre, clé en main.",
+  h1: "Construire une maison de plain-pied sur-mesure",
+  primaryKeyword: "maison plain pied",
+  searchVolume: 5400,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "La maison de plain-pied séduit de plus en plus de familles et de futurs retraités, pour son confort, son accessibilité et sa simplicité de vie. Mais un bon plain-pied se conçoit avec soin, pour tirer parti du terrain et éviter ses quelques pièges. Voici tout ce qu'il faut savoir, et comment nous concevons votre maison de plain-pied sur-mesure dans la région de Caen.",
+  sections: [
+    {
+      h2: "Qu'est-ce qu'une maison de plain-pied ?",
+      html: `<p>Une maison de plain-pied est une maison de plein-pied, c'est-à-dire entièrement de plain-pied sur un seul niveau, sans étage ni escalier. Toutes les pièces, du séjour aux chambres, sont au même niveau, accessibles directement depuis le rez-de-chaussée. C'est un mode d'habitat simple et fluide, qui plaît par son confort au quotidien.</p>`,
+    },
+    {
+      h2: "Les avantages d'une maison de plain-pied",
+      html: `<p>Le plain-pied réunit plusieurs atouts. L'<strong>accessibilité</strong> d'abord : pas d'escalier, donc une maison adaptée à tous les âges, aux jeunes enfants comme aux personnes à mobilité réduite, et idéale pour vieillir chez soi. La <strong>sécurité</strong> ensuite : l'absence d'escalier réduit les risques de chute. La <strong>simplicité de vie</strong> : tout est au même niveau, sans monter ni descendre. Un <strong>entretien facilité</strong> : façade et toiture accessibles plus simplement. Et une <strong>convivialité</strong> naturelle, avec des espaces de vie ouverts et de plain-pied sur le jardin.</p>`,
+    },
+    {
+      h2: "Les points d'attention d'un plain-pied",
+      html: `<p>Le plain-pied a aussi ses contraintes, qu'il vaut mieux connaître. Il demande une <strong>emprise au sol plus grande</strong> pour une surface habitable donnée, donc un <strong>terrain plus vaste</strong>, ce qui pèse là où le foncier est cher. Il coûte généralement un peu plus cher au mètre carré qu'une maison à étage, car il mobilise plus de fondations et de toiture. Enfin, l'agencement doit être pensé pour préserver l'intimité des chambres, puisque tout est sur le même niveau. Ces points se gèrent très bien à la conception, à condition de les anticiper.</p>`,
+    },
+    {
+      h2: "Maison de plain-pied ou maison à étage ?",
+      html: `<p>Le choix dépend de votre terrain et de votre mode de vie. Le plain-pied privilégie le confort, l'accessibilité et la vie de plain-pied sur le jardin, mais consomme du terrain. La maison à étage économise le foncier en empilant la surface, et coûte un peu moins cher au mètre carré, mais impose un escalier. Sur un grand terrain, le plain-pied prend tout son sens ; sur une parcelle réduite ou chère, l'étage peut s'imposer. Notre guide <a href="/guides/prix-construction-maison-m2" class="text-primary underline">prix de construction au m²</a> détaille l'impact sur le coût.</p>`,
+    },
+    {
+      h2: "Le prix d'une maison de plain-pied",
+      html: `<p>À surface égale, une maison de plain-pied revient en général un peu plus cher au mètre carré qu'une maison à étage, du fait des fondations et de la toiture plus étendues. L'écart reste mesuré et dépend surtout du niveau de finition. Comme pour toute maison neuve, comptez de l'ordre de 2 800 €/m² livré pour un projet clé en main sur-mesure et RE2020, hors terrain. Notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a> donne les repères complets.</p>`,
+    },
+    {
+      h2: "Bien concevoir une maison de plain-pied",
+      html: `<p>C'est là que se joue la réussite du projet. Un plain-pied bien conçu sépare clairement les espaces de jour (séjour, cuisine) et de nuit (chambres), pour préserver le calme et l'intimité. Il soigne l'apport de lumière naturelle, parfois plus délicat sans étage, par de grandes ouvertures et une bonne orientation. Et il intègre la conception bioclimatique de la RE2020 dès le départ, pour le confort été comme hiver. Un plan d'architecte fait toute la différence sur ces points. Voir notre page <a href="/services/maison-architecte" class="text-primary underline">maison d'architecte</a>.</p>`,
+    },
+    {
+      h2: "Les formes et styles de maison de plain-pied",
+      html: `<p>Le plain-pied se décline en de nombreuses formes, chacune avec ses atouts. La maison <strong>en longueur</strong> (rectangulaire) est la plus simple et la plus économique à construire, idéale sur un terrain tout en longueur. La maison <strong>en L</strong> crée un angle qui abrite une terrasse et structure le jardin, tout en séparant naturellement espaces de jour et de nuit. La maison <strong>en U</strong> enveloppe une cour ou une terrasse centrale, pour une intimité maximale et une belle luminosité. Côté style, le plain-pied s'accommode aussi bien d'une architecture <strong>traditionnelle</strong> normande (toit en pente, matériaux régionaux) que d'un parti pris <strong>contemporain</strong> (toit plat ou monopente, lignes épurées, grandes baies).</p>
+<p class="mt-4">Le choix de la forme se fait en fonction du terrain, de l'orientation et de vos envies. C'est tout l'intérêt du sur-mesure : plutôt que de partir d'un modèle figé, on dessine la forme qui exploite le mieux votre parcelle et votre vue, pour une maison à la fois belle et fonctionnelle.</p>`,
+    },
+    {
+      h2: "Pour qui la maison de plain-pied ?",
+      html: `<p>Le plain-pied convient particulièrement aux familles qui veulent une vie fluide et un lien direct avec le jardin, aux personnes qui anticipent l'avenir et souhaitent une maison où vieillir confortablement, et à toute personne sensible à l'accessibilité et à la sécurité. C'est un choix de confort durable, qui traverse les âges de la vie.</p>`,
+    },
+    {
+      h2: "Notre offre : un plain-pied sur-mesure et clé en main",
+      html: `<p>Nous concevons et réalisons votre maison de plain-pied sur-mesure, pensée pour votre terrain et votre mode de vie, conforme à la RE2020 et livrée clé en main. De la conception avec l'architecte au pilotage du chantier, vous bénéficiez d'un interlocuteur unique et d'honoraires clairs de 12 % du coût de construction. Découvrez notre <a href="/services/maison-cle-en-main" class="text-primary underline">accompagnement clé en main</a>.</p>`,
+    },
+    {
+      h2: "Concevons votre maison de plain-pied",
+      html: `<p>Vous rêvez d'une maison de plain-pied qui vous ressemble ? Parlons de votre projet. Maison de Nacre la conçoit sur-mesure et la réalise clé en main, dans la région de Caen. Estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Quels sont les avantages d'une maison de plain-pied ?",
+      answer:
+        "Accessibilité sans escalier, confort de vie sur un seul niveau, sécurité, entretien facilité et lien direct avec le jardin. C'est aussi une maison où vieillir sereinement.",
+    },
+    {
+      question: "Une maison de plain-pied est-elle plus chère ?",
+      answer:
+        "Légèrement plus chère au mètre carré qu'une maison à étage, car elle demande plus de fondations et de toiture, et un terrain plus grand. L'écart dépend des finitions.",
+    },
+    {
+      question: "Quelle surface de terrain pour un plain-pied ?",
+      answer:
+        "Plus grande qu'à étage à surface habitable égale, puisque toute la maison occupe le rez-de-chaussée. C'est un critère à intégrer dès le choix du terrain.",
+    },
+    {
+      question: "Plain-pied ou étage : que choisir ?",
+      answer:
+        "Le plain-pied pour le confort et l'accessibilité, sur un terrain assez grand. L'étage pour économiser le foncier sur une parcelle réduite ou chère.",
+    },
+    {
+      question: "Une maison de plain-pied respecte-t-elle la RE2020 ?",
+      answer:
+        "Oui, comme toute construction neuve. Une bonne conception bioclimatique permet même d'optimiser lumière et confort sur un seul niveau.",
+    },
+  ],
+  relatedGuideSlugs: ["prix-construction-maison-m2", "prix-maison-neuve-calvados", "maitre-doeuvre-ou-constructeur"],
+};
+
+export const SERVICES: Service[] = [S2, S1, S4, SArchi, S3];
 
 export const SERVICES_BY_SLUG: Record<string, Service> = Object.fromEntries(
   SERVICES.map((s) => [s.slug, s]),
