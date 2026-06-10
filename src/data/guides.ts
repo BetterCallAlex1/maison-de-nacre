@@ -2725,7 +2725,76 @@ const GDemarches: Guide = {
   relatedGuideSlugs: ["permis-de-construire-maison", "viabilisation-terrain", "etapes-construction-maison"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage, G20, G26, GDemarches];
+const GPtz: Guide = {
+  slug: "ptz-construction-maison",
+  title: "Le PTZ pour faire construire | Maison de Nacre",
+  metaDescription:
+    "Le prêt à taux zéro (PTZ) pour faire construire : principe, conditions, qui peut en bénéficier et comment il complète votre financement de maison neuve.",
+  h1: "Le PTZ pour faire construire sa maison",
+  primaryKeyword: "ptz construction maison",
+  searchVolume: 320,
+  publishedAt: "2026-06-10",
+  updatedAt: "2026-06-10",
+  intro:
+    "Le prêt à taux zéro (PTZ) est un coup de pouce précieux pour les primo-accédants qui font construire. Sans intérêts, il complète le financement et allège la charge mensuelle. Voici son principe, ses conditions générales et comment il s'intègre à votre projet. Les règles évoluant régulièrement, vérifiez toujours les conditions en vigueur au moment de votre projet.",
+  sections: [
+    {
+      h2: "Qu'est-ce que le PTZ ?",
+      html: `<p>Le PTZ est un prêt aidé par l'État, <strong>sans intérêts ni frais de dossier</strong>, destiné à faciliter l'accession à la propriété. Il ne finance qu'une partie du projet et vient en complément d'un prêt principal. Son montant et ses conditions dépendent de plusieurs critères, notamment les revenus, la composition du foyer et la localisation du bien.</p>`,
+    },
+    {
+      h2: "Qui peut en bénéficier ?",
+      html: `<p>Le PTZ s'adresse en priorité aux <strong>primo-accédants</strong>, c'est-à-dire aux personnes qui n'ont pas été propriétaires de leur résidence principale au cours des dernières années. Son obtention dépend de <strong>conditions de ressources</strong> : les revenus du foyer ne doivent pas dépasser certains plafonds, qui varient selon la zone géographique et le nombre de personnes. Le bien doit constituer la résidence principale.</p>`,
+    },
+    {
+      h2: "PTZ et construction neuve",
+      html: `<p>Le PTZ est particulièrement adapté à la construction neuve, qu'il encourage. Faire construire sa maison neuve, performante et conforme à la RE2020, entre dans les projets éligibles, sous réserve des conditions en vigueur et de la zone. C'est l'un des avantages du neuf pour un premier achat, à intégrer dans le plan de financement.</p>`,
+    },
+    {
+      h2: "Comment le PTZ complète votre financement",
+      html: `<p>Le PTZ ne finance jamais la totalité du projet : il s'ajoute à un <strong>prêt immobilier principal</strong> et à votre apport. Son grand intérêt est de réduire le coût total du crédit, puisqu'une partie de l'emprunt ne porte pas d'intérêts, et parfois de différer son remboursement. Bien monté, un plan de financement combinant prêt principal, apport et PTZ optimise votre capacité d'achat. Notre guide <a href="/guides/budget-construction-maison" class="text-primary underline">budget d'un projet de construction</a> replace le financement dans l'ensemble.</p>`,
+    },
+    {
+      h2: "Bien préparer sa demande",
+      html: `<p>Le PTZ se demande auprès de la banque qui accorde le prêt principal, au moment du montage du financement. Anticipez : rassemblez vos justificatifs de revenus, clarifiez votre statut de primo-accédant et faites simuler votre éligibilité. Comme les règles évoluent (zones, plafonds, quotités), vérifiez les conditions à jour avec votre banque ou un courtier au moment de votre projet.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous êtes primo-accédant et vous voulez faire construire ? Maison de Nacre vous accompagne sur le projet, pendant que vous montez votre financement avec votre banque. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Qu'est-ce que le PTZ ?",
+      answer:
+        "Un prêt à taux zéro aidé par l'État, sans intérêts, qui complète le financement d'une résidence principale pour les primo-accédants.",
+    },
+    {
+      question: "Peut-on avoir le PTZ pour faire construire ?",
+      answer:
+        "Oui, la construction neuve fait partie des projets pouvant être éligibles, sous réserve des conditions de ressources et de zone en vigueur.",
+    },
+    {
+      question: "Qui peut bénéficier du PTZ ?",
+      answer:
+        "Principalement les primo-accédants, sous conditions de ressources, pour l'achat de leur résidence principale.",
+    },
+    {
+      question: "Le PTZ finance-t-il tout le projet ?",
+      answer:
+        "Non, il ne finance qu'une partie et complète un prêt principal et votre apport.",
+    },
+    {
+      question: "Où demander le PTZ ?",
+      answer:
+        "Auprès de la banque qui accorde votre prêt principal, au moment du montage du financement. Vérifiez les conditions à jour.",
+    },
+  ],
+  relatedGuideSlugs: ["budget-construction-maison", "prix-construction-maison-m2"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage, G20, G26, GDemarches, GPtz];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
