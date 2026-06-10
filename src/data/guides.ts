@@ -1674,7 +1674,96 @@ const G22: Guide = {
   ],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7];
+const G25: Guide = {
+  slug: "garantie-decennale",
+  title: "La garantie décennale expliquée | Maison de Nacre",
+  metaDescription:
+    "La garantie décennale expliquée : ce qu'elle couvre, sa durée, qui est concerné et comment la faire jouer. Tout savoir pour protéger votre maison neuve.",
+  h1: "La garantie décennale expliquée",
+  primaryKeyword: "garantie décennale",
+  searchVolume: 1900,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "La garantie décennale est l'une des protections les plus importantes quand on fait construire. Elle vous couvre pendant dix ans contre les dommages graves qui pourraient affecter votre maison. Mais que couvre-t-elle exactement, qui est concerné, et comment la faire jouer en cas de problème ? Voici l'essentiel, expliqué simplement.",
+  sections: [
+    {
+      h2: "Qu'est-ce que la garantie décennale ?",
+      html: `<p>La garantie décennale est une garantie légale obligatoire qui engage, pendant dix ans, les professionnels ayant participé à la construction. Tout artisan ou entreprise qui réalise des travaux de construction doit être couvert par une assurance de responsabilité décennale. Cette garantie protège le propriétaire contre les désordres graves qui apparaîtraient après la réception des travaux, sans avoir à prouver une faute de l'entreprise.</p>`,
+    },
+    {
+      h2: "Ce que couvre la garantie décennale",
+      html: `<p>La décennale couvre les <strong>dommages graves</strong> : ceux qui compromettent la solidité de l'ouvrage (fissures structurelles, affaissement de fondations, effondrement) et ceux qui rendent la maison impropre à sa destination, c'est-à-dire inhabitable ou inutilisable normalement (infiltrations importantes, défaut d'étanchéité majeur, problème de toiture rendant la maison inhabitable). Elle couvre aussi certains éléments d'équipement indissociables du bâti. En clair, elle vous protège contre les sinistres lourds qui touchent à la structure ou à l'usage de votre maison.</p>`,
+    },
+    {
+      h2: "Ce qu'elle ne couvre pas",
+      html: `<p>La décennale ne couvre pas tout. Sont exclus les <strong>défauts esthétiques</strong> (une finition imparfaite sans gravité), l'<strong>usure normale</strong> et le défaut d'entretien, ainsi que les <strong>équipements dissociables</strong> (volets, robinetterie, chauffage), qui relèvent eux de la garantie biennale, valable deux ans. Les petits désordres signalés à la réception relèvent, eux, de la garantie de parfait achèvement, valable un an. Chaque garantie a son périmètre.</p>`,
+    },
+    {
+      h2: "Qui est concerné par la garantie décennale ?",
+      html: `<p>Tous les <strong>professionnels de la construction</strong> sont tenus à la décennale : entreprises de gros œuvre, artisans, et selon sa mission, le maître d'œuvre qui a conçu et suivi le chantier. Chaque intervenant doit pouvoir présenter une attestation d'assurance décennale en cours de validité. C'est un point à vérifier avant de signer un devis : un artisan sans décennale valable vous laisserait sans recours en cas de sinistre grave.</p>`,
+    },
+    {
+      h2: "La durée et le point de départ",
+      html: `<p>La garantie décennale dure <strong>dix ans</strong>, à compter de la <strong>réception des travaux</strong>. C'est la réception, matérialisée par le procès-verbal, qui déclenche le décompte. D'où l'importance de bien réceptionner sa maison et de conserver le procès-verbal. Notre guide <a href="/guides/reception-travaux-maison-neuve" class="text-primary underline">réception de chantier et levée des réserves</a> explique cette étape clé.</p>`,
+    },
+    {
+      h2: "Décennale et assurance dommage-ouvrage",
+      html: `<p>Les deux sont complémentaires. La décennale engage la responsabilité des professionnels. L'<strong>assurance dommage-ouvrage</strong>, que vous souscrivez en tant que maître d'ouvrage, sert à <strong>préfinancer</strong> rapidement les réparations couvertes par la décennale, sans attendre qu'un tribunal détermine les responsabilités. Sans elle, faire jouer la décennale peut être long. Notre guide <a href="/guides/assurance-dommage-ouvrage" class="text-primary underline">les assurances obligatoires pour construire</a> détaille ce mécanisme.</p>`,
+    },
+    {
+      h2: "Comment faire jouer la garantie décennale",
+      html: `<p>En cas de sinistre relevant de la décennale, vous déclarez le dommage à votre assurance dommage-ouvrage, qui mandate un expert et préfinance les travaux de réparation si le sinistre est couvert. L'assureur se retourne ensuite vers les responsables et leurs assurances décennales. C'est ce circuit qui rend la dommage-ouvrage si précieuse : elle vous évite d'avancer les frais et d'attendre l'issue des recours.</p>`,
+    },
+    {
+      h2: "Décennale et maison neuve : les bons réflexes",
+      html: `<p>Pour être bien protégé, quelques réflexes s'imposent. Vérifiez que chaque artisan dispose d'une <strong>attestation de décennale valable</strong> avant le début des travaux. Conservez soigneusement le <strong>procès-verbal de réception</strong> et toutes les attestations d'assurance. Souscrivez la <strong>dommage-ouvrage</strong> avant l'ouverture du chantier. Faire appel à un maître d'œuvre facilite ces vérifications, puisqu'il s'assure que les entreprises sont bien assurées avant de les engager.</p>`,
+    },
+    {
+      h2: "Comment vérifier l'attestation décennale d'un artisan",
+      html: `<p>Avant d'engager un artisan, demandez-lui son <strong>attestation d'assurance décennale</strong> et lisez-la attentivement. Trois points à contrôler. La <strong>validité</strong> d'abord : l'attestation doit couvrir la période du chantier, pas une année passée. Les <strong>activités garanties</strong> ensuite : l'attestation liste les travaux couverts (maçonnerie, charpente, plomberie…), et l'artisan doit être assuré précisément pour ce qu'il va réaliser chez vous, sinon la garantie ne jouera pas. Le <strong>nom et les coordonnées de l'assureur</strong> enfin, pour pouvoir le contacter en cas de besoin. En cas de doute, rien n'empêche d'appeler l'assureur pour confirmer que le contrat est bien en cours. Cette vérification, fastidieuse pour un particulier, fait partie du travail d'un maître d'œuvre.</p>`,
+    },
+    {
+      h2: "Garantie décennale et revente de la maison",
+      html: `<p>Bonne nouvelle si vous vendez avant les dix ans : la garantie décennale <strong>suit la maison</strong>, pas le propriétaire. Le nouvel acquéreur bénéficie donc de la garantie pour la durée restante, à compter de la réception initiale. De même, l'assurance dommage-ouvrage est transférée à l'acheteur. C'est un argument de vente non négligeable : une maison récente encore couverte par la décennale rassure l'acquéreur. Pensez à transmettre au nouveau propriétaire le procès-verbal de réception et les attestations d'assurance, qui prouvent l'existence et la date de départ des garanties.</p>`,
+    },
+    {
+      h2: "Construisez en toute sérénité",
+      html: `<p>Une maison bien construite et bien assurée, c'est dix ans de tranquillité. Maison de Nacre vérifie les assurances des artisans, suit le chantier et vous accompagne jusqu'à la réception. Parlons de votre projet.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Qu'est-ce que la garantie décennale ?",
+      answer:
+        "Une garantie légale obligatoire qui engage pendant dix ans les professionnels de la construction contre les dommages graves affectant la solidité de la maison ou la rendant impropre à l'habitation.",
+    },
+    {
+      question: "Que couvre exactement la décennale ?",
+      answer:
+        "Les dommages compromettant la solidité de l'ouvrage (fissures structurelles, fondations) et ceux rendant la maison inhabitable (infiltrations majeures, défauts d'étanchéité). Pas les défauts esthétiques ni l'usure.",
+    },
+    {
+      question: "Combien de temps dure la garantie décennale ?",
+      answer:
+        "Dix ans à compter de la réception des travaux, matérialisée par le procès-verbal.",
+    },
+    {
+      question: "Qui doit avoir une assurance décennale ?",
+      answer:
+        "Tous les professionnels intervenant sur la construction : entreprises, artisans, et selon sa mission le maître d'œuvre. Chacun doit présenter une attestation valable.",
+    },
+    {
+      question: "Quelle différence avec la dommage-ouvrage ?",
+      answer:
+        "La décennale engage la responsabilité des professionnels. La dommage-ouvrage, souscrite par le propriétaire, préfinance rapidement les réparations sans attendre la détermination des responsabilités.",
+    },
+  ],
+  relatedGuideSlugs: ["assurance-dommage-ouvrage", "reception-travaux-maison-neuve", "maitre-doeuvre-ou-constructeur"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
