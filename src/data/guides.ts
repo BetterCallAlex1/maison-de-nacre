@@ -2791,7 +2791,7 @@ const GPtz: Guide = {
         "Auprès de la banque qui accorde votre prêt principal, au moment du montage du financement. Vérifiez les conditions à jour.",
     },
   ],
-  relatedGuideSlugs: ["budget-construction-maison", "pret-construction-maison"],
+  relatedGuideSlugs: ["budget-construction-maison", "prix-construction-maison-m2"],
 };
 
 export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage, G20, G26, GDemarches, GPtz];
