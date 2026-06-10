@@ -1922,7 +1922,80 @@ const G15: Guide = {
   relatedGuideSlugs: ["maitre-doeuvre-ou-constructeur", "cout-maitre-doeuvre"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15];
+const GArchi: Guide = {
+  slug: "difference-architecte-maitre-doeuvre",
+  title: "Architecte ou maître d'œuvre : différence | Maison de Nacre",
+  metaDescription:
+    "Quelle différence entre un architecte et un maître d'œuvre ? Rôles, missions, coûts et quand faire appel à l'un ou à l'autre pour construire sa maison.",
+  h1: "Architecte ou maître d'œuvre : quelle différence ?",
+  primaryKeyword: "différence architecte maître d'œuvre",
+  searchVolume: 50,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Architecte et maître d'œuvre sont souvent confondus, et pour cause : tous deux interviennent dans la conception d'une maison. Pourtant, leurs métiers, leurs missions et leur périmètre diffèrent. Voici ce qui les distingue, pour savoir à qui faire appel selon votre projet.",
+  sections: [
+    {
+      h2: "L'architecte : le concepteur",
+      html: `<p>L'architecte est un professionnel diplômé, inscrit à l'Ordre des architectes, dont le cœur de métier est la <strong>conception</strong>. Il dessine la maison, imagine les volumes, la lumière, l'implantation sur le terrain, et garantit la qualité architecturale du projet. Il peut aussi assurer le suivi du chantier, mais sa valeur première est la création d'un projet unique et abouti. Au-delà d'un certain seuil de surface, le recours à un architecte est d'ailleurs obligatoire.</p>`,
+    },
+    {
+      h2: "Le maître d'œuvre : le concepteur-coordinateur",
+      html: `<p>Le maître d'œuvre conçoit lui aussi, seul ou avec un architecte, mais son rôle s'étend à la <strong>coordination complète de la réalisation</strong>. Il consulte les artisans, compare les devis, pilote le chantier, contrôle la qualité et les délais, et accompagne jusqu'à la réception. Là où l'architecte se concentre sur le projet, le maître d'œuvre prend en charge l'ensemble du processus jusqu'à la maison livrée. Notre guide <a href="/guides/role-maitre-doeuvre" class="text-primary underline">le rôle du maître d'œuvre</a> détaille ses missions.</p>`,
+    },
+    {
+      h2: "Les principales différences",
+      html: `<p>L'architecte est avant tout un concepteur, avec un titre protégé et une obligation d'assurance spécifique. Le maître d'œuvre est un coordinateur de projet, qui conçoit et pilote l'exécution. L'architecte apporte une signature architecturale forte ; le maître d'œuvre apporte une prise en charge opérationnelle de bout en bout. Leurs honoraires se calculent dans les deux cas en pourcentage du coût des travaux, dans des fourchettes comparables, mais le périmètre couvert n'est pas le même.</p>`,
+    },
+    {
+      h2: "Faut-il choisir l'un ou l'autre ?",
+      html: `<p>En réalité, les deux ne s'opposent pas toujours : ils se complètent. Le scénario idéal pour une maison sur-mesure est souvent d'associer un <strong>architecte pour la conception</strong> et un <strong>maître d'œuvre pour le pilotage</strong>, ou de faire appel à un maître d'œuvre qui travaille main dans la main avec un architecte. Vous obtenez ainsi une maison à la fois bien dessinée et bien construite, sans avoir à coordonner vous-même les intervenants.</p>`,
+    },
+    {
+      h2: "Quand l'architecte est-il obligatoire ?",
+      html: `<p>Le recours à un architecte est imposé par la loi au-delà d'un certain seuil de surface de plancher pour les particuliers. En dessous, il reste vivement conseillé pour un projet sur-mesure, mais n'est pas obligatoire : un maître d'œuvre peut alors concevoir et piloter le projet. Ce seuil est un repère utile pour savoir quelle configuration s'impose à vous.</p>`,
+    },
+    {
+      h2: "L'approche de Maison de Nacre",
+      html: `<p>Nous réunissons les deux compétences : la conception sur-mesure avec un architecte et le pilotage complet en maîtrise d'œuvre. Vous bénéficiez d'une maison bien pensée et d'un chantier bien tenu, avec un interlocuteur unique du premier plan à la remise des clés. Voir notre page <a href="/services/maison-architecte" class="text-primary underline">maison d'architecte</a>.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Architecte, maître d'œuvre, ou les deux : nous vous aidons à y voir clair et à monter le bon dispositif pour votre maison. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Quelle différence entre un architecte et un maître d'œuvre ?",
+      answer:
+        "L'architecte est avant tout concepteur, avec un titre protégé. Le maître d'œuvre conçoit et coordonne en plus la réalisation jusqu'à la livraison.",
+    },
+    {
+      question: "Lequel est le plus cher ?",
+      answer:
+        "Leurs honoraires se calculent de façon comparable, en pourcentage des travaux. La différence tient au périmètre couvert, le maître d'œuvre incluant le suivi de chantier.",
+    },
+    {
+      question: "Peut-on faire appel aux deux ?",
+      answer:
+        "Oui, et c'est souvent l'idéal : un architecte pour la conception, un maître d'œuvre pour le pilotage, ou un maître d'œuvre travaillant avec un architecte.",
+    },
+    {
+      question: "Quand l'architecte est-il obligatoire ?",
+      answer:
+        "Au-delà d'un certain seuil de surface de plancher pour les particuliers. En dessous, il est conseillé mais non obligatoire.",
+    },
+    {
+      question: "Qui suit le chantier ?",
+      answer:
+        "Le maître d'œuvre, par définition. Un architecte peut aussi le faire, selon la mission convenue.",
+    },
+  ],
+  relatedGuideSlugs: ["role-maitre-doeuvre", "maitre-doeuvre-ou-constructeur"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
