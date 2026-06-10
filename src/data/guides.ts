@@ -2441,7 +2441,76 @@ const GEtudeSol: Guide = {
   relatedGuideSlugs: ["choisir-terrain-constructible", "viabilisation-terrain"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol];
+const GChauffage: Guide = {
+  slug: "chauffage-maison-re2020",
+  title: "Quel chauffage pour une maison RE2020 | Maison de Nacre",
+  metaDescription:
+    "Quel chauffage choisir pour une maison RE2020 ? Pompe à chaleur, solutions décarbonées, pourquoi le gaz disparaît : le guide pour bien s'équiper.",
+  h1: "Quel chauffage pour une maison RE2020 ?",
+  primaryKeyword: "chauffage maison RE2020",
+  searchVolume: 50,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "La RE2020 a rebattu les cartes du chauffage dans le neuf : exit les énergies fossiles, place aux solutions décarbonées et performantes. Mais quelle solution choisir concrètement pour sa maison neuve ? Voici les options et les critères pour bien s'équiper.",
+  sections: [
+    {
+      h2: "Ce que la RE2020 change pour le chauffage",
+      html: `<p>La RE2020 vise à réduire l'empreinte carbone des maisons, ce qui se traduit par la <strong>fin progressive des énergies fossiles</strong> pour le chauffage. Le gaz, en particulier, devient très difficile à justifier dans une maison neuve. La norme favorise les énergies décarbonées et les équipements efficaces, dans une maison déjà peu gourmande grâce à l'isolation et à l'étanchéité.</p>`,
+    },
+    {
+      h2: "La pompe à chaleur, solution de référence",
+      html: `<p>Dans une maison RE2020, la <strong>pompe à chaleur</strong> s'impose comme la solution la plus courante. Elle puise les calories dans l'air ou le sol pour chauffer la maison et souvent l'eau chaude, avec une excellente efficacité : elle restitue plusieurs fois l'énergie qu'elle consomme. Décarbonée et performante, elle coche les cases de la RE2020 tout en limitant les factures. Selon le modèle (air-air, air-eau, géothermique), elle s'adapte à la maison et au terrain.</p>`,
+    },
+    {
+      h2: "Les autres solutions décarbonées",
+      html: `<p>Au-delà de la pompe à chaleur, d'autres options existent selon les cas. Le <strong>chauffage au bois</strong> (poêle, chaudière granulés) est une énergie renouvelable, parfois en complément. Le <strong>solaire thermique</strong> peut soutenir la production d'eau chaude. Dans une maison très bien conçue, les besoins sont si faibles que des solutions simples suffisent. Le choix se fait selon la maison, le budget et le mode de vie. Notre guide <a href="/guides/maison-basse-consommation" class="text-primary underline">maison basse consommation</a> replace le chauffage dans l'ensemble des leviers.</p>`,
+    },
+    {
+      h2: "Le rôle de la conception",
+      html: `<p>Le meilleur chauffage est d'abord celui dont on a le moins besoin. Une maison RE2020 bien isolée, étanche et bien orientée réduit fortement ses besoins de chauffage, ce qui permet de dimensionner l'équipement au plus juste et d'économiser à l'installation comme à l'usage. La conception bioclimatique est donc le premier levier, avant même le choix de l'appareil. Notre guide <a href="/guides/re2020" class="text-primary underline">la RE2020 expliquée</a> détaille ces principes.</p>`,
+    },
+    {
+      h2: "Chauffage et confort d'été",
+      html: `<p>La RE2020 impose aussi le confort d'été. Certaines pompes à chaleur réversibles peuvent rafraîchir la maison en période de chaleur, en complément des protections solaires et de la ventilation. Mais le rafraîchissement passif, gagné à la conception, reste prioritaire sur la climatisation. L'équilibre se pense globalement, été comme hiver.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous voulez une maison neuve bien chauffée, économe et confortable toute l'année ? Maison de Nacre conçoit l'enveloppe et les équipements ensemble, pour le meilleur résultat. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Quel chauffage pour une maison RE2020 ?",
+      answer:
+        "Le plus souvent une pompe à chaleur, décarbonée et performante. Le gaz devient difficile à justifier dans une maison neuve.",
+    },
+    {
+      question: "Le gaz est-il interdit en maison neuve ?",
+      answer:
+        "La RE2020 le rend très difficile à intégrer dans une maison individuelle neuve, au profit des solutions décarbonées.",
+    },
+    {
+      question: "La pompe à chaleur est-elle suffisante ?",
+      answer:
+        "Oui, dans une maison RE2020 bien isolée, les besoins sont faibles et une pompe à chaleur bien dimensionnée suffit, parfois complétée par un poêle à bois.",
+    },
+    {
+      question: "Peut-on chauffer au bois dans une maison RE2020 ?",
+      answer:
+        "Oui, le bois est une énergie renouvelable, souvent utilisée en appoint (poêle, chaudière granulés).",
+    },
+    {
+      question: "Comment réduire ses besoins de chauffage ?",
+      answer:
+        "Par la conception : isolation, étanchéité, orientation. Moins la maison a besoin de chauffage, plus l'équipement peut être modeste et économe.",
+    },
+  ],
+  relatedGuideSlugs: ["re2020", "maison-basse-consommation"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9, G31, G33, GEtudeSol, GChauffage];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
