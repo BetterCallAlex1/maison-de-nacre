@@ -2072,7 +2072,84 @@ const G10: Guide = {
   relatedGuideSlugs: ["prix-construction-maison-m2", "re2020"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10];
+const GPassive: Guide = {
+  slug: "maison-passive",
+  title: "La maison passive expliquée | Maison de Nacre",
+  metaDescription:
+    "La maison passive : principe, critères, différence avec la RE2020, coût et confort. Faut-il viser le passif pour sa maison neuve ? Le guide complet.",
+  h1: "La maison passive : principe, intérêt et différence avec la RE2020",
+  primaryKeyword: "maison passive",
+  searchVolume: 3600,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "La maison passive est souvent citée comme le summum de la performance énergétique. Mais qu'est-ce qu'une maison passive exactement, en quoi diffère-t-elle d'une maison RE2020, et vaut-il la peine de viser ce niveau ? Voici un guide clair pour comprendre et décider.",
+  sections: [
+    {
+      h2: "Qu'est-ce qu'une maison passive ?",
+      html: `<p>Une maison passive est une maison dont les besoins en chauffage sont si faibles qu'elle se passe presque d'un système de chauffage classique. Elle tire l'essentiel de sa chaleur de sources « passives » : le soleil, les occupants, les appareils électroménagers. Pour y parvenir, elle mise sur une isolation extrême, une étanchéité à l'air poussée, une ventilation double flux performante et une conception bioclimatique très soignée.</p>`,
+    },
+    {
+      h2: "Les critères d'une maison passive",
+      html: `<p>Le standard passif repose sur des seuils exigeants : un besoin de chauffage très bas, une excellente étanchéité à l'air vérifiée par test, une consommation d'énergie globale limitée, et une absence de surchauffe en été. Ces critères, plus stricts que la réglementation courante, imposent une conception et une mise en œuvre irréprochables, où le moindre pont thermique compte.</p>`,
+    },
+    {
+      h2: "Maison passive ou RE2020 : la différence",
+      html: `<p>La <strong>RE2020</strong> est la réglementation obligatoire de toute maison neuve : elle fixe un bon niveau de performance, déjà élevé. La <strong>maison passive</strong> est un standard volontaire, qui va nettement plus loin sur la sobriété énergétique. En clair, toute maison passive respecte largement la RE2020, mais l'inverse n'est pas vrai : une maison RE2020 n'est pas forcément passive. Notre guide <a href="/guides/re2020" class="text-primary underline">la RE2020 expliquée</a> détaille la norme de référence.</p>`,
+    },
+    {
+      h2: "Les avantages d'une maison passive",
+      html: `<p>Les bénéfices sont réels. Des <strong>factures de chauffage quasi nulles</strong>, ce qui protège durablement du coût de l'énergie. Un <strong>confort élevé et stable</strong>, été comme hiver, sans variations brutales de température. Une <strong>qualité de l'air</strong> excellente grâce à la ventilation double flux. Et une <strong>valeur patrimoniale</strong> renforcée, à l'heure où la performance énergétique pèse de plus en plus sur le prix des biens.</p>`,
+    },
+    {
+      h2: "Les points d'attention",
+      html: `<p>Le passif a un coût et des exigences. Le <strong>surcoût de construction</strong> est plus élevé qu'une maison RE2020 standard, du fait de l'isolation renforcée, des menuiseries très performantes et de la ventilation double flux. La <strong>conception et la mise en œuvre</strong> doivent être rigoureuses, ce qui suppose des professionnels expérimentés. Enfin, le retour sur investissement se mesure sur le long terme, par les économies d'énergie. C'est un choix d'engagement, à peser selon ses priorités et son budget.</p>`,
+    },
+    {
+      h2: "Faut-il viser le passif pour sa maison ?",
+      html: `<p>Tout dépend de vos objectifs. Si la sobriété énergétique maximale et l'indépendance vis-à-vis du coût de l'énergie sont une priorité, le passif a du sens. Si vous cherchez un excellent rapport performance/budget, une maison RE2020 bien conçue offre déjà un très bon niveau, à un coût plus mesuré, avec la possibilité de tendre vers le passif sur certains postes. L'important est de définir le bon niveau d'ambition pour votre projet, plutôt que de viser un label par principe.</p>`,
+    },
+    {
+      h2: "Bien concevoir une maison très performante",
+      html: `<p>Qu'on vise le passif ou une RE2020 optimisée, la performance se joue à la conception : orientation, compacité, isolation, étanchéité, ventilation. C'est le travail d'un architecte et d'un maître d'œuvre qui pensent l'énergie dès les premiers plans. Maison de Nacre conçoit votre maison performante sur-mesure dans la région de Caen. Voir notre page <a href="/services/maison-re2020" class="text-primary underline">construire une maison RE2020</a>.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous visez une maison très performante, passive ou RE2020 optimisée ? Maison de Nacre la conçoit sur-mesure et la réalise clé en main. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Qu'est-ce qu'une maison passive ?",
+      answer:
+        "Une maison aux besoins de chauffage si faibles qu'elle se passe presque de chauffage classique, grâce à une isolation extrême, une étanchéité poussée et une ventilation double flux.",
+    },
+    {
+      question: "Quelle différence entre maison passive et RE2020 ?",
+      answer:
+        "La RE2020 est obligatoire et fixe déjà un bon niveau. La maison passive est un standard volontaire qui va beaucoup plus loin sur la sobriété énergétique.",
+    },
+    {
+      question: "Une maison passive coûte-t-elle plus cher ?",
+      answer:
+        "Oui, son surcoût de construction est plus élevé qu'une RE2020 standard, compensé sur le long terme par des factures de chauffage quasi nulles.",
+    },
+    {
+      question: "Faut-il viser le passif ?",
+      answer:
+        "Selon vos priorités. Le passif maximise la sobriété ; une RE2020 bien conçue offre déjà un excellent rapport performance/budget.",
+    },
+    {
+      question: "Une maison RE2020 est-elle passive ?",
+      answer:
+        "Pas forcément. Toute maison passive dépasse la RE2020, mais une maison RE2020 n'atteint pas nécessairement le niveau passif.",
+    },
+  ],
+  relatedGuideSlugs: ["re2020"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
