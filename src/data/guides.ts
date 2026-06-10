@@ -2149,7 +2149,84 @@ const GPassive: Guide = {
   relatedGuideSlugs: ["re2020"],
 };
 
-export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive];
+const G9: Guide = {
+  slug: "faire-construire-ou-acheter-neuf",
+  title: "Faire construire ou acheter dans le neuf | Maison de Nacre",
+  metaDescription:
+    "Faire construire sa maison ou acheter un logement neuf chez un promoteur ? Sur-mesure, prix, délais, personnalisation : le comparatif pour bien choisir.",
+  h1: "Faire construire ou acheter dans le neuf : que choisir ?",
+  primaryKeyword: "faire construire ou acheter neuf",
+  searchVolume: 50,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "Vouloir du neuf ne règle pas tout : encore faut-il choisir entre faire construire sa maison sur-mesure et acheter un logement neuf déjà conçu, souvent vendu par un promoteur. Les deux donnent accès aux avantages du neuf, mais avec des libertés et des compromis très différents. Voici le comparatif.",
+  sections: [
+    {
+      h2: "Les deux options en bref",
+      html: `<p><strong>Faire construire</strong>, c'est concevoir une maison sur-mesure, sur un terrain que vous choisissez, avec les plans, les matériaux et l'agencement qui vous conviennent. <strong>Acheter dans le neuf</strong> chez un promoteur (souvent en VEFA, vente en l'état futur d'achèvement), c'est acquérir un logement déjà conçu, dans un programme standardisé, avec peu de marge de personnalisation. Deux logiques opposées : le sur-mesure d'un côté, le clé en main standardisé de l'autre.</p>`,
+    },
+    {
+      h2: "La personnalisation : sur-mesure contre standard",
+      html: `<p>C'est l'écart le plus net. En faisant construire, votre maison est unique, pensée pour votre terrain et votre mode de vie. Dans le neuf promoteur, le logement est conçu en série : vous choisissez parfois quelques finitions, mais l'agencement, les volumes et l'implantation sont figés. Pour qui a une idée précise de sa maison, faire construire offre une liberté incomparable.</p>`,
+    },
+    {
+      h2: "Le terrain et l'emplacement",
+      html: `<p>Faire construire suppose de <strong>trouver un terrain</strong>, ce qui demande du temps mais vous laisse choisir le secteur et la parcelle. Le neuf promoteur se situe là où le programme est lancé, souvent en zone urbaine ou en lotissement, sans choix du terrain. Selon que vous privilégiez la liberté d'implantation ou la simplicité, l'un ou l'autre prend l'avantage.</p>`,
+    },
+    {
+      h2: "Le prix et les frais",
+      html: `<p>Les deux relèvent de la fiscalité du neuf, avec des frais de notaire réduits par rapport à l'ancien. Le neuf promoteur affiche un prix global « clé en main » sans surprise apparente, mais intègre la marge du promoteur. Faire construire permet de maîtriser chaque poste et d'adapter le budget à ses choix, terrain compris. Notre guide <a href="/guides/prix-maison-neuve-calvados" class="text-primary underline">prix d'une maison neuve dans le Calvados</a> donne les repères.</p>`,
+    },
+    {
+      h2: "Les délais",
+      html: `<p>Le neuf promoteur peut être plus rapide si le programme est avancé, voire déjà construit. Faire construire demande le temps d'un projet, de la recherche de terrain à la livraison. Si la rapidité prime, le promoteur a une longueur d'avance ; si vous pouvez anticiper, le sur-mesure récompense l'attente.</p>`,
+    },
+    {
+      h2: "Maison individuelle ou logement en programme",
+      html: `<p>Un point souvent décisif : faire construire vous donne une <strong>maison individuelle</strong> avec terrain et indépendance. Le neuf promoteur propose fréquemment des appartements ou des maisons mitoyennes en programme, avec parfois des charges de copropriété. Si vous tenez à une maison indépendante avec jardin, faire construire est la voie naturelle.</p>`,
+    },
+    {
+      h2: "Comment choisir ?",
+      html: `<p>Faites construire si vous voulez une maison unique, un terrain choisi, une maison individuelle et la maîtrise de votre projet. Optez pour le neuf promoteur si vous privilégiez la rapidité, la simplicité et acceptez un logement standardisé. Pour une maison sur-mesure dans la région de Caen, voir notre page <a href="/services/maison-architecte" class="text-primary underline">maison d'architecte</a> et notre comparatif <a href="/guides/construire-ou-acheter-maison" class="text-primary underline">construire neuf ou acheter dans l'ancien</a>.</p>`,
+    },
+    {
+      h2: "Parlons de votre projet",
+      html: `<p>Vous voulez du neuf, mais sur-mesure et indépendant ? Maison de Nacre conçoit et réalise votre maison, du terrain à la remise des clés. Parlons-en, estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Discuter de mon projet</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Quelle différence entre faire construire et acheter dans le neuf ?",
+      answer:
+        "Faire construire donne une maison sur-mesure sur un terrain choisi. Acheter dans le neuf chez un promoteur donne un logement déjà conçu, standardisé, avec peu de personnalisation.",
+    },
+    {
+      question: "Lequel est le plus rapide ?",
+      answer:
+        "Le neuf promoteur peut être plus rapide si le programme est avancé. Faire construire demande le temps d'un projet complet.",
+    },
+    {
+      question: "Les frais de notaire sont-ils réduits dans les deux cas ?",
+      answer:
+        "Oui, les deux relèvent de la fiscalité du neuf, avec des frais de notaire réduits par rapport à l'ancien.",
+    },
+    {
+      question: "Peut-on personnaliser un logement neuf de promoteur ?",
+      answer:
+        "Très peu : quelques finitions parfois, mais l'agencement et les volumes sont figés. Faire construire offre une personnalisation totale.",
+    },
+    {
+      question: "Faire construire revient-il plus cher ?",
+      answer:
+        "Pas nécessairement. Vous maîtrisez chaque poste et adaptez le budget à vos choix, là où le promoteur intègre sa marge dans un prix global.",
+    },
+  ],
+  relatedGuideSlugs: ["construire-ou-acheter-maison", "prix-maison-neuve-calvados"],
+};
+
+export const GUIDES: Guide[] = [G22, G11, G6, G12, G17, G23, G24, G29, G14, G5, G19, G28, G16, G13, G30, G7, G25, G27, G15, GArchi, G10, GPassive, G9];
 
 export const GUIDES_BY_SLUG: Record<string, Guide> = Object.fromEntries(
   GUIDES.map((g) => [g.slug, g]),
