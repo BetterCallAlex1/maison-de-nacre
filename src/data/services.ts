@@ -435,7 +435,93 @@ const S3: Service = {
   relatedGuideSlugs: ["prix-construction-maison-m2", "prix-maison-neuve-calvados", "maitre-doeuvre-ou-constructeur"],
 };
 
-export const SERVICES: Service[] = [S2, S1, S4, SArchi, S3];
+const S6: Service = {
+  slug: "maison-contemporaine",
+  title: "Maison contemporaine sur-mesure | Maison de Nacre",
+  metaDescription:
+    "Construire une maison contemporaine sur-mesure dans le Calvados : lignes épurées, grandes baies, RE2020. Avec un architecte et un maître d'œuvre, clé en main.",
+  h1: "Construire une maison contemporaine sur-mesure",
+  primaryKeyword: "maison contemporaine",
+  searchVolume: 5400,
+  publishedAt: "2026-06-09",
+  updatedAt: "2026-06-09",
+  intro:
+    "La maison contemporaine séduit par ses lignes épurées, sa lumière et sa modernité. Mais une belle maison contemporaine ne s'improvise pas : elle se dessine sur-mesure, pour marier esthétique, confort et performance. Voici ce qui la caractérise, et comment nous concevons votre maison contemporaine dans la région de Caen.",
+  sections: [
+    {
+      h2: "Qu'est-ce qu'une maison contemporaine ?",
+      html: `<p>Une maison contemporaine est une maison au style actuel, qui rompt avec les codes de la maison traditionnelle. Elle se reconnaît à ses lignes épurées, ses volumes géométriques, son toit souvent plat ou monopente, ses grandes ouvertures vitrées et son jeu de matériaux. C'est une architecture qui privilégie la lumière, l'espace et la sobriété, au service d'un mode de vie moderne et ouvert sur l'extérieur.</p>`,
+    },
+    {
+      h2: "Les caractéristiques d'une maison contemporaine",
+      html: `<p>Plusieurs éléments signent le style contemporain. Les <strong>lignes épurées</strong> et les volumes simples, sans ornement superflu. Le <strong>toit plat ou monopente</strong>, qui remplace la toiture traditionnelle à deux pentes. Les <strong>grandes baies vitrées</strong>, qui font entrer la lumière et ouvrent la maison sur le jardin. Le <strong>jeu de matériaux</strong> (enduit, bois, métal, béton) et de couleurs sobres. Et souvent des <strong>espaces de vie ouverts</strong>, avec une cuisine intégrée au séjour. Chaque maison contemporaine reste unique, dessinée selon les envies et le terrain.</p>`,
+    },
+    {
+      h2: "Les avantages d'une maison contemporaine",
+      html: `<p>Au-delà de l'esthétique, le contemporain apporte des bénéfices concrets. La <strong>lumière naturelle</strong> abondante, grâce aux grandes ouvertures, pour des espaces de vie agréables. La <strong>modernité</strong> et la valeur d'une architecture actuelle, qui se distingue. La <strong>personnalisation</strong> poussée, puisque le style contemporain se prête particulièrement au sur-mesure. Et une bonne <strong>synergie avec la performance</strong> énergétique, à condition de bien concevoir les apports solaires.</p>`,
+    },
+    {
+      h2: "Maison contemporaine et RE2020",
+      html: `<p>Les grandes baies vitrées sont l'atout et le défi du contemporain. Bien orientées et bien protégées, elles captent la lumière et la chaleur l'hiver, un vrai plus pour la RE2020. Mais sans protections solaires adaptées, elles peuvent provoquer une surchauffe l'été. Tout se joue à la conception : orientation, dimensionnement des vitrages, débords et brise-soleil, inertie. Une maison contemporaine bien pensée est à la fois lumineuse et performante. Notre guide <a href="/guides/re2020" class="text-primary underline">la RE2020 expliquée</a> détaille ces principes.</p>`,
+    },
+    {
+      h2: "Le prix d'une maison contemporaine",
+      html: `<p>Le style contemporain ne renchérit pas fondamentalement la construction : le coût dépend surtout de la surface, des finitions et de la complexité des volumes. Certains partis pris (toit plat, grandes baies, matériaux nobles) peuvent ajouter au budget, d'autres l'optimisent par leur simplicité. Comme pour toute maison neuve sur-mesure clé en main, comptez de l'ordre de 2 800 €/m² livré, hors terrain. Notre guide <a href="/guides/prix-construction-maison-m2" class="text-primary underline">prix de construction au m²</a> donne les repères.</p>`,
+    },
+    {
+      h2: "Toit plat ou toit monopente ?",
+      html: `<p>C'est l'une des signatures du contemporain. Le <strong>toit plat</strong> offre des lignes très épurées et permet, selon les cas, une toiture-terrasse ou une végétalisation. Le <strong>toit monopente</strong> (une seule pente) garde une esthétique moderne tout en facilitant l'écoulement des eaux et l'intégration de panneaux solaires. Le choix dépend du style recherché, des contraintes du plan local d'urbanisme et de la performance visée. Un architecte vous oriente vers la solution la plus cohérente.</p>`,
+    },
+    {
+      h2: "Bien concevoir une maison contemporaine",
+      html: `<p>La réussite d'une maison contemporaine tient à la qualité de sa conception. Les volumes, les ouvertures, les matériaux et les détails doivent s'harmoniser, tout en intégrant la performance énergétique et les contraintes locales. C'est typiquement un projet où le regard d'un architecte fait la différence, pour une maison à la fois belle, fonctionnelle et durable. Voir notre page <a href="/services/maison-architecte" class="text-primary underline">maison d'architecte</a>.</p>`,
+    },
+    {
+      h2: "Maison contemporaine ou traditionnelle : que choisir ?",
+      html: `<p>Le choix entre contemporain et traditionnel est avant tout une question de goût et de cadre. La maison <strong>contemporaine</strong> mise sur la lumière, les volumes ouverts et une esthétique actuelle ; elle se distingue et vieillit bien quand elle est soignée. La maison <strong>traditionnelle</strong> normande, avec sa toiture à deux pentes et ses matériaux régionaux, s'intègre naturellement dans certains villages et rassure par son caractère intemporel. Au-delà du style, le plan local d'urbanisme a son mot à dire : certaines communes encadrent l'aspect des constructions (pente de toit, matériaux, couleurs), ce qui peut orienter le choix.</p>
+<p>Dans les deux cas, la qualité de conception prime sur le style : une maison bien pensée, lumineuse et performante, sera réussie qu'elle soit contemporaine ou traditionnelle. Le sur-mesure permet justement de trouver le bon équilibre entre vos envies, votre terrain et les règles locales, plutôt que de choisir entre deux modèles figés.</p>`,
+    },
+    {
+      h2: "Notre offre : une maison contemporaine clé en main",
+      html: `<p>Nous concevons et réalisons votre maison contemporaine sur-mesure, dessinée avec un architecte, conforme à la RE2020 et livrée clé en main. De la première esquisse au suivi du chantier, vous bénéficiez d'un interlocuteur unique et d'honoraires clairs de 12 % du coût de construction. Découvrez notre <a href="/services/maison-cle-en-main" class="text-primary underline">accompagnement clé en main</a>.</p>`,
+    },
+    {
+      h2: "Concevons votre maison contemporaine",
+      html: `<p>Vous rêvez d'une maison contemporaine lumineuse et unique ? Parlons de votre projet. Maison de Nacre la conçoit sur-mesure et la réalise clé en main, dans la région de Caen. Estimation gratuite et sans engagement.</p>
+<p class="mt-4"><a href="/#contact" class="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-2.5 font-medium hover:opacity-90">Demander mon estimation gratuite</a></p>`,
+    },
+  ],
+  faq: [
+    {
+      question: "Qu'est-ce qu'une maison contemporaine ?",
+      answer:
+        "Une maison au style actuel, aux lignes épurées, avec un toit plat ou monopente, de grandes baies vitrées et des volumes géométriques, qui privilégie la lumière et l'espace.",
+    },
+    {
+      question: "Une maison contemporaine est-elle plus chère ?",
+      answer:
+        "Pas fondamentalement : le coût dépend surtout de la surface et des finitions. Certains partis pris (toit plat, grandes baies) peuvent ajouter au budget, d'autres l'optimisent.",
+    },
+    {
+      question: "Toit plat ou toit monopente pour une maison contemporaine ?",
+      answer:
+        "Le toit plat offre des lignes très épurées, le monopente facilite l'écoulement des eaux et l'intégration solaire. Le choix dépend du style et des règles d'urbanisme.",
+    },
+    {
+      question: "Une maison contemporaine respecte-t-elle la RE2020 ?",
+      answer:
+        "Oui, comme toute construction neuve. Ses grandes baies sont un atout pour la lumière, à condition de bien gérer les protections solaires pour le confort d'été.",
+    },
+    {
+      question: "Peut-on personnaliser une maison contemporaine ?",
+      answer:
+        "Totalement. Le style contemporain se prête particulièrement au sur-mesure, dessiné avec un architecte selon vos envies et votre terrain.",
+    },
+  ],
+  relatedGuideSlugs: ["re2020", "prix-construction-maison-m2"],
+};
+
+export const SERVICES: Service[] = [S6, S2, S1, S4, SArchi, S3];
 
 export const SERVICES_BY_SLUG: Record<string, Service> = Object.fromEntries(
   SERVICES.map((s) => [s.slug, s]),
