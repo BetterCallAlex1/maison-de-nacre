@@ -9,7 +9,6 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
-import heroImg from "@/assets/hero-maison.webp";
 
 function NotFoundComponent() {
   return (
@@ -73,8 +72,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Maison neuve à Caen, clé en main (14) | Maison de Nacre" },
-      { name: "description", content: "Votre maison neuve clé en main à Caen et dans le Calvados. Maître d'œuvre dédié, architecte inclus, devis négociés, norme RE2020. 1er rendez-vous offert." },
       { name: "author", content: "Maison de Nacre" },
       { name: "language", content: "fr-FR" },
       { httpEquiv: "content-language", content: "fr-FR" },
@@ -82,26 +79,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "geo.placename", content: "Caen, Calvados, France" },
       { name: "geo.position", content: "49.1829;-0.3707" },
       { name: "ICBM", content: "49.1829, -0.3707" },
-      { property: "og:title", content: "Maison neuve à Caen, clé en main (14) | Maison de Nacre" },
-      { property: "og:description", content: "Votre maison neuve clé en main à Caen et dans le Calvados. Maître d'œuvre dédié, architecte inclus, devis négociés, norme RE2020. 1er rendez-vous offert." },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "fr_FR" },
       { property: "og:site_name", content: "Maison de Nacre" },
-      { property: "og:url", content: "https://maison-de-nacre.fr/" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Maison neuve à Caen, clé en main (14) | Maison de Nacre" },
-      { name: "twitter:description", content: "Votre maison neuve clé en main à Caen et dans le Calvados. Maître d'œuvre dédié, architecte inclus, devis négociés, norme RE2020. 1er rendez-vous offert." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/89b1dbff-fd65-4152-b07b-f17fbfe75cd6/id-preview-1895e7d8--5b4883a1-2ba1-479a-976f-1c48421421fb.lovable.app-1780050663202.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/89b1dbff-fd65-4152-b07b-f17fbfe75cd6/id-preview-1895e7d8--5b4883a1-2ba1-479a-976f-1c48421421fb.lovable.app-1780050663202.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       { rel: "apple-touch-icon", href: "/favicon.svg" },
-      { rel: "canonical", href: "https://maison-de-nacre.fr/" },
-      { rel: "alternate", hreflang: "fr-FR", href: "https://maison-de-nacre.fr/" },
-      { rel: "alternate", hreflang: "x-default", href: "https://maison-de-nacre.fr/" },
-      { rel: "preload", as: "image", href: heroImg, fetchpriority: "high" },
     ],
     scripts: [
       {
